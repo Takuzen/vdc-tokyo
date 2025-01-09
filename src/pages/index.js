@@ -65,7 +65,33 @@ export default function Home() {
           <p className="text-lg sm:text-xl mt-4 text-center">
             シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
 
-	  </p>
+	</p>
+	  {/* Subtitle */}
+  	  <p className="text-md sm:text-lg mt-4 text-center font-medium">
+    	    Apple Vision Pro 特化回！ <br />
+    	    個人でもチームでも、共にアイデアを形にしよう！ 
+ 	  </p>
+
+  	  {/* Date */}
+  	  <div className="mt-8 text-center">
+    	  <p className="text-4xl sm:text-5xl font-bold text-red-400">
+      	    04.11 金 - 13 日, 2025
+    	  </p>
+  	  </div>
+
+  	  {/* Venue */}
+  	  <div className="mt-4 text-center">
+    	  <p className="text-lg sm:text-xl font-bold">
+      	    会場：<span className="text-white">東京科学未来館, 東京</span>
+          </p>
+          </div>
+
+  	  {/* Event Format */}
+  	  <div className="mt-4 text-center">
+    	  <p className="text-lg sm:text-xl font-bold">
+      	    開催方式：<span className="text-white">現地＆オンラインのハイブリッド開催</span>
+    	  </p>
+  	  </div>
         </section>
 
 	<section
@@ -197,7 +223,7 @@ export default function Home() {
 	  <p>見本例</p>
           {/* Premium Sponsors */}
           <div className="mb-12">
-            <h4 className="text-lg font-bold mb-4">Premium Sponsors</h4>
+            <h4 className="text-lg font-bold mb-4">プレミアム・スポンサー</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <SponsorCard
                 logo="/default_profile_400x400.png"
@@ -218,7 +244,7 @@ export default function Home() {
 
           {/* Basic Sponsors */}
           <div className="mb-12">
-            <h4 className="text-lg font-bold mb-4">Basic Sponsors</h4>
+            <h4 className="text-lg font-bold mb-4">ベーシック・スポンサー</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               <SponsorCard
                 logo="/default_profile_400x400.png"
@@ -249,7 +275,7 @@ export default function Home() {
 
           {/* Venue Sponsor */}
           <div className="mb-12">
-            <h4 className="text-lg font-bold mb-4">Venue Sponsor</h4>
+            <h4 className="text-lg font-bold mb-4">会場スポンサー</h4>
             <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/default_profile_400x400.png"
@@ -263,12 +289,12 @@ export default function Home() {
 
           {/* Broadcast Sponsor */}
           <div>
-            <h4 className="text-lg font-bold mb-4">Broadcast Sponsor</h4>
+            <h4 className="text-lg font-bold mb-4">ブロードキャスト・スポンサー</h4>
             <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/default_profile_400x400.png"
-                name="Dwango"
-                description="Live Streaming Support provided by Dwango."
+                name="Broadcast Sponsor Name"
+                description="Live Streaming Support provided by [Name]."
                 link="https://example.com/"
                 badge="broadcast"
               />
@@ -278,16 +304,18 @@ export default function Home() {
 	  {/* Sponsor Recruitment Section */}
           <div className="flex flex-col items-center mt-16">
             <h4 className="text-xl font-bold text-purple-700 mb-4">スポンサー募集</h4>
+	  {/*
             <img
-              src="/"
+              src="/visiondevcamplogo.png"
               alt="Sponsor Recruitment Illustration"
               className="w-40 h-40 object-contain mb-6"
             />
+	  */}
             <a
               href="https://productive-fear-c6e.notion.site/174cc332b048804f9a5fdae32d5ec224?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-orange-500 text-purple-700 font-bold py-2 px-6 rounded-full hover:bg-orange-100 transition"
+              className="border-4 border-white text-purple-700 font-bold py-2 px-6 rounded-full hover:bg-orange-100 transition"
             >
               スポンサー応募フォーム
             </a>
