@@ -65,7 +65,7 @@ export default function Home() {
 	
   	{/* News Items */}
   	<div className="space-y-6 mb-8">
-    	<NewsItem text="公式サイト公開しました！" link="#top" />
+    	<NewsItem text="公式サイトを公開しました！" link="#top" />
   	</div>
 
 	<p>過去のイベントの様子</p>
@@ -115,7 +115,7 @@ export default function Home() {
           />
           <ScheduleItem
             dateRange="2024.02.01 - 2024.03.23"
-            title="技術ワークショップ"
+            title="募集イベント"
             subDates={[
               "2025.2月前半枠",
 	      "02.01, 02.02, 02.08, 02.09, 02.15, 02.16",
@@ -412,13 +412,8 @@ function Header() {
               </a>
             </li>
             <li className="mb-2">
-              <a href="/history" className="hover:underline font-bold">
-                歴史
-              </a>
-            </li>
-            <li className="mb-2">
-              <a href="/uniqueness" className="hover:underline font-bold">
-                特徴
+              <a href="/history-and-uniqueness" className="hover:underline font-bold">
+                歴史と特徴
               </a>
             </li>
             <li className="mb-2">
@@ -467,13 +462,8 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="/history" className="hover:underline font-bold">
-              歴史
-            </a>
-          </li>
-          <li>
-            <a href="/uniqueness" className="hover:underline font-bold">
-              特徴
+            <a href="/history-and-uniqueness" className="hover:underline font-bold">
+              歴史と特徴
             </a>
           </li>
           <li>
