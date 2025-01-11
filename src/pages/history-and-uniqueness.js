@@ -42,14 +42,6 @@ const History = () => {
         <p>iPhoneDevCamp (2007, 2008, 2009)から始まり、iPadDevCamp (2010)、iOSDevCamp (2010, 2011, 2012, 2013)と、規模と参加者を拡大していきました。</p>
     </div>
     <div style={styles.image}>
-	<div style={styles.imageWithCaption}>
-            <img
-                src="dom-promoting-iPhoneDevCamp-2.png"
-                alt="Dom Promoting iphoneDevCamp 2 Photo"
-                style={styles.image}
-            />
-            <p style={styles.caption}>Dom promoting iPhoneDevCamp 2 in 2008</p>
-        </div>
         <div style={styles.imageWithCaption}>
             <img
                 src="iPhoneDevCamp07.png"
@@ -57,6 +49,14 @@ const History = () => {
                 style={styles.image}
             />
             <p style={styles.caption}>iPhoneDevCamp (2007)</p>
+        </div>
+	<div style={styles.imageWithCaption}>
+          <img
+            src="dom-promoting-iPhoneDevCamp-2.png"
+            alt="Dom Promoting iphoneDevCamp 2 Photo"
+            style={styles.image}
+          />
+          <p style={styles.caption}>Dom promoting iPhoneDevCamp 2 in 2008</p>
         </div>
         <div style={styles.imageWithCaption}>
             <img
