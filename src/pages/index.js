@@ -417,7 +417,7 @@ function Header() {
               </a>
             </li>
             <li className="mb-2">
-              <a href="#schedule" className="hover:underline font-bold">
+              <a href="/schedule" className="hover:underline font-bold">
                 スケジュール
               </a>
             </li>
@@ -467,7 +467,7 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="#schedule" className="hover:underline font-bold">
+            <a href="/schedule" className="hover:underline font-bold">
               スケジュール
             </a>
           </li>
