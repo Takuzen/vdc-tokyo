@@ -42,6 +42,14 @@ const History = () => {
         <p>iPhoneDevCamp (2007, 2008, 2009)から始まり、iPadDevCamp (2010)、iOSDevCamp (2010, 2011, 2012, 2013)と、規模と参加者を拡大していきました。</p>
     </div>
     <div style={styles.image}>
+	<div style={styles.imageWithCaption}>
+            <img
+                src="dom-promoting-iPhoneDevCamp-2.png"
+                alt="Dom Promoting iphoneDevCamp 2 Photo"
+                style={styles.image}
+            />
+            <p style={styles.caption}>Dom promoting iPhoneDevCamp 2 in 2008</p>
+        </div>
         <div style={styles.imageWithCaption}>
             <img
                 src="iPhoneDevCamp07.png"
@@ -139,8 +147,62 @@ const History = () => {
                     />
                 </div>
             </div>
+	    {/* Section 5 */}
+	    <div style={styles.sectionRow}>
+  	    <h2 style={styles.subtitle}>多数の成功プロジェクトを輩出</h2>
+            <p style={styles.text}>
+    	      開発者コミュニティにおけるインクルージョン、多様性、エンパワーメントを促進しており、毎年、何百人もの開発者、デザイナー、愛好家が集まり、iPhone、iPad、iOS向けのアプリを作成してきました。
+	    </p>
+  	    <ul style={styles.list}>
+    	      <li>Oauthのような著名なオープンソースプロジェクトから、Block（旧Square）のような上場企業に至るまで、多くのものを生み出してきました。</li>
+    	      <li>Getaround、Obama ’08アプリ、AppleのTestFlightなどもすべてここから生まれました。</li>
+  	    </ul>
 
-	          {/* Footer */}
+    <div style={styles.projectContainer}>
+    {/* Logos/Icons Section */}
+    <div style={styles.projectRow}>
+      <img src="/oauth-logo.png" alt="Oauth Logo" style={styles.projectImage} />
+      <img src="/square-block-logo.png" alt="Square/Block Logo" style={styles.projectImage} />
+      <img src="/gatearound-logo.png" alt="Gateround Logo" style={styles.projectImage} />
+      <img src="/obama-08-logo.png" alt="Obama ’08 Logo" style={styles.projectImage} />
+      <img src="/testflight-logo.png" alt="TestFlight Logo" style={styles.projectImage} />
+    </div>
+
+    {/* Additional Content */}
+    <div style={styles.quote}>
+      <p>
+        "共同創業者を見つけて、チームを作り、あなたの夢を現実にするための絶好の機会です。"
+      </p>
+      <footer>– Dom Sagolla、DevCamp共同主催者</footer>
+　　　<div style={styles.imageColumn}>
+        <img
+          src="/dom-photo.png"
+          alt="Dom Photo"
+          style={styles.image}
+        />
+      </div>
+      </div>
+      </div>
+    </div>
+
+      	    {/* Section 5 */}
+	    <div style={styles.sectionRow}>
+  	      <h2 style={styles.subtitle}>そして、VisionDevCampへ</h2>
+	    <ul style={styles.list}>
+    	      <li>Vision Proが発売された翌月末に、第1回目のVisionDevCampがアメリカのサンタクララで開催されました。</li>
+    	      <li>100台以上のVision Proと150人以上の開発者が集まり、週末を含め3日間のハッカソンを楽しみました。
+</li>
+  	    </ul>
+	      　　　<div style={styles.imageColumn}>
+              <img
+                src="/visiondevcamp-zoomup-photo.png"
+                alt="VisionDevCamp Group Photo Zoomup"
+                style={styles.image}
+              />
+      	      </div>　
+	    </div>
+
+      {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-6">
         <p>
           Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
@@ -222,6 +284,35 @@ const styles = {
         color: '#666',
         marginBottom: '8px',
     },
+	projectContainer: {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  gap: '20px',
+  marginTop: '20px',
+},
+
+projectRow: {
+  display: 'flex',
+  justifyContent: 'center',
+  gap: '20px',
+  flexWrap: 'wrap',
+},
+
+projectImage: {
+  width: '120px',
+  height: 'auto',
+  objectFit: 'contain',
+  margin: '10px',
+},
+
+quote: {
+  fontStyle: 'italic',
+  textAlign: 'center',
+  fontSize: '16px',
+  marginTop: '20px',
+  color: '#555',
+},
 };
 
 export default History;
