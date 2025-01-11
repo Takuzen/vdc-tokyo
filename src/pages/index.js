@@ -382,12 +382,19 @@ function Header() {
   return (
     <header className="fixed top-0 w-full bg-white shadow-md z-50">
       <nav className="flex justify-between items-center px-4 md:px-8 py-3 md:py-4">
-        {/* Logo */}
-        <div className="text-xl font-bold text-black flex items-center">
-          VisionDevCamp
-          <span className="text-xl font-bold text-red-500 flex items-center pl-1">
-            Tokyo
-          </span>
+        {/* Logo and Title */}
+        <div className="flex items-center">
+          {/* Logo Image */}
+          <img
+            src="/visiondevcamp-logo-only.png"
+            alt="VisionDevCamp Logo"
+            className="w-8 h-8 md:w-10 md:h-10 mr-2 object-contain"
+          />
+          {/* Title */}
+          <div className="text-xl font-bold text-black flex items-center">
+            VisionDevCamp
+            <span className="text-xl font-bold text-red-500 pl-1">Tokyo</span>
+          </div>
         </div>
 
         {/* Hamburger Icon */}
@@ -436,16 +443,16 @@ function Header() {
                 報道
               </a>
             </li>
-	    <li className="mb-2">
-            <a href="#tickets" className="hover:underline font-bold">
-              チケット購入
-            </a>
-          </li>
-	  <li className="mb-2">
-            <a href="#contact" className="hover:underline font-bold">
-              お問い合わせ
-            </a>
-          </li>
+            <li className="mb-2">
+              <a href="#tickets" className="hover:underline font-bold">
+                チケット購入
+              </a>
+            </li>
+            <li className="mb-2">
+              <a href="#contact" className="hover:underline font-bold">
+                お問い合わせ
+              </a>
+            </li>
           </ul>
         )}
 
@@ -486,12 +493,12 @@ function Header() {
               報道
             </a>
           </li>
-	  <li>
+          <li>
             <a href="#tickets" className="hover:underline font-bold">
               チケット購入
             </a>
           </li>
-	  <li>
+          <li>
             <a href="#contact" className="hover:underline font-bold">
               お問い合わせ
             </a>

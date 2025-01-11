@@ -58,7 +58,7 @@ const Press = () => {
             </div>
 
 	{/* Footer */}
-      	<footer className="bg-gray-800 text-white text-center py-6">
+      	<footer className="bg-gray-800 text-white text-center py-6 mt-20">
         <p>
           Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
         </p>
