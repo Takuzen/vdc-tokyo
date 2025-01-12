@@ -87,37 +87,7 @@ const History = () => {
         </div>
     </div>
 </div>
-            {/* Section 3 */}
-            <div style={styles.sectionRow}>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>世界最大級のvisionOS開発者コミュニティ</h2>
-                    <p>2024年の3月に開催された第1回目のVisionDevCampは世界中からvisionOS開発者が集まりました。</p>
-                    <p>発売直後にも関わらず、100台以上のVision Proと150人以上の開発者が週末に集まりハッカソンを楽しみました。</p>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/largest-vos-community-photo.jpg"
-                        alt="VisionDevCamp 2024"
-                        style={styles.image}
-                    />
-                </div>
-            </div>
 
-            {/* Section 4 */}
-            <div style={styles.sectionRow}>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>非営利のボランティアによる運営</h2>
-                    <p>ボランティアによって運営され、スポンサーと参加者の両方によって費用が賄われる非営利イベントです。</p>
-                    <p>参加者が素晴らしいアプリケーションの開発に集中できるよう、スペース、食事、電源、インターネット、ネットワーキングの機会を提供し、参加費をできるだけ低く抑えることを目標としています。</p>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/volunteer-operation-photo.png"
-                        alt="Volunteer Team"
-                        style={styles.image}
-                    />
-                </div>
-            </div>
 	    {/* Section 5 */}
 	    <div style={styles.sectionRow}>
   	    <h2 style={styles.subtitle}>多数の成功プロジェクトを輩出</h2>
