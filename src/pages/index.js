@@ -82,18 +82,72 @@ export default function Home() {
     	></iframe>
   	</div>
 	</section>
-
-	{/* Section 3
-        <section
-          id="history"
-          className="min-h-screen flex flex-col items-center justify-center bg-green-500 text-white px-8 py-12"
+	
+	<section
+          id="uniqueness"
+          className="min-h-screen flex flex-col bg-yellow-400 text-gray-900 px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold">歴史</h3>
-          <p className="text-md sm:text-lg mt-4 text-center max-w-3xl">
-            Relax with a calming purple design for the final section.
-          </p>
-        </section>
-	*/}
+	  <h3 className="text-sm sm:text-base font-bold mb-6">特徴</h3>
+	              <div style={styles.sectionRow}>
+	        <div style={styles.imageColumn}>
+                  <img
+                    src="/visiondevcamp2025-group-photo.jpg"
+                    alt="VisionDevCamp Group"
+                    style={styles.image}
+                  />
+                </div>
+                <div style={styles.textColumn}>
+                    <h2 style={styles.subtitle}>開発者が集まりApple Vision Proで動作するアプリを作る</h2>
+                    <ul style={styles.list}>
+                        <li>VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利の開発者向けイベントです。</li>
+                        <li>経験豊富なボランティアチームがApple Vision ProとvisionOSの開発者、デザイナー、起業家、および愛好家の方々をサポートします。</li>
+                        <li>イベントは金曜日から日曜日まで開催され、参加者は週末にかけて共同作業を行います。開発プロジェクトには、個人での作業とチームでの作業の両方が含まれます。</li>
+                    </ul>
+                    <blockquote style={styles.quote}>
+                        <p>"VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた非営利の開発者向けイベントです。" </p>
+                        <footer>– Raven Zachary、DevCamp共同主催者</footer>
+                    </blockquote>
+                </div>
+                <div style={styles.imageColumn}>
+                    <img
+                        src="/raven-photo.png"
+                        alt="Raven Photo"
+                        style={styles.image}
+                    />
+                </div>
+            </div>
+	  	            {/* Section 3 */}
+            <div style={styles.sectionRow}>
+                <div style={styles.textColumn}>
+                    <h2 style={styles.subtitle}>世界最大級のvisionOS開発者コミュニティ</h2>
+                    <p>2024年の3月に開催された第1回目のVisionDevCampは世界中からvisionOS開発者が集まりました。</p>
+                    <p>発売直後にも関わらず、100台以上のVision Proと150人以上の開発者が週末に集まりハッカソンを楽しみました。</p>
+                </div>
+                <div style={styles.imageColumn}>
+                    <img
+                        src="/largest-vos-community-photo.jpg"
+                        alt="VisionDevCamp 2024"
+                        style={styles.image}
+                    />
+                </div>
+            </div>
+
+            {/* Section 4 */}
+            <div style={styles.sectionRow}>
+                <div style={styles.textColumn}>
+                    <h2 style={styles.subtitle}>非営利のボランティアによる運営</h2>
+                    <p>ボランティアによって運営され、スポンサーと参加者の両方によって費用が賄われる非営利イベントです。</p>
+                    <p>参加者が素晴らしいアプリケーションの開発に集中できるよう、スペース、食事、電源、インターネット、ネットワーキングの機会を提供し、参加費をできるだけ低く抑えることを目標としています。</p>
+                </div>
+                <div style={styles.imageColumn}>
+                    <img
+                        src="/volunteer-operation-photo.png"
+                        alt="Volunteer Team"
+                        style={styles.image}
+                    />
+                </div>
+            </div>
+	</section>
 
         {/* Section 4 */}
         <section
@@ -161,7 +215,7 @@ export default function Home() {
         </div>
       </section>
 
-	{/* Section 5 */}
+	{/* Section 5
         <section
           id="judges"
           className="flex flex-col bg-pink-500 text-white px-8 py-12"
@@ -171,14 +225,12 @@ export default function Home() {
             <JudgeCard
               image="/default_profile_400x400.png"
               name="順次 公開"
-	      title="開発者枠"
-              description="お楽しみに"
+              description="Coming Soon"
             />
             <JudgeCard
               image="/default_profile_400x400.png"
               name="順次 公開"
-	      title="アカデミア枠"
-              description="お楽しみに"
+              description="Coming Soon"
             />
             <JudgeCard
               image="/default_profile_400x400.png"
@@ -206,16 +258,15 @@ export default function Home() {
             />
           </div>
         </section>
+	*/}
 
-	{/* Section 6 */}
+	{/* Section 6
         <section
           id="sponsors"
-          className="min-h-screen flex flex-col bg-yellow-400 text-gray-900 px-8 py-12"
+          className="min-h-screen flex flex-col bg-white text-gray-900 px-8 py-12"
         >
-          {/* Sponsors Title */}
           <h3 className="text-sm font-bold text-left mb-6 sm:text-base">スポンサー</h3>
-	  <p>見本例</p>
-          {/* Premium Sponsors */}
+
           <div className="mb-12">
             <h4 className="text-lg font-bold mb-4">プレミアム・スポンサー</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -236,7 +287,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Basic Sponsors */}
           <div className="mb-12">
             <h4 className="text-lg font-bold mb-4">ベーシック・スポンサー</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -267,7 +317,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Venue Sponsor */}
           <div className="mb-12">
             <h4 className="text-lg font-bold mb-4">会場スポンサー</h4>
             <div className="grid grid-cols-1">
@@ -281,7 +330,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Broadcast Sponsor */}
           <div>
             <h4 className="text-lg font-bold mb-4">配信スポンサー</h4>
             <div className="grid grid-cols-1">
@@ -295,16 +343,13 @@ export default function Home() {
             </div>
           </div>
 
-	  {/* Sponsor Recruitment Section */}
           <div className="flex flex-col items-center mt-16">
             <h4 className="text-xl font-bold text-purple-700 mb-4">スポンサー募集中！</h4>
-	  {/*
             <img
               src="/visiondevcamplogo.png"
               alt="Sponsor Recruitment Illustration"
               className="w-40 h-40 object-contain mb-6"
             />
-	  */}
             <a
               href="https://forms.gle/rkd5RQrNtSU4fYxF9"
               target="_blank"
@@ -314,17 +359,6 @@ export default function Home() {
               スポンサー応募フォーム
             </a>
           </div>
-        </section>
-
-	{/* Section 7
-        <section
-          id="press"
-          className="min-h-screen flex flex-col items-center justify-center bg-[#7a7fde] text-white px-8 py-12"
-        >
-          <h3 className="text-3xl sm:text-5xl font-bold">報道</h3>
-          <p className="text-md sm:text-lg mt-4 text-center max-w-3xl">
-            Relax with a calming purple design for the final section.
-          </p>
         </section>
 	*/}
 
@@ -418,9 +452,14 @@ function Header() {
                 お知らせ
               </a>
             </li>
+	    <li className="mb-2">
+              <a href="#uniqueness" className="hover:underline font-bold">
+                特徴
+              </a>
+            </li>
             <li className="mb-2">
-              <a href="/history-and-uniqueness" className="hover:underline font-bold">
-                歴史と特徴
+              <a href="/history" className="hover:underline font-bold">
+                歴史
               </a>
             </li>
             <li className="mb-2">
@@ -429,18 +468,18 @@ function Header() {
               </a>
             </li>
             <li className="mb-2">
-              <a href="#judges" className="hover:underline font-bold">
+              <a href="#" className="hover:underline font-bold text-gray-400">
                 審査員
               </a>
             </li>
             <li className="mb-2">
-              <a href="#sponsors" className="hover:underline font-bold">
+              <a href="#" className="hover:underline font-bold text-gray-400">
                 スポンサー
               </a>
             </li>
             <li className="mb-2">
               <a href="/press" className="hover:underline font-bold">
-                報道
+                プレス
               </a>
             </li>
             <li className="mb-2">
@@ -468,9 +507,14 @@ function Header() {
               お知らせ
             </a>
           </li>
+	  <li>
+            <a href="#uniqueness" className="hover:underline font-bold">
+              特徴
+            </a>
+          </li>
           <li>
-            <a href="/history-and-uniqueness" className="hover:underline font-bold">
-              歴史と特徴
+            <a href="/history" className="hover:underline font-bold">
+              歴史
             </a>
           </li>
           <li>
@@ -479,18 +523,18 @@ function Header() {
             </a>
           </li>
           <li>
-            <a href="#judges" className="hover:underline font-bold">
+            <a href="#" className="hover:underline font-bold text-gray-400">
               審査員
             </a>
           </li>
           <li>
-            <a href="#sponsors" className="hover:underline font-bold">
+            <a href="#" className="hover:underline font-bold text-gray-400">
               スポンサー
             </a>
           </li>
           <li>
             <a href="/press" className="hover:underline font-bold">
-              報道
+              プレス
             </a>
           </li>
           <li>
@@ -633,3 +677,46 @@ function NewsItem({ text, link }) {
     </div>
   );
 }
+
+const styles = {
+	sectionRow: {
+	    display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            marginBottom: '40px',
+            gap: '20px',
+	},
+	subtitle: {
+        fontSize: '24px',
+        marginBottom: '10px',
+    	},
+	imageColumn: {
+        flex: '1',
+        display: 'flex',
+        justifyContent: 'center',
+    	},
+	image: {
+        width: '100%',
+        maxWidth: '500px',
+        height: 'auto',
+        borderRadius: '10px',
+    	},
+	textColumn: {
+        flex: '1',
+        textAlign: 'left',
+        maxWidth: '650px',
+    	},
+	list: {
+        listStyle: 'disc',
+        paddingLeft: '20px',
+        lineHeight: '1.8',
+    	},
+	quote: {
+        fontStyle: 'italic',
+        borderLeft: '4px solid #ddd',
+        paddingLeft: '10px',
+        marginTop: '20px',
+    	},
+};
+	 
+

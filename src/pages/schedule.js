@@ -170,9 +170,6 @@ const Schedule = () => {
       </div>
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-6">
-        <p>
-          Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
-        </p>
 	<p>
 	  Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.
 	</p>

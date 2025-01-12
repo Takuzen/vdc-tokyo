@@ -3,36 +3,7 @@ import React from 'react';
 const History = () => {
     return (
         <section id="history" style={styles.section}>
-          	    	<h1 style={styles.title}>歴史と特徴</h1>
-            {/* Section 1 */}
-            <div style={styles.sectionRow}>
-	        <div style={styles.imageColumn}>
-                  <img
-                    src="/visiondevcamp2025-group-photo.jpg"
-                    alt="VisionDevCamp Group"
-                    style={styles.image}
-                  />
-                </div>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>開発者が集まりApple Vision Proで動作するアプリを作る</h2>
-                    <ul style={styles.list}>
-                        <li>VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利の開発者向けイベントです。</li>
-                        <li>経験豊富なボランティアチームがApple Vision ProとvisionOSの開発者、デザイナー、起業家、および愛好家の方々をサポートします。</li>
-                        <li>イベントは金曜日から日曜日まで開催され、参加者は週末にかけて共同作業を行います。開発プロジェクトには、個人での作業とチームでの作業の両方が含まれます。</li>
-                    </ul>
-                    <blockquote style={styles.quote}>
-                        <p>"VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた非営利の開発者向けイベントです。" </p>
-                        <footer>– Raven Zachary、DevCamp共同主催者</footer>
-                    </blockquote>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/raven-photo.png"
-                        alt="Raven Photo"
-                        style={styles.image}
-                    />
-                </div>
-            </div>
+          <h1 style={styles.title}>歴史</h1>
 
 {/* Section 2 */}
 <div style={styles.sectionRow}>
@@ -204,9 +175,6 @@ const History = () => {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-6">
-        <p>
-          Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
-        </p>
 	<p>
 	  Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.
 	</p>
@@ -237,6 +205,7 @@ const styles = {
         flex: '1',
         textAlign: 'left',
         maxWidth: '650px',
+	marginBottom: '20px',
     },
     imageColumn: {
         flex: '1',
@@ -244,8 +213,11 @@ const styles = {
         justifyContent: 'center',
     },
     subtitle: {
+	flex: '1',
+        display: 'flex',
+        justifyContent: 'center',
         fontSize: '24px',
-        marginBottom: '10px',
+        marginBottom: '20px',
     },
     text: {
         fontSize: '16px',

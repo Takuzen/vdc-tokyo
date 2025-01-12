@@ -38,7 +38,7 @@ const Press = () => {
             <div style={styles.pressCoverage}>
                 <h2 style={styles.subtitle}>VisionDevCamp プレス掲載情報</h2>
                 <p style={styles.text}>
-	          以下はVisionDevCampについてのブログ、記事、そしてポッドキャストの一覧である。
+	          以下はVisionDevCampについてのブログ、記事、そしてポッドキャストの一覧です。
                 </p>
                 <ul style={styles.list}>
                     {pressCoverageLinks.map((item, index) => (
@@ -59,9 +59,6 @@ const Press = () => {
 
 	{/* Footer */}
       	<footer className="bg-gray-800 text-white text-center py-6 mt-20">
-        <p>
-          Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
-        </p>
 	<p>
 	  Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.
 	</p>
