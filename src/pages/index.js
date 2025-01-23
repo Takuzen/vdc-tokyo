@@ -103,10 +103,6 @@ export default function Home() {
                         <li>経験豊富なボランティアチームがApple Vision ProとvisionOSの開発者、デザイナー、起業家、および愛好家の方々をサポートします。</li>
                         <li>イベントは金曜日から日曜日まで開催され、参加者は週末にかけて共同作業を行います。開発プロジェクトには、個人での作業とチームでの作業の両方が含まれます。</li>
                     </ul>
-                    <blockquote style={styles.quote}>
-                        <p>"VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた非営利の開発者向けイベントです。" </p>
-                        <footer>– Raven Zachary、DevCamp共同主催者</footer>
-                    </blockquote>
                 </div>
                 <div style={styles.imageColumn}>
                     <img
@@ -115,8 +111,12 @@ export default function Home() {
                         style={styles.image}
                     />
                 </div>
+	        <blockquote style={styles.quote}>
+                  <p>"VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた非営利の開発者向けイベントです。" </p>
+                  <footer>– Raven Zachary、DevCamp共同主催者</footer>
+                </blockquote>
+
             </div>
-	  	            {/* Section 3 */}
             <div style={styles.sectionRow}>
                 <div style={styles.textColumn}>
                     <h2 style={styles.subtitle}>世界最大級のvisionOS開発者コミュニティ</h2>
@@ -146,6 +146,14 @@ export default function Home() {
                         style={styles.image}
                     />
                 </div>
+	      	<a
+                  href="/history"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-black text-black py-2 px-6 mt-6 rounded-full hover:bg-orange-100 transition"
+            	>
+                  もっと詳しく知る →
+        	</a>
             </div>
 	</section>
 
@@ -161,54 +169,88 @@ export default function Home() {
 
         {/* Schedule Items */}
         <div className="space-y-6">
-          {/* Modular Schedule Item */}
+
+            <ScheduleItem
+              dateRange="2025.02.01 - 2025.03.23"
+              title="キックオフイベント"
+              subDates={[
+		"2025.03.04",
+              ]}
+              linkText="募集中"
+              link="#sponsors"
+              dimmed={false}
+            >
+	  {/*
+              <div className="mt-4 p-4 bg-orange-500 text-white rounded-lg">
+                <div className="flex items-center justify-between">
+
+                  <div className="flex items-center">
+                    <img
+                      src="/hobonichi-logo.png"
+                      alt="Logo"
+                      className="w-20 h-20 object-contain mr-4"
+                    />
+                    <h4 className="text-lg font-bold">と行う<span className="text-2xl ml-2">一日アイデアソン「テーマ：〇 △ ◻︎」</span></h4>
+                  </div>
+                </div>
+                <p className="text-sm mt-4 text-left mb-4">
+                  何は生涯いよいよそんな譴責団というもののところへ勧めらしいた。ことに十月を病気方はもっともその準備でうだってをいうばみるなにも評ぶつかったいないで、こうには教えましなですあり。人にすれない事もいくらほかに同時にないますあり。同時に大森さんよりお話し程度少し吟味から引けるです主意この世間私か採用をとしてお永続なたでしょないて、その時分は私か風他をやまて、岡田さんの事から学校のあなたが多分ご奨励とできるば私先生がご学問からあるくように同時にお［＃「に出さべきますから、いかにいやいや批評で向いでからくれでしょのを云いたろます。
+                </p>
+	    <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <img
+                      src="/default_profile_400x400.png"
+                      alt="Judge"
+                      className="w-12 h-12 rounded-full object-cover mr-4"
+                    />
+                    <div>
+                      <p className="text-sm font-bold">審査員</p>
+                      <p className="text-sm">ほぼ日 CTO 清水昌</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <a
+                      href="/details-page"
+                      className="py-2 px-6 mr-4 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition"
+                    >
+                      詳細を見る
+                    </a>
+                    <a
+                      href="/details-page"
+                      className="py-2 px-6 bg-white text-blue-700 font-bold rounded-full hover:bg-orange-300 transition"
+                    >
+                      参加する
+                    </a>
+		  </div>
+	  </div>
+              </div>
+	      		  	  */}
+
+            </ScheduleItem>
+
           <ScheduleItem
-            date="2025.02.01"
-            title="エントリー申し込み 受付スタート"
-            dimmed={false}
-          />
-          <ScheduleItem
-            dateRange="2024.02.01 - 2024.03.23"
+            dateRange="2025.03.04"
             title="募集イベント"
             subDates={[
-              "2025.2月前半枠",
-	      "02.01, 02.02, 02.08, 02.09, 02.15, 02.16",
-              "2025.3月前半枠",
-	      "03.08, 03.09, 03.15, 03.16",
-              "2025.3月後半枠",
-	      "03.22, 03.23",
+	      "Coming Soon",
             ]}
-	    linkText="募集中"
-	    link="#sponsors"
             dimmed={false}
           />
 	   <ScheduleItem
-            dateRange="2024.03.11"
-            title="キックオフイベント"
-            subDates={[
-              "03.08, 03.09, 03.15, 03.16"
-            ]}
-	    linkText="募集中"
-	    link="#sponsors"
-            dimmed={false}
-          />
-	   <ScheduleItem
-            dateRange="2024.03.11 - 2024.04.10"
+            dateRange="2025.03.16"
             title="アイデアソン"
             subDates={[
-              "03.08, 03.09, 03.15, 03.16, 03.22, 03.23"
+	      "Coming Soon"
             ]}
-	    linkText="募集中"
-	    link="#sponsors"
             dimmed={false}
           />
           <ScheduleItem
-            date="2024.04.10"
+            date="2025.04.10"
             title="エントリー申し込み 締め切り"
             dimmed={true}
           />
 	   <ScheduleItem
-            dateRange="2024.04.11"
+            dateRange="2025.04.11"
             title="チームビルディング"
             dimmed={false}
           />
@@ -222,6 +264,13 @@ export default function Home() {
         >
           <h3 className="text-sm sm:text-base font-bold mb-6">審査員</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <JudgeCard
+      image="/satoshi-san-profile-image.png"
+      name="服部 智"
+      title="Cyber AI Productions"
+      description="XR エンジニア"
+      bio="サイバーエージェント所属。AbemaTVにてアプリ開発に従事後、AICG事業部にてバーチャル撮影スタジオツールなど開発。社内認定 AR Expert。visionOS書籍執筆。国内外で登壇多数。"
+    />
             <JudgeCard
               image="/default_profile_400x400.png"
               name="順次 公開"
@@ -231,12 +280,6 @@ export default function Home() {
               image="/default_profile_400x400.png"
               name="順次 公開"
               description="Coming Soon"
-            />
-            <JudgeCard
-              image="/default_profile_400x400.png"
-              name="順次 公開"
-	   　 title="アーティスト枠"
-              description="お楽しみに"
             />
             <JudgeCard
               image="/default_profile_400x400.png"
@@ -258,10 +301,12 @@ export default function Home() {
             />
           </div>
         </section>
+
 	*/}
 
+
 	{/* Section 6
-        <section
+	<section
           id="sponsors"
           className="min-h-screen flex flex-col bg-white text-gray-900 px-8 py-12"
         >
@@ -345,21 +390,18 @@ export default function Home() {
 
           <div className="flex flex-col items-center mt-16">
             <h4 className="text-xl font-bold text-purple-700 mb-4">スポンサー募集中！</h4>
-            <img
-              src="/visiondevcamplogo.png"
-              alt="Sponsor Recruitment Illustration"
-              className="w-40 h-40 object-contain mb-6"
-            />
+
             <a
               href="https://forms.gle/rkd5RQrNtSU4fYxF9"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-4 border-white text-purple-700 font-bold py-2 px-6 rounded-full hover:bg-orange-100 transition"
+              className="border border-black py-2 px-6 rounded-full hover:bg-orange-100 transition"
             >
               スポンサー応募フォーム
             </a>
           </div>
         </section>
+
 	*/}
 
 	{/* Section 8 */}
@@ -395,9 +437,6 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-6">
-        <p>
-          Built with ❤️  using <a href="https://nextjs.org" className="underline hover:text-blue-400">Next.js</a>.
-        </p>
 	<p>
 	  Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.
 	</p>
@@ -553,7 +592,7 @@ function Header() {
   );
 }
 
-function ScheduleItem({ date, dateRange, title, linkText, link, subDates, dimmed }) {
+function ScheduleItem({ date, dateRange, title, linkText, link, subDates, dimmed, children }) {
   return (
     <div
       className={`rounded-lg shadow-lg p-6 ${
@@ -570,16 +609,16 @@ function ScheduleItem({ date, dateRange, title, linkText, link, subDates, dimmed
           <h4 className="mt-2 font-semibold text-base">{title}</h4>
         </div>
         {linkText && link && (
-<a
-  href={link}
-  className={`${
-    dimmed
-      ? "bg-gray-500 text-gray-300"
-      : "bg-blue-800 text-white hover:bg-blue-900"
-  } text-sm font-medium py-2 px-6 rounded-full whitespace-nowrap`}
->
-  {linkText}
-</a>
+          <a
+            href={link}
+            className={`${
+              dimmed
+                ? "bg-gray-500 text-gray-300"
+                : "bg-blue-800 text-white hover:bg-blue-900"
+            } text-sm font-medium py-2 px-6 rounded-full whitespace-nowrap`}
+          >
+            {linkText}
+          </a>
         )}
       </div>
       {subDates && (
@@ -591,25 +630,71 @@ function ScheduleItem({ date, dateRange, title, linkText, link, subDates, dimmed
           ))}
         </div>
       )}
+      {children}
     </div>
   );
 }
 
-function JudgeCard({ image, name, title, description }) {
+function JudgeCard({ image, name, title, description, bio }) {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
-    <div className="bg-white text-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center">
-      <img
-        src={image}
-        alt={name}
-        className="w-20 h-20 rounded-full mb-4 object-cover"
-      />
-      <h4 className="font-bold text-lg">{name}</h4>
-      <p className="text-sm">{title}</p>
-      <p className="text-sm mt-1 text-center">{description}</p>
-    </div>
+    <>
+      {/* Judge Card */}
+      <div
+        onClick={openModal}
+        className="bg-white text-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-2xl transition"
+      >
+        <img
+          src={image}
+          alt={name}
+          className="w-20 h-20 rounded-full mb-4 object-cover"
+        />
+        <h4 className="font-bold text-lg hover:underline">{name}</h4>
+        <p className="text-sm">{title}</p>
+        <p className="text-sm mt-1 text-center">{description}</p>
+      </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center"
+          onClick={closeModal}
+        >
+          <div
+            className="relative bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              className="absolute top-2 right-4 text-gray-500 hover:text-black"
+              onClick={closeModal}
+              aria-label="Close Modal"
+            >
+              ✕
+            </button>
+            <div className="flex flex-col items-center">
+              <img
+                src={image}
+                alt={name}
+                className="w-24 h-24 rounded-full mb-4 object-cover"
+              />
+              <h4 className="font-bold text-xl text-black">{name}</h4>
+              <p className="text-md font-medium text-gray-700 mt-2">{title}</p>
+              <p className="text-sm text-gray-600 text-center">
+                {description}
+              </p>
+              {bio && <p className="mt-4 text-gray-800 text-center font-serif">{bio}</p>}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
-
 function SponsorCard({ logo, name, description, link, badge }) {
   const badgeStyles = {
     premium: "bg-gradient-to-r from-yellow-500 to-red-500 text-white",

@@ -111,10 +111,6 @@ const History = () => {
 
     {/* Additional Content */}
     <div style={styles.quote}>
-      <p>
-        "共同創業者を見つけて、チームを作り、あなたの夢を現実にするための絶好の機会です。"
-      </p>
-      <footer>– Dom Sagolla、DevCamp共同主催者</footer>
 　　　<div style={styles.imageColumn}>
         <img
           src="/dom-photo.png"
@@ -122,6 +118,10 @@ const History = () => {
           style={styles.image}
         />
       </div>
+	      <p className="mt-4">
+        "共同創業者を見つけて、チームを作り、あなたの夢を現実にするための絶好の機会です。"
+      </p>
+      <footer>– Dom Sagolla、DevCamp共同主催者</footer>
       </div>
       </div>
     </div>
