@@ -30,8 +30,7 @@ export default function Home() {
 	</p>
 	  {/* Subtitle */}
   	  <p className="text-md sm:text-lg mt-4 text-center font-medium">
-    	    Apple Vision Pro 特化回！ <br />
-    	    個人でもチームでも、共にアイデアを形にしよう！ 
+    	    個人でもチームでも、共にVision Proのアイデアを形にしよう！ 
  	  </p>
 
   	  {/* Date */}
@@ -56,114 +55,97 @@ export default function Home() {
   	  </div>
         </section>
 
-	<section
-  	  id="news"
-  	  className="flex flex-col bg-[#e75b10] text-white px-8 py-12"
-	>
-	{/* News Title */}
-  	<h2 className="text-sm font-bold text-left mb-6 sm:text-base">お知らせ</h2>
+	<section id="news" className="w-full bg-[#e75b10] py-12">
+  <div className="container">
+    <h2 className="text-2xl md:text-3xl  font-bold text-left mb-6 sm:text-base text-white">お知らせ</h2>
+
+    <div className="text-white space-y-6 mb-8">
+      <NewsItem noLinkText="公式サイトを公開しました！"/>
+    </div>
+
+    <p className="text-white">過去のイベントの様子</p>
+
+    <div className="relative mt-2 w-full" style={{ paddingBottom: "56.25%" }}>
+      <iframe
+        className="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/KTIVdrXbJ_Q"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
+</section>
 	
-  	{/* News Items */}
-  	<div className="space-y-6 mb-8">
-    	<NewsItem text="公式サイトを公開しました！" link="#top" />
-  	</div>
+<section id="uniqueness" className="w-full min-h-screen flex flex-col bg-[#059d9f] text-gray-900 py-12">
+  <div className="container">
+    <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">特徴</h3>
 
-	<p>過去のイベントの様子</p>
+    {/* Row 1: VisionDevCamp Overview */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <div>
+        <img src="/visiondevcamp2025-group-photo.jpg" 
+             alt="VisionDevCamp Group" 
+             className="w-full h-[400px] object-cover rounded-lg" />
+      </div>
+      <div>
+        <h2 className="text-2xl font-bold">開発者が集まりApple Vision Proで動作するアプリを作る</h2>
+        <ul className="list-disc pl-5 mt-4 space-y-2">
+          <li>VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利の開発者向けイベントです。</li>
+          <li>経験豊富なボランティアチームがApple Vision ProとvisionOSの開発者、デザイナー、起業家、および愛好家の方々をサポートします。</li>
+          <li>イベントは金曜日から日曜日まで開催され、参加者は週末にかけて共同作業を行います。開発プロジェクトには、個人での作業とチームでの作業の両方が含まれます。</li>
+        </ul>
+      </div>
+    </div>
 
-  	{/* Responsive YouTube Embed */}
-  	<div className="relative mt-2 w-full" style={{ paddingBottom: "56.25%" }}>
-    	<iframe
-      	  className="absolute top-0 left-0 w-full h-full"
-      	  src="https://www.youtube.com/embed/KTIVdrXbJ_Q"
-      	  title="YouTube video player"
-      	  frameBorder="0"
-      	  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      	  allowFullScreen
-    	></iframe>
-  	</div>
-	</section>
-	
-	<section
-          id="uniqueness"
-          className="min-h-screen flex flex-col bg-yellow-400 text-gray-900 px-8 py-12"
-        >
-	  <h3 className="text-sm sm:text-base font-bold mb-6">特徴</h3>
-	              <div style={styles.sectionRow}>
-	        <div style={styles.imageColumn}>
-                  <img
-                    src="/visiondevcamp2025-group-photo.jpg"
-                    alt="VisionDevCamp Group"
-                    style={styles.image}
-                  />
-                </div>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>開発者が集まりApple Vision Proで動作するアプリを作る</h2>
-                    <ul style={styles.list}>
-                        <li>VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利の開発者向けイベントです。</li>
-                        <li>経験豊富なボランティアチームがApple Vision ProとvisionOSの開発者、デザイナー、起業家、および愛好家の方々をサポートします。</li>
-                        <li>イベントは金曜日から日曜日まで開催され、参加者は週末にかけて共同作業を行います。開発プロジェクトには、個人での作業とチームでの作業の両方が含まれます。</li>
-                    </ul>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/raven-photo.png"
-                        alt="Raven Photo"
-                        style={styles.image}
-                    />
-                </div>
-	        <blockquote style={styles.quote}>
-                  <p>"VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた非営利の開発者向けイベントです。" </p>
-                  <footer>– Raven Zachary、DevCamp共同主催者</footer>
-                </blockquote>
+    {/* Row 2: VisionDevCamp Community */}
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-6 items-center mt-12">
+      {/* Image */}
+      <div className="md:order-2">
+        <img src="/largest-vos-community-photo.jpg" 
+             alt="VisionDevCamp 2024" 
+             className="w-full h-[400px] object-cover rounded-lg" />
+      </div>
 
-            </div>
-            <div style={styles.sectionRow}>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>世界最大級のvisionOS開発者コミュニティ</h2>
-                    <p>2024年の3月に開催された第1回目のVisionDevCampは世界中からvisionOS開発者が集まりました。</p>
-                    <p>発売直後にも関わらず、100台以上のVision Proと150人以上の開発者が週末に集まりハッカソンを楽しみました。</p>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/largest-vos-community-photo.jpg"
-                        alt="VisionDevCamp 2024"
-                        style={styles.image}
-                    />
-                </div>
-            </div>
+      {/* Text */}
+      <div className="md:order-1">
+        <h2 className="text-2xl font-bold">世界最大級のvisionOS開発者コミュニティ</h2>
+        <p className="mt-4">2024年の3月に開催された第1回目のVisionDevCampは世界中からvisionOS開発者が集まりました。</p>
+        <p className="mt-2">発売直後にも関わらず、100台以上のVision Proと150人以上の開発者が週末に集まりハッカソンを楽しみました。</p>
+      </div>
+    </div>
 
-            {/* Section 4 */}
-            <div style={styles.sectionRow}>
-                <div style={styles.textColumn}>
-                    <h2 style={styles.subtitle}>非営利のボランティアによる運営</h2>
-                    <p>ボランティアによって運営され、スポンサーと参加者の両方によって費用が賄われる非営利イベントです。</p>
-                    <p>参加者が素晴らしいアプリケーションの開発に集中できるよう、スペース、食事、電源、インターネット、ネットワーキングの機会を提供し、参加費をできるだけ低く抑えることを目標としています。</p>
-                </div>
-                <div style={styles.imageColumn}>
-                    <img
-                        src="/volunteer-operation-photo.png"
-                        alt="Volunteer Team"
-                        style={styles.image}
-                    />
-                </div>
-	      	<a
-                  href="/history"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="border border-black text-black py-2 px-6 mt-6 rounded-full hover:bg-orange-100 transition"
-            	>
-                  もっと詳しく知る →
-        	</a>
-            </div>
-	</section>
+    {/* Row 3: Volunteer-Driven */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-12">
+      <div>
+        <img src="/volunteer-operation-photo.png" 
+             alt="Volunteer Team" 
+             className="w-full h-[400px] object-cover rounded-lg" />
+      </div>
+      <div>
+        <h2 className="text-2xl font-bold">非営利のボランティアによる運営</h2>
+        <p className="mt-4">ボランティアによって運営され、スポンサーと参加者の両方によって費用が賄われる非営利イベントです。</p>
+        <p className="mt-2">参加者が素晴らしいアプリケーションの開発に集中できるよう、スペース、食事、電源、インターネット、ネットワーキングの機会を提供し、参加費をできるだけ低く抑えることを目標としています。</p>
+      </div>
+    </div>
 
-        {/* Section 4 */}
+    <a href="/history" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       className="inline-block mt-12 border border-black text-black py-2 px-6 rounded-full hover:bg-white transition">
+      もっと詳しく知る →
+    </a>
+  </div>
+</section>
+
         <section
         id="schedule"
-        className="min-h-screen flex flex-col bg-gradient-to-b from-blue-500 to-blue-300 text-white px-8 py-12"
+        className="w-full min-h-screen flex flex-col bg-gradient-to-b from-blue-500 to-blue-300 text-white px-8 py-12"
       >
+	<div className="container">
         {/* Schedule Title */}
-        <h3 className="text-sm font-bold text-left mb-6 sm:text-base">
+        <h3 className="text-2xl md:text-3xl font-bold text-left mb-6">
           スケジュール
         </h3>
 
@@ -174,10 +156,9 @@ export default function Home() {
               dateRange="2025.02.01 - 2025.03.23"
               title="キックオフイベント"
               subDates={[
-		"2025.03.04",
               ]}
               linkText="募集中"
-              link="#sponsors"
+              link="#contact"
               dimmed={false}
             >
 	  {/*
@@ -232,7 +213,7 @@ export default function Home() {
             dateRange="2025.03.04"
             title="募集イベント"
             subDates={[
-	      "Coming Soon",
+	      "詳細 Coming Soon",
             ]}
             dimmed={false}
           />
@@ -240,7 +221,7 @@ export default function Home() {
             dateRange="2025.03.16"
             title="アイデアソン"
             subDates={[
-	      "Coming Soon"
+	      "詳細 Coming Soon"
             ]}
             dimmed={false}
           />
@@ -254,7 +235,15 @@ export default function Home() {
             title="チームビルディング"
             dimmed={false}
           />
+	  <ScheduleItem
+            dateRange="2025.04.12 - 13"
+            title="ハッカソン本番"
+            subDates={[
+            ]}
+            dimmed={false}
+          />
         </div>
+	</div>
       </section>
 
 	{/* Section 5
@@ -506,6 +495,7 @@ function Header() {
                 スケジュール
               </a>
             </li>
+	    {/*
             <li className="mb-2">
               <a href="#" className="hover:underline font-bold text-gray-400">
                 審査員
@@ -516,6 +506,7 @@ function Header() {
                 スポンサー
               </a>
             </li>
+	    */}
             <li className="mb-2">
               <a href="/press" className="hover:underline font-bold">
                 プレス
@@ -561,6 +552,7 @@ function Header() {
               スケジュール
             </a>
           </li>
+	  {/*
           <li>
             <a href="#" className="hover:underline font-bold text-gray-400">
               審査員
@@ -571,6 +563,7 @@ function Header() {
               スポンサー
             </a>
           </li>
+	  */}
           <li>
             <a href="/press" className="hover:underline font-bold">
               プレス
@@ -744,21 +737,22 @@ function SponsorCard({ logo, name, description, link, badge }) {
   );
 }
 
-function NewsItem({ text, link }) {
+function NewsItem({ linkText, link, noLinkText }) {
   return (
     <div className="flex items-center space-x-4">
-      {/* Icon */}
+      
       <div className="text-xl font-bold">›</div>
 
-      {/* Text with Link */}
       <a
         href={link}
         className="text-lg sm:text-xl font-medium underline hover:no-underline"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {text}
+        {linkText}
       </a>
+
+      <p className="text-lg sm:text-xl font-medium">{noLinkText}</p>
     </div>
   );
 }
