@@ -21,7 +21,7 @@ const judges = [
   {
     image: "/aimi-sekiguchi-400-400.png",
     name: "せきぐちあいみ",
-    title: "XRアーティスト",
+    title: "XR / Spatial Artist",
     description: "",
     bio: "2016年からVR空間に3Dの絵を描くアーティストとして活動。アート制作やライブペイントのオファーを世界13カ国から受ける。メタバース上の個展会場には世界中から多くの人が訪れ、ヴェネチア国際映画祭VR部門に選出される。NFTアートの初作品が約1300万円で落札され話題となる。2021年「Forbes Japan 100」に選出される。ドバイ政府認定アーティスト",
     socialMedia: [
