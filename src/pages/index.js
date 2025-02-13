@@ -112,6 +112,7 @@ export default function Home() {
             </h2>
 
             <div className="text-white space-y-6 mb-8">
+	      <NewsItem linkText="審査員・スポンサー情報を追加しました！" link="#judges"/>
               <NewsItem noLinkText="公式サイトを公開しました！" />
             </div>
 
