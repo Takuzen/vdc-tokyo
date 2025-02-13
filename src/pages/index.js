@@ -73,7 +73,7 @@ export default function Home() {
   {/* Circular Image 1 - Top Left */}
   <div className="absolute top-[-20px] left-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
     <img
-      src="/pana6841.jpg"
+      src="/PANA6841.jpg"
       alt="decorative"
       className="w-full h-full object-cover"
     />
@@ -82,7 +82,7 @@ export default function Home() {
   {/* Circular Image 2 - Bottom Right */}
   <div className="absolute bottom-[-20px] right-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
     <img
-      src="/pana6691.jpg"
+      src="/PANA6691.jpg"
       alt="decorative"
       className="w-full h-full object-cover"
     />
