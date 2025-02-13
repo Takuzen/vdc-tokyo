@@ -65,45 +65,41 @@ export default function Home() {
       <Header />
 
       <main className="mt-16">
-        <section
-          id="top"
-          className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-12"
-        >
-          <h1 className="text-4xl sm:text-6xl font-bold">
-            VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
-          </h1>
-          <p className="text-lg sm:text-xl underline mt-4 text-center">
-            シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
-          </p>
+        
+<section
+  id="top"
+  className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-12"
+>
+  <img
+    src="/PANA6841.jpg"
+    alt="Decorative"
+    className="absolute top-4 left-6 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 rounded-full object-cover"
+  />
 
-          <p className="text-md sm:text-lg mt-4 text-center font-medium">
-            個人でもチームでも、共にVision Proのアイデアを形にしよう！
-          </p>
+  <img
+    src="/PANA6691.jpg"
+    alt="Decorative"
+    className="absolute bottom-6 right-6 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 rounded-full object-cover"
+  />
 
-          <div className="mt-8 text-center">
-            <p className="text-4xl sm:text-5xl font-bold text-red-400">
-              04.11 <span className="text-2xl sm:text-3xl">金</span> - 13{" "}
-              <span className="text-2xl sm:text-3xl">日</span>, 2025
-            </p>
-          </div>
+  <h1 className="text-4xl sm:text-6xl font-bold text-center">
+    VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
+  </h1>
+  <p className="text-lg sm:text-xl underline mt-4 text-start">
+    シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
+  </p>
+  <p className="text-md sm:text-lg mt-4 text-center font-medium">
+    個人でもチームでも、共にVision Proのアイデアを形にしよう！
+  </p>
 
-          <div className="mt-4 text-center">
-            <p className="text-lg sm:text-xl font-bold">
-              会場：
-              <span className="underline decoration-[1px]">
-                <a
-                  href="https://www.z-lodge.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white"
-                >
-                  {" ︎オープンコラボレーションハブ LODGE "}
-                </a>
-              </span>
-              <span className="ml-1">& Online</span>
-            </p>
-          </div>
-        </section>
+  <div className="mt-8 text-center">
+    <p className="text-4xl sm:text-5xl font-bold text-red-400">
+      04.11 <span className="text-2xl sm:text-3xl">金</span> - 13{" "}
+      <span className="text-2xl sm:text-3xl">日</span>, 2025
+    </p>
+  </div>
+</section>
+
 
         <section id="news" className="w-full bg-[#e75b10] py-12">
           <div className="container">
