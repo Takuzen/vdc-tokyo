@@ -128,7 +128,7 @@ export default function Home() {
         <section id="news" className="w-full bg-[#e75b10] py-12">
           <div className="container">
             <h2 className="text-2xl md:text-3xl  font-bold text-left mb-6 sm:text-base text-white">
-              お知らせ
+              News
             </h2>
 
             <div className="text-white space-y-6 mb-8">
@@ -431,7 +431,7 @@ export default function Home() {
           id="tickets"
           className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold">チケット購入</h3>
+          <h3 className="text-3xl sm:text-5xl font-bold">Ticket Purchase</h3>
           <p className="text-md sm:text-lg underline mt-4 text-center max-w-3xl">
 	    Ticket sales open in Mid February 2025!
           </p>
@@ -872,7 +872,7 @@ function SponsorCard({ logo, name, link, badgeStyle }) {
           rel="noopener noreferrer"
           className="mt-4 text-blue-500 underline font-bold"
         >
-          公式サイト →
+          Official Website →
         </a>
       )}
     </div>
