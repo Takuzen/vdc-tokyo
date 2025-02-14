@@ -112,7 +112,7 @@ export default function Home() {
               会場：
               <span className="underline decoration-[1px]">
                 <a
-                  href="https://www.z-lodge.com/"
+                  href="https://www.z-lodge.com/#space"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white"
@@ -212,7 +212,7 @@ export default function Home() {
                 </p>
                 <p className="mt-2">
                   発売直後にも関わらず、100台以上のVision
-                  Proと150人以上の開発者が週末に集まりハッカソンを楽しみました。
+                  Proと同数の開発者が週末に集まりハッカソンを楽しみました。
                 </p>
               </div>
             </div>
@@ -436,7 +436,7 @@ export default function Home() {
         >
           <h3 className="text-3xl sm:text-5xl font-bold">チケット購入</h3>
           <p className="text-md sm:text-lg underline mt-4 text-center max-w-3xl">
-            2025年2月より募集開始！
+            2025年2月中旬より募集開始！
           </p>
         </section>
 
