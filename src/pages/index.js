@@ -65,66 +65,65 @@ export default function Home() {
       <Header />
 
       <main className="mt-16">
-        
-<section
-  id="top"
-  className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-12 overflow-hidden"
->
-  {/* Circular Image 1 - Top Left */}
-  <div className="absolute top-[-20px] left-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
-    <img
-      src="/PANA6841.jpg"
-      alt="decorative"
-      className="w-full h-full object-cover"
-    />
-  </div>
-
-  {/* Circular Image 2 - Bottom Right */}
-  <div className="absolute bottom-[-20px] right-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
-    <img
-      src="/PANA6691.jpg"
-      alt="decorative"
-      className="w-full h-full object-cover"
-    />
-  </div>
-
-  {/* Main Title */}
-  <h1 className="text-4xl sm:text-6xl font-bold text-center">
-    VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
-  </h1>
-
-  <p className="text-lg sm:text-xl underline mt-4 text-start">
-    シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
-  </p>
-
-  <p className="text-md sm:text-lg mt-4 text-center font-medium">
-    個人でもチームでも、共にVision Proのアイデアを形にしよう！
-  </p>
-
-  <div className="mt-8 text-center">
-    <p className="text-4xl sm:text-5xl font-bold text-red-400">
-      04.11 <span className="text-2xl sm:text-3xl">金</span> - 13{" "}
-      <span className="text-2xl sm:text-3xl">日</span>, 2025
-    </p>
-  </div>
-
-  <div className="mt-4 text-center">
-    <p className="text-lg sm:text-xl font-bold">
-      会場：
-      <span className="underline decoration-[1px]">
-        <a
-          href="https://www.z-lodge.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-white"
+        <section
+          id="top"
+          className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-12 overflow-hidden"
         >
-          {" ︎オープンコラボレーションハブ LODGE "}
-        </a>
-      </span>
-      <span className="ml-1">& Online</span>
-    </p>
-  </div>
-</section>
+          {/* Circular Image 1 - Top Left */}
+          <div className="absolute top-[-20px] left-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
+            <img
+              src="/PANA6841.jpg"
+              alt="decorative"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Circular Image 2 - Bottom Right */}
+          <div className="absolute bottom-[-20px] right-4 w-40 h-40 sm:w-48 sm:h-48 lg:w-80 lg:h-80 overflow-hidden rounded-full">
+            <img
+              src="/PANA6691.jpg"
+              alt="decorative"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Main Title */}
+          <h1 className="text-4xl sm:text-6xl font-bold text-center">
+            VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
+          </h1>
+
+          <p className="text-lg sm:text-xl underline mt-4 text-start">
+            シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
+          </p>
+
+          <p className="text-md sm:text-lg mt-4 text-center font-medium">
+            個人でもチームでも、共にVision Proのアイデアを形にしよう！
+          </p>
+
+          <div className="mt-8 text-center">
+            <p className="text-4xl sm:text-5xl font-bold text-red-400">
+              04.11 <span className="text-2xl sm:text-3xl">金</span> - 13{" "}
+              <span className="text-2xl sm:text-3xl">日</span>, 2025
+            </p>
+          </div>
+
+          <div className="mt-4 text-center">
+            <p className="text-lg sm:text-xl font-bold">
+              会場：
+              <span className="underline decoration-[1px]">
+                <a
+                  href="https://www.z-lodge.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  {" ︎オープンコラボレーションハブ LODGE "}
+                </a>
+              </span>
+              <span className="ml-1">& Online</span>
+            </p>
+          </div>
+        </section>
 
         <section id="news" className="w-full bg-[#e75b10] py-12">
           <div className="container">
@@ -133,7 +132,10 @@ export default function Home() {
             </h2>
 
             <div className="text-white space-y-6 mb-8">
-	      <NewsItem linkText="審査員・スポンサー情報を追加しました！" link="#judges"/>
+              <NewsItem
+                linkText="審査員・スポンサー情報を追加しました！"
+                link="#judges"
+              />
               <NewsItem noLinkText="公式サイトを公開しました！" />
             </div>
 
@@ -264,7 +266,6 @@ export default function Home() {
                 link="#contact"
                 dimmed={false}
               />
-
               <ScheduleItem
                 dateRange="2025.03.04"
                 title="キックオフイベント"
@@ -311,13 +312,38 @@ export default function Home() {
         </div>
 	*/}
               </ScheduleItem>
-
               <ScheduleItem
                 dateRange="2025.03.16"
                 title="アイデアソン"
-                subDates={["詳細 Coming Soon"]}
                 dimmed={false}
-              />
+              >
+                <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
+                  <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                    VisionDevCamp
+                    <br />
+                    アイデアソン:
+                    <br />
+                    空間コンピューティング×AIで創る次世代ライフスタイル
+                  </h4>
+                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                    VisionDevCampアイデアソン:
+                    <br />
+                    空間コンピューティング×AIで創る次世代ライフスタイル
+                  </h4>
+                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                    supported by DevX
+                  </span>
+
+                  <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                    >
+                      イベント詳細ページ →
+                    </a>
+                  </div>
+                </div>
+              </ScheduleItem>{" "}
               <ScheduleItem
                 date="2025.04.10"
                 title="エントリー申し込み 締め切り"
@@ -336,10 +362,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="judges"
-          className="w-full flex flex-col bg-pink-500 text-gray-900 px-8 py-12"
-        >
+        <section className="w-full flex flex-col bg-pink-500 text-gray-900 px-8 py-12">
           <div className="container">
             <h3 className="text-2xl md:text-3xl font-bold text-left mb-6 text-white">
               審査員
@@ -918,3 +941,4 @@ const styles = {
     marginTop: "20px",
   },
 };
+
