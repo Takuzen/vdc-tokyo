@@ -127,7 +127,7 @@ export default function Home() {
 
         <section id="news" className="w-full bg-[#e75b10] py-12">
           <div className="container">
-            <h2 className="text-2xl md:text-3xl  font-bold text-left mb-6 sm:text-base text-white">
+            <h2 className="text-2xl md:text-3xl font-bold text-left mb-6 sm:text-base text-white">
               お知らせ
             </h2>
 
@@ -136,7 +136,6 @@ export default function Home() {
                 linkText="審査員・スポンサー情報を追加しました！"
                 link="#judges"
               />
-              <NewsItem noLinkText="公式サイトを公開しました！" />
             </div>
 
             <p className="text-white">過去のイベントの様子</p>
@@ -242,7 +241,7 @@ export default function Home() {
               href="/history"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-12 border border-black text-black py-2 px-6 rounded-full hover:bg-white transition"
+              className="inline-block mt-12 border border-white text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
             >
               もっと詳しく知る →
             </a>
@@ -262,55 +261,69 @@ export default function Home() {
               <ScheduleItem
                 dateRange="2025.02.01 - 2025.03.23"
                 title="プレイベント"
-                linkText="募集中"
-                link="#contact"
                 dimmed={false}
               />
               <ScheduleItem
                 dateRange="2025.03.04"
-                title="キックオフイベント"
-                subDates={["詳細 Coming Soon"]}
+                title="講演会"
                 dimmed={false}
               >
-                {/*
         <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center">
-              <img src="/default_profile_400x400.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain mr-4" />
-              <h4 className="text-lg sm:text-2xl font-bold tracking-wide">
-                VisionDevCamp講演会2025：「ビジョンをクラフトするには？」<br />
-                <span className="text-sm sm:text-lg">supported by ほぼ日の學校</span>
-              </h4>
+              <img src="/hobonichi-logo.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg" />
+	    <div className="flex flex-col">
+              <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                    VisionDevCamp
+                    <br />
+                    講演会:
+                    <br />
+                    「ビジョンをクラフトするには？」
+                  </h4>
+                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                    VisionDevCamp講演会:
+                    <br />
+                    「ビジョンをクラフトするには？」
+                  </h4>
+                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                    supported by ほぼ日 サイエンス・マジック部
+                  </span> 
+	  </div>
             </div>
           </div>
           <p className="text-sm mt-4 text-left mb-4">
-            こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。INTERACTIONシンポジウムのアフター会でもございます。シンポジウム会場の徒歩圏内に位置するほぼ日の學校の収録会場をお借りして現地ならびにオンラインにてお送りいたします。詳細および申し込みは右下ボタンよりconnpassへお進みください。
+            こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。詳細および申し込みは右下ボタンよりconnpassへお進みください。
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">	  
             <SpeakerCard
-        image="/default_profile_400x400.png"
+        image="/koyama-san-profile-image.png"
         name="コヤ所長"
         title="株式会社ホットスタッフ・プロモーション"
 	description="エグゼクティブプロデューサー"
         bio="バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。"
-        socialMediaLink1="https://x.com/example"
-        socialMediaLink2="https://github.com/example"
+        socialMediaLink1="https://x.com/mayanmoyan"
+        socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
       />
             <SpeakerCard
-              image="/default_profile_400x400.png"
+              image="/yaseinootoko-san-profile-image.png"
               name="野生の男"
-              title="スピーカー"
-              bio="野生の男は、VR・AR分野での先駆者として知られ、国内外で多くの登壇経験を持つ。..."
+              title="株式会社ワイルドマン"
+	      description="代表取締役"
+              bio="2012年にSony HMZ-T2とOculus Rift DK1クラウドファンディングの二択で迷いOculus Rift DK1を購入。2013年春から同人活動でVRゲームの開発を始めコミックマーケット・BitSummit・デジゲー博などのイベントで頒布・出展を行う。2015年から本職もVRに転向し、株式会社gumi、SHOWROOM株式会社を経て現職。現在は株式会社ワイルドマンにて『パンツァードラグーンVoyage Record』の製作ほかに従事。"
+	      socialMediaLink1="https://x.com/yasei_no_otoko"
+              socialMediaLink2="https://www.wildman.co.jp/"
             />
-            <a
-              href="https://visiondevcamp.connpass.com/event/344662/preview/"
-              className="mt-4 sm:mt-0 py-2 px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wider"
-            >
-              イベント詳細ページ →
-            </a>
-          </div>
+	            </div>
+
+            <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                    >
+                      イベント詳細ページ →
+                    </a>
+                  </div>
         </div>
-	*/}
               </ScheduleItem>
               <ScheduleItem
                 dateRange="2025.03.16"
@@ -358,7 +371,16 @@ export default function Home() {
                 dateRange="2025.04.12 - 13"
                 title="ハッカソン本番"
                 dimmed={false}
-              />
+              >
+	                  <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
+                    >
+                      チケット購入 →
+                    </a>
+                  </div>
+	     </ScheduleItem>
             </div>
           </div>
         </section>
@@ -416,16 +438,16 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-center mt-16">
-            <h4 className="text-xl font-bold text-purple-700 mb-4">
+            <h4 className="text-xl font-bold text-purple-700 mb-6">
               スポンサー募集中！
             </h4>
             <a
               href="https://forms.gle/rkd5RQrNtSU4fYxF9"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-black py-2 px-6 rounded-full hover:bg-orange-100 transition"
+              className="border border-black py-2 px-6 rounded-full hover:bg-orange-300 transition"
             >
-              スポンサー応募フォーム
+              スポンサー応募フォーム →
             </a>
           </div>
         </section>
@@ -434,10 +456,16 @@ export default function Home() {
           id="tickets"
           className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold">チケット購入</h3>
-          <p className="text-md sm:text-lg underline mt-4 text-center max-w-3xl">
-            2025年2月中旬より募集開始！
-          </p>
+          <h3 className="text-3xl sm:text-5xl font-bold mb-6">チケット購入</h3>
+          <a
+            href="https://lu.ma/wsqwzm4s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-white text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+          >
+            こちらから購入できます →
+          </a>
+
         </section>
 
         <section
@@ -449,7 +477,7 @@ export default function Home() {
             href="https://forms.gle/UAUzjzJvSmNtKthg6"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-black text-black py-2 px-6 rounded-full hover:bg-orange-100 transition"
+            className="border border-black text-black py-2 px-6 rounded-full hover:bg-orange-300 transition"
           >
             お問い合わせフォーム →
           </a>
