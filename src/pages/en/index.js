@@ -136,7 +136,6 @@ export default function Home() {
                 linkText="Added judges and sponsor information!"
                 link="#judges"
               />
-              <NewsItem noLinkText="Official website launched!" />
             </div>
 
             <p className="text-white">Past Event Highlights</p>
@@ -235,14 +234,16 @@ export default function Home() {
               </div>
             </div>
 
-            <a
+            
+<a
               href="/history"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-12 border border-black text-black py-2 px-6 rounded-full hover:bg-white transition"
+              className="inline-block mt-12 border border-white text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
             >
-              Learn more →
+              Learn More →
             </a>
+
           </div>
         </section>
 
@@ -259,8 +260,6 @@ export default function Home() {
               <ScheduleItem
                 dateRange="2025.02.01 - 2025.03.23"
                 title="Pre-Event"
-                linkText="募集中"
-                link="#contact"
                 dimmed={false}
               />
               <ScheduleItem
@@ -269,49 +268,66 @@ export default function Home() {
                 subDates={["Details Coming Soon"]}
                 dimmed={false}
               >
-                {/*
-        <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
+<div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center">
-              <img src="/default_profile_400x400.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain mr-4" />
-              <h4 className="text-lg sm:text-2xl font-bold tracking-wide">
-                VisionDevCamp講演会2025：「ビジョンをクラフトするには？」<br />
-                <span className="text-sm sm:text-lg">supported by ほぼ日の學校</span>
-              </h4>
+              <img src="/hobonichi-logo.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg" />
+	    <div className="flex flex-col">
+              <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                    VisionDevCamp
+                    <br />
+                　　Lecture:
+                    <br />
+                    「How to Craft a Vision?」
+                  </h4>
+                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                    VisionDevCamp Lecture:
+                    <br />
+                    「How to Craft a Vision?」
+                  </h4>
+                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                    supported by Hobonichi Science & Magic Club
+                  </span> 
+	  </div>
             </div>
           </div>
           <p className="text-sm mt-4 text-left mb-4">
-            こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。INTERACTIONシンポジウムのアフター会でもございます。シンポジウム会場の徒歩圏内に位置するほぼ日の學校の収録会場をお借りして現地ならびにオンラインにてお送りいたします。詳細および申し込みは右下ボタンよりconnpassへお進みください。
+            At this pre-event, we will welcome creators who shape the future and hold a session where we all learn and think about &#8220;Vision&#8221; in the dual sense of Vision Pro and future vision, as well as the formula for creating it. For more details and registration, please proceed to Connpass via the button in the bottom right.
           </p>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">	  
             <SpeakerCard
-        image="/default_profile_400x400.png"
-        name="コヤ所長"
-        title="株式会社ホットスタッフ・プロモーション"
-	description="エグゼクティブプロデューサー"
-        bio="バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。"
-        socialMediaLink1="https://x.com/example"
-        socialMediaLink2="https://github.com/example"
+        image="/koyama-san-profile-image.png"
+        name="Director Koya"
+        title="Hot Stuff Promotion Co., Ltd."
+	description="Executive Producer"
+        bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
+        socialMediaLink1="https://x.com/mayanmoyan"
+        socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
       />
             <SpeakerCard
-              image="/default_profile_400x400.png"
-              name="野生の男"
-              title="スピーカー"
-              bio="野生の男は、VR・AR分野での先駆者として知られ、国内外で多くの登壇経験を持つ。..."
+              image="/yaseinootoko-san-profile-image.png"
+              name="Yasei No Otoko"
+              title="Wildman Inc."
+	      description="CEO"
+              bio="In 2012, he debated between Sony&#8242;s HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of &#8220;Panzer Dragoon Voyage Record&#8221; at Wildman Inc."
+	      socialMediaLink1="https://x.com/yasei_no_otoko"
+              socialMediaLink2="https://www.wildman.co.jp/"
             />
-            <a
-              href="https://visiondevcamp.connpass.com/event/344662/preview/"
-              className="mt-4 sm:mt-0 py-2 px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wider"
-            >
-              イベント詳細ページ →
-            </a>
-          </div>
+	            </div>
+
+            <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                    >
+                      Event Details Page →
+                    </a>
+                  </div>
         </div>
-	*/}
               </ScheduleItem>
-              <ScheduleItem
+	      <ScheduleItem
                 dateRange="2025.03.16"
-                title="Ideathon"
+                title="アイデアソン"
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
@@ -320,13 +336,12 @@ export default function Home() {
                     <br />
                     Ideathon:
                     <br />
-                    Creating the Future Lifestyle with Spatial Computing × AI
-	          </h4>
+                    Creating the Next-Generation Lifestyle with Spatial Computing × AI                  </h4>
                   <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
                     VisionDevCamp Ideathon:
                     <br />
-                    Creating the Future Lifestyle with Spatial Computing × AI
-	          </h4>
+                    Creating the Next-Generation Lifestyle with Spatial Computing × AI
+                  </h4>
                   <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                     supported by DevX
                   </span>
@@ -336,11 +351,11 @@ export default function Home() {
                       href="https://lu.ma/7zomrwt6"
                       className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
                     >
-                      Event Page →
+                      Event Details Page →
                     </a>
                   </div>
                 </div>
-              </ScheduleItem>{" "}
+              </ScheduleItem>
               <ScheduleItem
                 date="2025.04.10"
                 title="Entry Deadline"
@@ -355,7 +370,16 @@ export default function Home() {
                 dateRange="2025.04.12 - 13"
                 title="Main Hackathon"
                 dimmed={false}
-              />
+	      >
+	        <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
+                    >
+                      Purchase Ticket →
+                    </a>
+                  </div>
+              </ScheduleItem>
             </div>
           </div>
         </section>
@@ -420,9 +444,9 @@ export default function Home() {
               href="https://forms.gle/rkd5RQrNtSU4fYxF9"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-black py-2 px-6 rounded-full hover:bg-orange-100 transition"
+              className="border border-black py-2 px-6 rounded-full hover:bg-orange-300 transition"
             >
-              Apply Here
+              Apply Here →
             </a>
           </div>
         </section>
@@ -431,22 +455,29 @@ export default function Home() {
           id="tickets"
           className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold">Ticket Purchase</h3>
-          <p className="text-md sm:text-lg underline mt-4 text-center max-w-3xl">
-	    Ticket sales open in Mid February 2025!
-          </p>
+          <h3 className="text-3xl sm:text-5xl font-bold mb-4">Ticket Purchase</h3>
+          
+<a
+            href="https://lu.ma/wsqwzm4s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+          >
+            Purchase here →
+          </a>
+
         </section>
 
         <section
           id="contact"
           className="min-h-screen flex flex-col items-center justify-center bg-white text-black px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold mb-6">Contact</h3>
+          <h3 className="text-3xl sm:text-5xl font-bold mb-4">Contact</h3>
           <a
             href="https://forms.gle/UAUzjzJvSmNtKthg6"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-black text-black py-2 px-6 rounded-full hover:bg-orange-100 transition"
+            className="border border-black text-black py-2 px-6 rounded-full hover:bg-orange-300 transition"
           >
             Contact Form →
           </a>
@@ -686,7 +717,7 @@ function SpeakerCard({
           className="w-12 h-12 rounded-full object-cover mr-4"
         />
         <div>
-          <p className="text-sm">スピーカー</p>
+          <p className="text-sm">Speaker</p>
           <p className="text-sm font-bold">{name}</p>
         </div>
       </div>

@@ -241,7 +241,7 @@ export default function Home() {
               href="/history"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-12 border border-white text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+              className="inline-block mt-12 text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
             >
               もっと詳しく知る →
             </a>
@@ -461,7 +461,7 @@ export default function Home() {
             href="https://lu.ma/wsqwzm4s"
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+            className="text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
           >
             こちらから購入できます →
           </a>
