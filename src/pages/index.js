@@ -1,4 +1,6 @@
-import { useState } from "react";
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -268,54 +270,59 @@ export default function Home() {
                 title="講演会"
                 dimmed={false}
               >
-        <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center">
-              <img src="/hobonichi-logo.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg" />
-	    <div className="flex flex-col">
-              <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
-                    VisionDevCamp
-                    <br />
-                    講演会:
-                    <br />
-                    「ビジョンをクラフトするには？」
-                  </h4>
-                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
-                    VisionDevCamp講演会:
-                    <br />
-                    「ビジョンをクラフトするには？」
-                  </h4>
-                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
-                    supported by ほぼ日 サイエンス・マジック部
-                  </span> 
-	  </div>
-            </div>
-          </div>
-          <p className="text-sm mt-4 text-left mb-4">
-            こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。詳細および申し込みは右下ボタンよりconnpassへお進みください。
-          </p>
-          <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">	  
-            <SpeakerCard
-        image="/koyama-san-profile-image.png"
-        name="コヤ所長"
-        title="株式会社ホットスタッフ・プロモーション"
-	description="エグゼクティブプロデューサー"
-        bio="バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。"
-        socialMediaLink1="https://x.com/mayanmoyan"
-        socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
-      />
-            <SpeakerCard
-              image="/yaseinootoko-san-profile-image.png"
-              name="野生の男"
-              title="株式会社ワイルドマン"
-	      description="代表取締役"
-              bio="2012年にSony HMZ-T2とOculus Rift DK1クラウドファンディングの二択で迷いOculus Rift DK1を購入。2013年春から同人活動でVRゲームの開発を始めコミックマーケット・BitSummit・デジゲー博などのイベントで頒布・出展を行う。2015年から本職もVRに転向し、株式会社gumi、SHOWROOM株式会社を経て現職。現在は株式会社ワイルドマンにて『パンツァードラグーンVoyage Record』の製作ほかに従事。"
-	      socialMediaLink1="https://x.com/yasei_no_otoko"
-              socialMediaLink2="https://www.wildman.co.jp/"
-            />
-	            </div>
+                <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center">
+                      <img
+                        src="/hobonichi-logo.png"
+                        alt="Hobinichi Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg"
+                      />
+                      <div className="flex flex-col">
+                        <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                          VisionDevCamp
+                          <br />
+                          講演会:
+                          <br />
+                          「ビジョンをクラフトするには？」
+                        </h4>
+                        <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                          VisionDevCamp講演会:
+                          <br />
+                          「ビジョンをクラフトするには？」
+                        </h4>
+                        <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                          supported by ほぼ日 サイエンス・マジック部
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm mt-4 text-left mb-4">
+                    こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision
+                    Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。詳細および申し込みは右下ボタンよりconnpassへお進みください。
+                  </p>
+                  <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">
+                    <SpeakerCard
+                      image="/koyama-san-profile-image.png"
+                      name="コヤ所長"
+                      title="株式会社ホットスタッフ・プロモーション"
+                      description="エグゼクティブプロデューサー"
+                      bio="バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。"
+                      socialMediaLink1="https://x.com/mayanmoyan"
+                      socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
+                    />
+                    <SpeakerCard
+                      image="/yaseinootoko-san-profile-image.png"
+                      name="野生の男"
+                      title="株式会社ワイルドマン"
+                      description="代表取締役"
+                      bio="2012年にSony HMZ-T2とOculus Rift DK1クラウドファンディングの二択で迷いOculus Rift DK1を購入。2013年春から同人活動でVRゲームの開発を始めコミックマーケット・BitSummit・デジゲー博などのイベントで頒布・出展を行う。2015年から本職もVRに転向し、株式会社gumi、SHOWROOM株式会社を経て現職。現在は株式会社ワイルドマンにて『パンツァードラグーンVoyage Record』の製作ほかに従事。"
+                      socialMediaLink1="https://x.com/yasei_no_otoko"
+                      socialMediaLink2="https://www.wildman.co.jp/"
+                    />
+                  </div>
 
-            <div className="mt-4 flex justify-center sm:justify-end">
+                  <div className="mt-4 flex justify-center sm:justify-end">
                     <a
                       href="https://lu.ma/7zomrwt6"
                       className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
@@ -323,7 +330,7 @@ export default function Home() {
                       イベント詳細ページ →
                     </a>
                   </div>
-        </div>
+                </div>
               </ScheduleItem>
               <ScheduleItem
                 dateRange="2025.03.16"
@@ -372,15 +379,15 @@ export default function Home() {
                 title="ハッカソン本番"
                 dimmed={false}
               >
-	                  <div className="mt-4 flex justify-center sm:justify-end">
-                    <a
-                      href="https://lu.ma/7zomrwt6"
-                      className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
-                    >
-                      チケット購入 →
-                    </a>
-                  </div>
-	     </ScheduleItem>
+                <div className="mt-4 flex justify-center sm:justify-end">
+                  <a
+                    href="https://lu.ma/wsqwzm4s"
+                    className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
+                  >
+                    チケット購入 →
+                  </a>
+                </div>
+              </ScheduleItem>
             </div>
           </div>
         </section>
@@ -465,7 +472,6 @@ export default function Home() {
           >
             こちらから購入できます →
           </a>
-
         </section>
 
         <section
@@ -493,9 +499,25 @@ export default function Home() {
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentLang, setCurrentLang] = useState("ja");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentLang(window.location.pathname.startsWith("/en") ? "en" : "ja");
+    }
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleLanguage = () => {
+    const newLang = currentLang === "ja" ? "en" : "ja";
+    const newUrl =
+      newLang === "ja"
+        ? "https://www.vdctokyo.org/"
+        : "https://www.vdctokyo.org/en";
+    window.location.href = newUrl;
   };
 
   return (
@@ -503,26 +525,41 @@ function Header() {
       <nav className="flex justify-between items-center px-4 md:px-8 py-3 md:py-4">
         {/* Logo and Title */}
         <div className="flex items-center">
-          {/* Logo Image */}
           <img
             src="/visiondevcamp-logo-only.png"
             alt="VisionDevCamp Logo"
             className="w-8 h-8 md:w-10 md:h-10 mr-2 object-contain"
           />
-          {/* Title */}
           <div className="text-xl font-bold text-black flex items-center">
             VisionDevCamp
             <span className="text-xl font-bold text-red-500 pl-1">Tokyo</span>
           </div>
         </div>
 
-        {/* Hamburger Icon */}
-        <button
-          onClick={toggleMenu}
-          className="block md:hidden text-2xl text-black focus:outline-none"
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
+        <div className="flex">
+          {/* Hamburger Icon */}
+          <button
+            onClick={toggleMenu}
+            className="block md:hidden text-2xl text-black focus:outline-none"
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
+
+          {/* Language Toggle (Mobile) */}
+          <div className="sm:block md:hidden pl-4 pt-3">
+            <button
+              onClick={toggleLanguage}
+              className="hover:opacity-75 transition"
+            >
+              <Image
+                src="/language.svg"
+                alt="Language Toggle"
+                width={22}
+                height={22}
+              />
+            </button>
+          </div>
+        </div>
 
         {/* Mobile/Tablet Navigation */}
         {menuOpen && (
@@ -631,6 +668,22 @@ function Header() {
             <a href="#contact" className="hover:underline font-bold">
               お問い合わせ
             </a>
+          </li>
+          <li>
+            {/* Language Toggle (Desktop) */}
+            <div className="hidden sm:block pl-4">
+              <button
+                onClick={toggleLanguage}
+                className="hover:opacity-75 transition"
+              >
+                <Image
+                  src="/language.svg"
+                  alt="Language Toggle"
+                  width={22}
+                  height={22}
+                />
+              </button>
+            </div>
           </li>
         </ul>
       </nav>
@@ -969,4 +1022,3 @@ const styles = {
     marginTop: "20px",
   },
 };
-

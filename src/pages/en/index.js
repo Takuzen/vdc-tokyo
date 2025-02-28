@@ -1,4 +1,6 @@
-import { useState } from "react";
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 
@@ -93,11 +95,13 @@ export default function Home() {
           </h1>
 
           <p className="text-lg sm:text-xl underline mt-4 text-start">
-            The historic hackathon that has continued in Silicon Valley since 2007 is coming to Japan for the first time!
+            The historic hackathon that has continued in Silicon Valley since
+            2007 is coming to Japan for the first time!
           </p>
 
           <p className="text-md sm:text-lg mt-4 text-center font-medium">
-            Whether you’re working individually or in a team, let’s bring Vision Pro ideas to life together!
+            Whether you’re working individually or in a team, let’s bring Vision
+            Pro ideas to life together!
           </p>
 
           <div className="mt-8 text-center">
@@ -179,13 +183,18 @@ export default function Home() {
                 </h2>
                 <ul className="list-disc pl-5 mt-4 space-y-2">
                   <li>
-                    VisionDevCamp is a nonprofit developer event focused on app development for Apple Vision Pro and visionOS.
+                    VisionDevCamp is a nonprofit developer event focused on app
+                    development for Apple Vision Pro and visionOS.
                   </li>
                   <li>
-                    A team of experienced volunteers supports developers, designers, entrepreneurs, and enthusiasts working on Vision Pro and visionOS.
+                    A team of experienced volunteers supports developers,
+                    designers, entrepreneurs, and enthusiasts working on Vision
+                    Pro and visionOS.
                   </li>
                   <li>
-                    The event takes place from Friday to Sunday, where participants collaborate on projects both individually and in teams.
+                    The event takes place from Friday to Sunday, where
+                    participants collaborate on projects both individually and
+                    in teams.
                   </li>
                 </ul>
               </div>
@@ -202,14 +211,16 @@ export default function Home() {
 
               <div className="md:order-1">
                 <h2 className="text-2xl font-bold">
-	          One of the world’s largest visionOS developer communities
+                  One of the world’s largest visionOS developer communities
                 </h2>
                 <p className="mt-4">
-                  The first VisionDevCamp in March 2024 attracted visionOS developers from around the world.                
-	        </p>
+                  The first VisionDevCamp in March 2024 attracted visionOS
+                  developers from around the world.
+                </p>
                 <p className="mt-2">
-                  Despite the product’s recent launch, over 100 Vision Pro devices and developers participated in the hackathon.
-	        </p>
+                  Despite the product’s recent launch, over 100 Vision Pro
+                  devices and developers participated in the hackathon.
+                </p>
               </div>
             </div>
 
@@ -226,16 +237,18 @@ export default function Home() {
                   Nonprofit, volunteer-run operation
                 </h2>
                 <p className="mt-4">
-                  A nonprofit event operated by volunteers, funded by both sponsors and participants.
+                  A nonprofit event operated by volunteers, funded by both
+                  sponsors and participants.
                 </p>
                 <p className="mt-2">
-                  Aims to keep participation costs low while providing space, meals, power, internet, and networking opportunities to help participants focus on building great applications.
+                  Aims to keep participation costs low while providing space,
+                  meals, power, internet, and networking opportunities to help
+                  participants focus on building great applications.
                 </p>
               </div>
             </div>
 
-            
-<a
+            <a
               href="/history"
               target="_blank"
               rel="noopener noreferrer"
@@ -243,7 +256,6 @@ export default function Home() {
             >
               Learn More →
             </a>
-
           </div>
         </section>
 
@@ -268,54 +280,63 @@ export default function Home() {
                 subDates={["Details Coming Soon"]}
                 dimmed={false}
               >
-<div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center">
-              <img src="/hobonichi-logo.png" alt="Hobinichi Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg" />
-	    <div className="flex flex-col">
-              <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
-                    VisionDevCamp
-                    <br />
-                　　Lecture:
-                    <br />
-                    「How to Craft a Vision?」
-                  </h4>
-                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
-                    VisionDevCamp Lecture:
-                    <br />
-                    「How to Craft a Vision?」
-                  </h4>
-                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
-                    supported by Hobonichi Science & Magic Club
-                  </span> 
-	  </div>
-            </div>
-          </div>
-          <p className="text-sm mt-4 text-left mb-4">
-            At this pre-event, we will welcome creators who shape the future and hold a session where we all learn and think about &#8220;Vision&#8221; in the dual sense of Vision Pro and future vision, as well as the formula for creating it. For more details and registration, please proceed to Connpass via the button in the bottom right.
-          </p>
-          <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">	  
-            <SpeakerCard
-        image="/koyama-san-profile-image.png"
-        name="Director Koya"
-        title="Hot Stuff Promotion Co., Ltd."
-	description="Executive Producer"
-        bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
-        socialMediaLink1="https://x.com/mayanmoyan"
-        socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
-      />
-            <SpeakerCard
-              image="/yaseinootoko-san-profile-image.png"
-              name="Yasei No Otoko"
-              title="Wildman Inc."
-	      description="CEO"
-              bio="In 2012, he debated between Sony&#8242;s HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of &#8220;Panzer Dragoon Voyage Record&#8221; at Wildman Inc."
-	      socialMediaLink1="https://x.com/yasei_no_otoko"
-              socialMediaLink2="https://www.wildman.co.jp/"
-            />
-	            </div>
+                <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                    <div className="flex items-center">
+                      <img
+                        src="/hobonichi-logo.png"
+                        alt="Hobinichi Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg"
+                      />
+                      <div className="flex flex-col">
+                        <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                          VisionDevCamp
+                          <br />
+                          　　Lecture:
+                          <br />
+                          「How to Craft a Vision?」
+                        </h4>
+                        <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                          VisionDevCamp Lecture:
+                          <br />
+                          「How to Craft a Vision?」
+                        </h4>
+                        <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                          supported by Hobonichi Science & Magic Club
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm mt-4 text-left mb-4">
+                    At this pre-event, we will welcome creators who shape the
+                    future and hold a session where we all learn and think about
+                    &#8220;Vision&#8221; in the dual sense of Vision Pro and
+                    future vision, as well as the formula for creating it. For
+                    more details and registration, please proceed to Connpass
+                    via the button in the bottom right.
+                  </p>
+                  <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">
+                    <SpeakerCard
+                      image="/koyama-san-profile-image.png"
+                      name="Director Koya"
+                      title="Hot Stuff Promotion Co., Ltd."
+                      description="Executive Producer"
+                      bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
+                      socialMediaLink1="https://x.com/mayanmoyan"
+                      socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
+                    />
+                    <SpeakerCard
+                      image="/yaseinootoko-san-profile-image.png"
+                      name="Yasei No Otoko"
+                      title="Wildman Inc."
+                      description="CEO"
+                      bio="In 2012, he debated between Sony&#8242;s HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of &#8220;Panzer Dragoon Voyage Record&#8221; at Wildman Inc."
+                      socialMediaLink1="https://x.com/yasei_no_otoko"
+                      socialMediaLink2="https://www.wildman.co.jp/"
+                    />
+                  </div>
 
-            <div className="mt-4 flex justify-center sm:justify-end">
+                  <div className="mt-4 flex justify-center sm:justify-end">
                     <a
                       href="https://lu.ma/7zomrwt6"
                       className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
@@ -323,9 +344,9 @@ export default function Home() {
                       Event Details Page →
                     </a>
                   </div>
-        </div>
+                </div>
               </ScheduleItem>
-	      <ScheduleItem
+              <ScheduleItem
                 dateRange="2025.03.16"
                 title="アイデアソン"
                 dimmed={false}
@@ -336,11 +357,14 @@ export default function Home() {
                     <br />
                     Ideathon:
                     <br />
-                    Creating the Next-Generation Lifestyle with Spatial Computing × AI                  </h4>
+                    Creating the Next-Generation Lifestyle with Spatial
+                    Computing × AI{" "}
+                  </h4>
                   <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
                     VisionDevCamp Ideathon:
                     <br />
-                    Creating the Next-Generation Lifestyle with Spatial Computing × AI
+                    Creating the Next-Generation Lifestyle with Spatial
+                    Computing × AI
                   </h4>
                   <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                     supported by DevX
@@ -370,15 +394,15 @@ export default function Home() {
                 dateRange="2025.04.12 - 13"
                 title="Main Hackathon"
                 dimmed={false}
-	      >
-	        <div className="mt-4 flex justify-center sm:justify-end">
-                    <a
-                      href="https://lu.ma/7zomrwt6"
-                      className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
-                    >
-                      Purchase Ticket →
-                    </a>
-                  </div>
+              >
+                <div className="mt-4 flex justify-center sm:justify-end">
+                  <a
+                    href="https://lu.ma/wsqwzm4s"
+                    className="py-2 px-4 sm:px-6 bg-[#2a294b] text-white font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base"
+                  >
+                    Purchase Ticket →
+                  </a>
+                </div>
               </ScheduleItem>
             </div>
           </div>
@@ -455,9 +479,11 @@ export default function Home() {
           id="tickets"
           className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold mb-4">Ticket Purchase</h3>
-          
-<a
+          <h3 className="text-3xl sm:text-5xl font-bold mb-4">
+            Ticket Purchase
+          </h3>
+
+          <a
             href="https://lu.ma/wsqwzm4s"
             target="_blank"
             rel="noopener noreferrer"
@@ -465,7 +491,6 @@ export default function Home() {
           >
             Purchase here →
           </a>
-
         </section>
 
         <section
@@ -493,9 +518,25 @@ export default function Home() {
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentLang, setCurrentLang] = useState("ja");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCurrentLang(window.location.pathname.startsWith("/en") ? "en" : "ja");
+    }
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+
+  const toggleLanguage = () => {
+    const newLang = currentLang === "ja" ? "en" : "ja";
+    const newUrl =
+      newLang === "ja"
+        ? "https://www.vdctokyo.org/"
+        : "https://www.vdctokyo.org/en";
+    window.location.href = newUrl;
   };
 
   return (
@@ -516,6 +557,7 @@ function Header() {
           </div>
         </div>
 
+	  <div className="flex">
         {/* Hamburger Icon */}
         <button
           onClick={toggleMenu}
@@ -523,6 +565,22 @@ function Header() {
         >
           {menuOpen ? "✕" : "☰"}
         </button>
+	
+	          {/* Language Toggle (Mobile) */}
+          <div className="sm:block md:hidden pl-4 pt-3">
+            <button
+              onClick={toggleLanguage}
+              className="hover:opacity-75 transition"
+            >
+              <Image
+                src="/language.svg"
+                alt="Language Toggle"
+                width={22}
+                height={22}
+              />
+            </button>
+          </div>
+        </div>
 
         {/* Mobile/Tablet Navigation */}
         {menuOpen && (
@@ -631,6 +689,22 @@ function Header() {
             <a href="#contact" className="hover:underline font-bold">
               Contact
             </a>
+          </li>
+	  <li>
+            {/* Language Toggle (Desktop) */}
+            <div className="hidden sm:block pl-4">
+              <button
+                onClick={toggleLanguage}
+                className="hover:opacity-75 transition"
+              >
+                <Image
+                  src="/language.svg"
+                  alt="Language Toggle"
+                  width={22}
+                  height={22}
+                />
+              </button>
+            </div>
           </li>
         </ul>
       </nav>
@@ -969,4 +1043,3 @@ const styles = {
     marginTop: "20px",
   },
 };
-
