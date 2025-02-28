@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl font-bold text-center">
+          <h1 className="text-4xl sm:text-6xl font-bold text-center mt-[100px] sm:mt-0">
             VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
           </h1>
 
@@ -111,7 +111,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-4 text-center">
+          <div className="mt-4 mb-[100px] sm:mb-0 text-center">
             <p className="text-lg sm:text-xl font-bold">
               Venue
               <span className="underline decoration-[1px]">
@@ -276,8 +276,7 @@ export default function Home() {
               />
               <ScheduleItem
                 dateRange="2025.03.04"
-                title="Kickoff Event"
-                subDates={["Details Coming Soon"]}
+                title="Lecture"
                 dimmed={false}
               >
                 <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
@@ -292,14 +291,14 @@ export default function Home() {
                         <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                           VisionDevCamp
                           <br />
-                          　　Lecture:
+                          Lecture:
                           <br />
-                          「How to Craft a Vision?」
+                          How to Craft a Vision?
                         </h4>
                         <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
                           VisionDevCamp Lecture:
                           <br />
-                          「How to Craft a Vision?」
+                          How to Craft a Vision?
                         </h4>
                         <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                           supported by Hobonichi Science & Magic Club
@@ -307,15 +306,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm mt-4 text-left mb-4">
-                    At this pre-event, we will welcome creators who shape the
-                    future and hold a session where we all learn and think about
-                    &#8220;Vision&#8221; in the dual sense of Vision Pro and
-                    future vision, as well as the formula for creating it. For
-                    more details and registration, please proceed to Connpass
-                    via the button in the bottom right.
-                  </p>
-                  <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">
+                  <div className="flex gap-4 items-center pt-4 pb-2 sm:flex-row sm:items-center">
                     <SpeakerCard
                       image="/koyama-san-profile-image.png"
                       name="Director Koya"
@@ -348,7 +339,7 @@ export default function Home() {
               </ScheduleItem>
               <ScheduleItem
                 dateRange="2025.03.16"
-                title="アイデアソン"
+                title="Ideathon"
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
@@ -557,16 +548,16 @@ function Header() {
           </div>
         </div>
 
-	  <div className="flex">
-        {/* Hamburger Icon */}
-        <button
-          onClick={toggleMenu}
-          className="block md:hidden text-2xl text-black focus:outline-none"
-        >
-          {menuOpen ? "✕" : "☰"}
-        </button>
-	
-	          {/* Language Toggle (Mobile) */}
+        <div className="flex">
+          {/* Hamburger Icon */}
+          <button
+            onClick={toggleMenu}
+            className="block md:hidden text-2xl text-black focus:outline-none"
+          >
+            {menuOpen ? "✕" : "☰"}
+          </button>
+
+          {/* Language Toggle (Mobile) */}
           <div className="sm:block md:hidden pl-4 pt-3">
             <button
               onClick={toggleLanguage}
@@ -690,7 +681,7 @@ function Header() {
               Contact
             </a>
           </li>
-	  <li>
+          <li>
             {/* Language Toggle (Desktop) */}
             <div className="hidden sm:block pl-4">
               <button
