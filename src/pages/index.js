@@ -297,11 +297,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm mt-4 text-left mb-4">
-                    こちらのプレイベントでは未来を創造するクリエイター方をお迎えして、Vision
-                    Proと掛け合わせた二重の意味での【ビジョン】について、それを作り出すための方程式について、みんなで学び・考える会を開催します。詳細および申し込みは右下ボタンよりconnpassへお進みください。
-                  </p>
-                  <div className="flex gap-4 items-center pt-2 pb-2 sm:flex-row sm:items-center">
+                  <div className="flex gap-4 items-center mt-4 pt-2 pb-2 sm:flex-row sm:items-center">
                     <SpeakerCard
                       image="/koyama-san-profile-image.png"
                       name="コヤ所長"

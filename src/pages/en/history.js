@@ -1,16 +1,14 @@
-import React from 'react';
-
 const History = () => {
     return (
         <section id="history" style={styles.section}>
-          <h1 style={styles.title}>歴史</h1>
+          <h1 style={styles.title}>History</h1>
 
 {/* Section 2 */}
 <div style={styles.sectionRow}>
     <div style={styles.textColumn}>
-        <h2 style={styles.subtitle}>シリコンバレー発祥の歴史あるハッカソン</h2>
-        <p>2007年のiPhoneの発売を起源とし、16年の長い歴史を有しています。</p>
-        <p>iPhoneDevCamp (2007, 2008, 2009)から始まり、iPadDevCamp (2010)、iOSDevCamp (2010, 2011, 2012, 2013)と、規模と参加者を拡大していきました。</p>
+        <h2 style={styles.subtitle}>A Historic Hackathon Originating from Silicon Valley</h2>
+        <p>With its origins tracing back to the release of the iPhone in 2007, this hackathon boasts a 16-year-long history.</p>
+        <p>It started as iPhoneDevCamp (2007, 2008, 2009) and later expanded in scale and participation, evolving into iPadDevCamp (2010) and then iOSDevCamp (2010, 2011, 2012, 2013).</p>
     </div>
     <div style={styles.image}>
         <div style={styles.imageWithCaption}>
@@ -90,13 +88,13 @@ const History = () => {
 
 	    {/* Section 5 */}
 	    <div style={styles.sectionRow}>
-  	    <h2 style={styles.subtitle}>多数の成功プロジェクトを輩出</h2>
+  	    <h2 style={styles.subtitle}>Producing Many Successful Projects</h2>
             <p style={styles.text}>
-    	      開発者コミュニティにおけるインクルージョン、多様性、エンパワーメントを促進しており、毎年、何百人もの開発者、デザイナー、愛好家が集まり、iPhone、iPad、iOS向けのアプリを作成してきました。
+    	      This hackathon has promoted inclusion, diversity, and empowerment in the developer community. Every year, hundreds of developers, designers, and enthusiasts gather to create apps for the iPhone, iPad, and iOS.
 	    </p>
   	    <ul style={styles.list}>
-    	      <li>Oauthのような著名なオープンソースプロジェクトから、Block（旧Square）のような上場企業に至るまで、多くのものを生み出してきました。</li>
-    	      <li>Getaround、Obama ’08アプリ、AppleのTestFlightなどもすべてここから生まれました。</li>
+    	      <li>From well-known open-source projects like OAuth to publicly traded companies like Block (formerly Square), this hackathon has been a launchpad for many successful ventures.</li>
+    	      <li>Projects such as Getaround, the Obama ’08 app, and Apple’s TestFlight all originated from here.</li>
   	    </ul>
 
     <div style={styles.projectContainer}>
@@ -119,19 +117,19 @@ const History = () => {
         />
       </div>
 	      <p className="mt-4">
-        "共同創業者を見つけて、チームを作り、あなたの夢を現実にするための絶好の機会です。"
+        "It’s a great opportunity to find co-founders, build a team, and turn your dreams into reality."
       </p>
-      <footer>– Dom Sagolla、DevCamp共同主催者</footer>
+      <footer>— Dom Sagolla, Co-organizer of DevCamp</footer>
       </div>
       </div>
     </div>
 
       	    {/* Section 5 */}
 	    <div style={styles.sectionRow}>
-  	      <h2 style={styles.subtitle}>そして、VisionDevCampへ</h2>
+  	      <h2 style={styles.subtitle}>And Now, VisionDevCamp</h2>
 	    <ul style={styles.list}>
-    	      <li>Vision Proが発売された翌月末に、第1回目のVisionDevCampがアメリカのサンタクララで開催されました。</li>
-    	      <li>100台以上のVision Proと150人以上の開発者が集まり、週末を含め3日間のハッカソンを楽しみました。
+    	      <li>The first VisionDevCamp was held in Santa Clara, USA, just one month after the launch of the Vision Pro.</li>
+    	      <li>Around 100 developers gathered with more than 100 Vision Pro devices, enjoying a three-day hackathon including the weekend.
 </li>
   	    </ul>
 	      　　　<div style={styles.imageColumn}>
