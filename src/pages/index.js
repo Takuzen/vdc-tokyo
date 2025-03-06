@@ -40,12 +40,34 @@ const judges = [
     ],
   },
   {
-    image: "/default_profile_400x400.png",
-    name: "順次 公開",
-    title: "",
-    description: "お楽しみに",
-    bio: "",
-    socialMedia: [],
+    image: "/shinobu-takahashi-icon.png",
+    name: "高橋 忍",
+    title: "Unity Technologies Japan",
+    description: "Solution Architect",
+    bio: "産業分野のお客様向けにUnityを使った 3DやXR技術を利用したアプリケーションの開発等をご提案しています。国土交通省 PLATEAU Advocate。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://unity3d.jp/",
+        icon: "/globe-outline.svg",
+      },
+
+    ],
+  },
+  {
+    image: "/koyama-san-profile-image.png",
+    name: "コヤ所長",
+    title: "ホットスタッフ・プロモーション",
+    description: "エグゼクティブプロデューサー",
+    bio: "バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。",
+    socialMedia: [
+      { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
+      {
+        platform: "Website",
+        url: "https://bandainamco-am.co.jp/others/vrzone-portal/",
+        icon: "/globe-outline.svg",
+      },
+    ],
   },
 ];
 
@@ -90,7 +112,7 @@ export default function Home() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-4xl sm:text-6xl font-bold text-center">
+          <h1 className="text-4xl sm:text-6xl font-bold text-center mt-[100px] sm:mt-0">
             VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
           </h1>
 
@@ -109,7 +131,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-4 text-center">
+          <div className="mt-4 mb-[100px] sm:mb-0 text-center">
             <p className="text-lg sm:text-xl font-bold">
               会場：
               <span className="underline decoration-[1px]">
@@ -320,10 +342,10 @@ export default function Home() {
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
-                      href="https://lu.ma/7zomrwt6"
-                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                      href="https://visiondevcamp.connpass.com/event/344662/"
+                      className="pt-2 pb-1 px-4 sm:px-6 bg-gray-500 text-white font-bold rounded-full tracking-wide text-sm sm:text-base hover:cursor"
                     >
-                      イベント詳細ページ →
+                      終了
                     </a>
                   </div>
                 </div>
@@ -334,6 +356,13 @@ export default function Home() {
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
+	      <div className="flex items-center">
+	              <img
+                        src="/devx-logo.png"
+                        alt="DevX Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-4 rounded-lg"
+                      />
+	  <div className="flex flex-col">
                   <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                     VisionDevCamp
                     <br />
@@ -349,6 +378,9 @@ export default function Home() {
                   <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                     supported by DevX
                   </span>
+	     </div>
+	     </div>
+
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
@@ -359,7 +391,42 @@ export default function Home() {
                     </a>
                   </div>
                 </div>
-              </ScheduleItem>{" "}
+              </ScheduleItem>
+	      <ScheduleItem
+                dateRange="2025.03.20"
+                title="環境構築セッション"
+                dimmed={false}
+              >
+                <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
+	          <div className="flex items-center">
+	              <img
+                        src="/meltinghack-logo.png"
+                        alt="MeltingHack Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain ml-[-8px] mr-4 rounded-lg"
+                      />
+	          <div className="flex flex-col">
+                  <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                    Vision Pro開発環境構築イベント
+	  	  </h4>
+                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                    Vision Pro開発環境構築イベント
+                  </h4>
+                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                    with MeltingHack
+                  </span>
+	  </div>
+	  	  </div>
+
+                  <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://melting-hack.connpass.com/event/347737/"
+                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                    >
+                      イベント詳細ページ →
+                    </a>
+                  </div>
+                </div>
+              </ScheduleItem>
               <ScheduleItem
                 date="2025.04.10"
                 title="エントリー申し込み 締め切り"
@@ -372,7 +439,7 @@ export default function Home() {
               />
               <ScheduleItem
                 dateRange="2025.04.12 - 13"
-                title="ハッカソン本番"
+                title="ハッカソン"
                 dimmed={false}
               >
                 <div className="mt-4 flex justify-center sm:justify-end">

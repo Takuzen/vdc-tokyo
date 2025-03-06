@@ -40,12 +40,33 @@ const judges = [
     ],
   },
   {
-    image: "/default_profile_400x400.png",
-    name: "Coming Soon",
-    title: "",
-    description: "Stay tuned!",
-    bio: "",
-    socialMedia: [],
+    image: "/shinobu-takahashi-icon.png",
+    name: "Shinobu Takahashi",
+    title: "Unity Technologies Japan",
+    description: "Solution Architect",
+    bio: "He proposes the development of applications utilizing 3D and XR technologies with Unity for clients in various industrial sectors, and also serves as a PLATEAU Advocate for the Ministry of Land, Infrastructure, Transport and Tourism.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://unity3d.jp/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/koyama-san-profile-image.png",
+    name: "Junichiro Koyama",
+    title: "Hot Stuff Promotion",
+    description: "Executive Producer",
+    bio: "During his tenure at Bandai Namco Group, he developed over 100 titles, including The Idolmaster, Mobile Suit Gundam: Bonds of the Battlefield, and Fishing Spirits, and produced VR ZONE. Currently, He leads the educational innovation project Vision Craft at Nihon Kogakuin College.",
+    socialMedia: [
+      { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
+      {
+        platform: "Website",
+        url: "https://bandainamco-am.co.jp/others/vrzone-portal/",
+        icon: "/globe-outline.svg",
+      },
+    ],
   },
 ];
 
@@ -343,6 +364,13 @@ export default function Home() {
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
+	          <div className="flex items-center">
+	              <img
+                        src="/devx-logo.png"
+                        alt="DevX Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-4 rounded-lg"
+                      />
+	  <div className="flex flex-col">
                   <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                     VisionDevCamp
                     <br />
@@ -360,10 +388,47 @@ export default function Home() {
                   <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                     supported by DevX
                   </span>
+	  </div>
+	  </div>
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
                       href="https://lu.ma/7zomrwt6"
+                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                    >
+                      Event Details Page →
+                    </a>
+                  </div>
+                </div>
+              </ScheduleItem>
+	      <ScheduleItem
+                dateRange="2025.03.20"
+                title="Development Environment Setup"
+                dimmed={false}
+              >
+                <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
+	          <div className="flex items-center">
+	              <img
+                        src="/meltinghack-logo.png"
+                        alt="MeltingHack Logo"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain ml-[-8px] mr-4 rounded-lg"
+                      />
+	          <div className="flex flex-col">
+                  <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                    Vision Pro Development Environment Setup Event
+	          </h4>
+                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                    Vision Pro Development Environment Setup Event
+                  </h4>
+                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                    with MeltingHack
+                  </span>
+	  </div>
+	  	  </div>
+
+                  <div className="mt-4 flex justify-center sm:justify-end">
+                    <a
+                      href="https://melting-hack.connpass.com/event/347737/"
                       className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
                     >
                       Event Details Page →
@@ -383,7 +448,7 @@ export default function Home() {
               />
               <ScheduleItem
                 dateRange="2025.04.12 - 13"
-                title="Main Hackathon"
+                title="Hackathon"
                 dimmed={false}
               >
                 <div className="mt-4 flex justify-center sm:justify-end">
