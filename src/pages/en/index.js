@@ -68,6 +68,36 @@ const judges = [
       },
     ],
   },
+  {
+    image: "/HEAVENchan.png",
+    name: "Ikkou Morohoshi",
+    title: "ONE SHOT STAR",
+    description: "LODGE XR Talk",
+    bio: "2024-2025 Microsoft MVP / A strong advocate for WebXR and visionOS! Hosting the monthly “LODGE XR Talk” at the open collaboration hub LODGE, featuring discussions and hands-on experiences on the latest XR trends.",
+    socialMedia: [
+      { platform: "X", url: "https://x.com/ikkou", icon: "/x-logo.png" },
+      {
+        platform: "Website",
+        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/daigo-ushijima-image.png",
+    name: "Daigo Ushijima",
+    title: "Tokyo University of the Arts",
+    description: "Intermedia Art Art Media Center",
+    bio: "A media artist and researcher, they gained early recognition when their work was selected as a Jury Recommended Work at the 2004 Japan Media Arts Festival by the Agency for Cultural Affairs. Since then, they have continued to present their works at exhibitions both domestically and internationally, including in South Korea and China. In the field of education, after serving as a lecturer at the China Academy of Art, they have been engaged in education and research at Tokyo University of the Arts to this day.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+
 ];
 
 const geistSans = Geist({
@@ -303,11 +333,13 @@ export default function Home() {
                 <div className="mt-4 p-4 bg-[#2a294b] text-white rounded-lg">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
                     <div className="flex items-center">
+	  	      <a href="https://www.1101.com/n/s/boshu_sm/index.html">
                       <img
                         src="/hobonichi-logo.png"
                         alt="Hobinichi Logo"
                         className="w-16 h-16 sm:w-20 sm:h-20 object-cover mr-4 rounded-lg"
                       />
+	  	      </a>
                       <div className="flex flex-col">
                         <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                           VisionDevCamp
@@ -330,7 +362,7 @@ export default function Home() {
                   <div className="flex gap-4 items-center pt-4 pb-2 sm:flex-row sm:items-center">
                     <SpeakerCard
                       image="/koyama-san-profile-image.png"
-                      name="Director Koya"
+                      name="Junichiro Koyama"
                       title="Hot Stuff Promotion Co., Ltd."
                       description="Executive Producer"
                       bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
@@ -339,7 +371,7 @@ export default function Home() {
                     />
                     <SpeakerCard
                       image="/yaseinootoko-san-profile-image.png"
-                      name="Yasei No Otoko"
+                      name="Wildman"
                       title="Wildman Inc."
                       description="CEO"
                       bio="In 2012, he debated between Sony&#8242;s HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of &#8220;Panzer Dragoon Voyage Record&#8221; at Wildman Inc."
@@ -350,10 +382,10 @@ export default function Home() {
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
-                      href="https://lu.ma/7zomrwt6"
-                      className="py-2 px-4 sm:px-6 bg-white text-black font-bold rounded-full hover:bg-orange-300 transition tracking-wide text-sm sm:text-base shadow-lg"
+                      href="https://visiondevcamp.connpass.com/event/344662/"
+                      className="pt-2 pb-2 px-4 sm:px-6 bg-gray-500 text-white font-bold rounded-full tracking-wide text-sm sm:text-base hover:cursor"
                     >
-                      Event Details Page →
+	  	      Ended
                     </a>
                   </div>
                 </div>
@@ -365,11 +397,13 @@ export default function Home() {
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
 	          <div className="flex items-center">
+	  <a href="https://devx.jp/">
 	              <img
                         src="/devx-logo.png"
                         alt="DevX Logo"
-                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-4 rounded-lg"
+                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-14 md:mr-3 rounded-lg"
                       />
+	  </a>
 	  <div className="flex flex-col">
                   <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                     VisionDevCamp
@@ -408,11 +442,13 @@ export default function Home() {
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
 	          <div className="flex items-center">
+	  <a href="https://melting-hack.tokyo/">
 	              <img
                         src="/meltinghack-logo.png"
                         alt="MeltingHack Logo"
                         className="w-16 h-16 sm:w-20 sm:h-20 object-contain ml-[-8px] mr-4 rounded-lg"
                       />
+	  </a>
 	          <div className="flex flex-col">
                   <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
                     Vision Pro Development Environment Setup Event
@@ -617,7 +653,7 @@ function Header() {
           {/* Hamburger Icon */}
           <button
             onClick={toggleMenu}
-            className="block md:hidden text-2xl text-black focus:outline-none"
+            className="block md:hidden text-2xl text-black focus:outline-none mt-[-1px]"
           >
             {menuOpen ? "✕" : "☰"}
           </button>
@@ -695,7 +731,7 @@ function Header() {
         )}
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-4 text-sm text-black">
+        <ul className="hidden md:flex gap-4 text-sm text-black mt-2">
           <li>
             <a href="#top" className="hover:underline font-bold">
               Top
@@ -748,7 +784,7 @@ function Header() {
           </li>
           <li>
             {/* Language Toggle (Desktop) */}
-            <div className="hidden sm:block pl-4">
+            <div className="hidden sm:block pl-4 mt-[-1px]">
               <button
                 onClick={toggleLanguage}
                 className="hover:opacity-75 transition"
@@ -948,9 +984,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
           className="w-20 h-20 rounded-full mb-4 object-cover"
         />
         <h4 className="font-bold text-lg hover:underline">{name}</h4>
-        <p className={`text-sm ${!description ? "mt-2" : ""}`}>{title}</p>
+        <p className="text-xs md:text-sm text-gray-700">{title}</p>
         {description && (
-          <p className="text-sm mt-1 text-center">{description}</p>
+          <p className="text-[11px] text-gray-600">{description}</p>
         )}
       </div>
 
@@ -1099,3 +1135,4 @@ const styles = {
     marginTop: "20px",
   },
 };
+

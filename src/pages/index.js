@@ -51,7 +51,6 @@ const judges = [
         url: "https://unity3d.jp/",
         icon: "/globe-outline.svg",
       },
-
     ],
   },
   {
@@ -65,6 +64,35 @@ const judges = [
       {
         platform: "Website",
         url: "https://bandainamco-am.co.jp/others/vrzone-portal/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/HEAVENchan.png",
+    name: "諸星一行",
+    title: "ONE SHOT STAR",
+    description: "LODGE XR Talk",
+    bio: "2024-2025 Microsoft MVP / WebXRとvisionOS推し! / ︎オープンコラボレーションハブ LODGE を会場として、XRトレンドウォッチ&体験会をテーマとした「LODGE XR Talk」を毎月開催しています。",
+    socialMedia: [
+      { platform: "X", url: "https://x.com/ikkou", icon: "/x-logo.png" },
+      {
+        platform: "Website",
+        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/daigo-ushijima-image.png",
+    name: "牛島大悟",
+    title: "東京藝術大学",
+    description: "先端芸術表現科 芸術情報センター",
+    bio: "メディアアートやサウンドアートを専門とするアーティスト／研究者であり、2004年の文化庁メディア芸術祭において審査委員会推薦作品に選出されるなど初期から注目を集めた後、韓国や中国など国内外の展覧会で作品発表を重ねました。教育面では中国美術学院で講師を務めた後、現在に至るまで東京藝術大学で教育・研究に従事しております。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
         icon: "/globe-outline.svg",
       },
     ],
@@ -116,9 +144,12 @@ export default function Home() {
             VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
           </h1>
 
-          <p className="text-lg sm:text-xl underline mt-4 text-start">
+          <a
+            href="https://visiondevcamp.org/"
+            className="text-lg sm:text-xl underline mt-4 text-start"
+          >
             シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
-          </p>
+          </a>
 
           <p className="text-md sm:text-lg mt-4 text-center font-medium">
             個人でもチームでも、共にVision Proのアイデアを形にしよう！
@@ -306,12 +337,12 @@ export default function Home() {
                           <br />
                           講演会:
                           <br />
-                          「ビジョンをクラフトするには？」
+                          ビジョンをクラフトするには？
                         </h4>
                         <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
                           VisionDevCamp講演会:
                           <br />
-                          「ビジョンをクラフトするには？」
+                          ビジョンをクラフトするには？
                         </h4>
                         <span className="text-xs sm:text-sm block mt-2 text-gray-300">
                           supported by ほぼ日 サイエンス・マジック部
@@ -343,7 +374,7 @@ export default function Home() {
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
                       href="https://visiondevcamp.connpass.com/event/344662/"
-                      className="pt-2 pb-1 px-4 sm:px-6 bg-gray-500 text-white font-bold rounded-full tracking-wide text-sm sm:text-base hover:cursor"
+                      className="pt-2 pb-2 px-4 sm:px-6 bg-gray-500 text-white font-bold rounded-full tracking-wide text-sm sm:text-base hover:cursor"
                     >
                       終了
                     </a>
@@ -356,31 +387,30 @@ export default function Home() {
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
-	      <div className="flex items-center">
-	              <img
-                        src="/devx-logo.png"
-                        alt="DevX Logo"
-                        className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-4 rounded-lg"
-                      />
-	  <div className="flex flex-col">
-                  <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
-                    VisionDevCamp
-                    <br />
-                    アイデアソン:
-                    <br />
-                    空間コンピューティング×AIで創る次世代ライフスタイル
-                  </h4>
-                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
-                    VisionDevCampアイデアソン:
-                    <br />
-                    空間コンピューティング×AIで創る次世代ライフスタイル
-                  </h4>
-                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
-                    supported by DevX
-                  </span>
-	     </div>
-	     </div>
-
+                  <div className="flex items-center">
+                    <img
+                      src="/devx-logo.png"
+                      alt="DevX Logo"
+                      className="w-16 h-16 sm:w-20 sm:h-20 object-cover ml-[-8px] mr-4 rounded-lg"
+                    />
+                    <div className="flex flex-col">
+                      <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                        VisionDevCamp
+                        <br />
+                        アイデアソン:
+                        <br />
+                        空間コンピューティング×AIで創る次世代ライフスタイル
+                      </h4>
+                      <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                        VisionDevCampアイデアソン:
+                        <br />
+                        空間コンピューティング×AIで創る次世代ライフスタイル
+                      </h4>
+                      <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                        supported by DevX
+                      </span>
+                    </div>
+                  </div>
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
@@ -392,30 +422,30 @@ export default function Home() {
                   </div>
                 </div>
               </ScheduleItem>
-	      <ScheduleItem
+              <ScheduleItem
                 dateRange="2025.03.20"
                 title="環境構築セッション"
                 dimmed={false}
               >
                 <div className="mt-4 p-5 sm:p-6 bg-[#2a294b] text-white rounded-2xl shadow-md">
-	          <div className="flex items-center">
-	              <img
-                        src="/meltinghack-logo.png"
-                        alt="MeltingHack Logo"
-                        className="w-16 h-16 sm:w-20 sm:h-20 object-contain ml-[-8px] mr-4 rounded-lg"
-                      />
-	          <div className="flex flex-col">
-                  <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
-                    Vision Pro開発環境構築イベント
-	  	  </h4>
-                  <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
-                    Vision Pro開発環境構築イベント
-                  </h4>
-                  <span className="text-xs sm:text-sm block mt-2 text-gray-300">
-                    with MeltingHack
-                  </span>
-	  </div>
-	  	  </div>
+                  <div className="flex items-center">
+                    <img
+                      src="/meltinghack-logo.png"
+                      alt="MeltingHack Logo"
+                      className="w-16 h-16 sm:w-20 sm:h-20 object-contain ml-[-8px] mr-4 rounded-lg"
+                    />
+                    <div className="flex flex-col">
+                      <h4 className="text-base block sm:hidden sm:text-xl font-bold tracking-wide">
+                        Vision Pro開発環境構築イベント
+                      </h4>
+                      <h4 className="text-base hidden sm:block sm:text-xl font-bold tracking-wide leading-tight">
+                        Vision Pro開発環境構築イベント
+                      </h4>
+                      <span className="text-xs sm:text-sm block mt-2 text-gray-300">
+                        with MeltingHack
+                      </span>
+                    </div>
+                  </div>
 
                   <div className="mt-4 flex justify-center sm:justify-end">
                     <a
@@ -603,7 +633,7 @@ function Header() {
           {/* Hamburger Icon */}
           <button
             onClick={toggleMenu}
-            className="block md:hidden text-2xl text-black focus:outline-none"
+            className="block md:hidden text-2xl text-black focus:outline-none mt-[1px]"
           >
             {menuOpen ? "✕" : "☰"}
           </button>
@@ -681,7 +711,7 @@ function Header() {
         )}
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex gap-4 text-sm text-black">
+        <ul className="hidden md:flex gap-4 text-sm text-black mt-2">
           <li>
             <a href="#top" className="hover:underline font-bold">
               トップ
@@ -734,7 +764,7 @@ function Header() {
           </li>
           <li>
             {/* Language Toggle (Desktop) */}
-            <div className="hidden sm:block pl-4">
+            <div className="hidden sm:block pl-4 mt-[-1px]">
               <button
                 onClick={toggleLanguage}
                 className="hover:opacity-75 transition"
@@ -830,11 +860,11 @@ function SpeakerCard({
         <img
           src={image}
           alt={name}
-          className="w-12 h-12 rounded-full object-cover mr-4"
+          className="w-12 h-12 rounded-full object-cover mr-2"
         />
         <div>
-          <p className="text-sm">スピーカー</p>
-          <p className="text-sm font-bold">{name}</p>
+          <p className="text-[8px] sm:text-sm">スピーカー</p>
+          <p className="text-[11px] sm:text-sm font-bold">{name}</p>
         </div>
       </div>
 
@@ -926,7 +956,7 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
     <>
       <div
         onClick={openModal}
-        className="bg-white text-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-2xl transition w-64 h-58 sm:w-72 sm:h-52"
+        className="bg-white text-gray-900 rounded-lg shadow-lg p-6 flex flex-col items-center cursor-pointer hover:shadow-2xl transition w-64 h-66 sm:w-72 sm:h-52"
       >
         <img
           src={image}
@@ -934,9 +964,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
           className="w-20 h-20 rounded-full mb-4 object-cover"
         />
         <h4 className="font-bold text-lg hover:underline">{name}</h4>
-        <p className={`text-sm ${!description ? "mt-2" : ""}`}>{title}</p>
+        <p className="text-xs md:text-sm text-gray-700">{title}</p>
         {description && (
-          <p className="text-sm mt-1 text-center">{description}</p>
+          <p className="text-[11px] text-gray-600">{description}</p>
         )}
       </div>
 
@@ -1085,3 +1115,4 @@ const styles = {
     marginTop: "20px",
   },
 };
+
