@@ -549,6 +549,26 @@ export default function Home() {
                 link="https://www.z-lodge.com/"
                 badgeStyle="venue"
               />
+	      <h4 className="text-lg font-bold mb-4">Filming Partner</h4>
+              <SponsorCard
+                logo="/crossdevice-logo.png"
+                name="︎Crossdevice Inc."
+                link="https://www.z-lodge.com/"
+	  	badgeStyle="venue"
+              />
+	      <div className="col-span-2">
+	      <h4 className="text-lg font-bold mb-4">Community Partners</h4>
+	      </div>
+              <SponsorCard
+                logo="/iwaken-lab-logo.png"
+                name="︎Iwaken Lab."
+                link="https://x.com/iwakenlab"
+              />
+	      <SponsorCard
+                logo="/kwdc25-logo.png"
+                name="︎KWDC"
+                link="https://kwdc.dev/"
+              />
             </div>
           </div>
 
