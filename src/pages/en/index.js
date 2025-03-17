@@ -56,8 +56,8 @@ const judges = [
   {
     image: "/koyama-san-profile-image.png",
     name: "Junichiro Koyama",
-    title: "Hot Stuff Promotion",
-    description: "Executive Producer",
+    title: "Nihon Kogakuin College",
+    description: "Vision Craft Executive Producer",
     bio: "During his tenure at Bandai Namco Group, he developed over 100 titles, including The Idolmaster, Mobile Suit Gundam: Bonds of the Battlefield, and Fishing Spirits, and produced VR ZONE. Currently, He leads the educational innovation project Vision Craft at Nihon Kogakuin College.",
     socialMedia: [
       { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
@@ -363,8 +363,8 @@ export default function Home() {
                     <SpeakerCard
                       image="/koyama-san-profile-image.png"
                       name="Junichiro Koyama"
-                      title="Hot Stuff Promotion Co., Ltd."
-                      description="Executive Producer"
+                      title="Nihon Kogakuin College"
+                      description="Vision Craft Executive Producer"
                       bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
                       socialMediaLink1="https://x.com/mayanmoyan"
                       socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
@@ -553,7 +553,7 @@ export default function Home() {
               <SponsorCard
                 logo="/crossdevice-logo.png"
                 name="︎Crossdevice Inc."
-                link="https://www.z-lodge.com/"
+                link="https://www.crossdevice.co.jp/"
 	  	badgeStyle="venue"
               />
 	      <div className="col-span-2">

@@ -56,8 +56,8 @@ const judges = [
   {
     image: "/koyama-san-profile-image.png",
     name: "コヤ所長",
-    title: "ホットスタッフ・プロモーション",
-    description: "エグゼクティブプロデューサー",
+    title: "日本工学院専門学校",
+    description: "Vision Craft エグゼクティブプロデューサー",
     bio: "バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。",
     socialMedia: [
       { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
@@ -354,8 +354,8 @@ export default function Home() {
                     <SpeakerCard
                       image="/koyama-san-profile-image.png"
                       name="コヤ所長"
-                      title="株式会社ホットスタッフ・プロモーション"
-                      description="エグゼクティブプロデューサー"
+                      title="日本工学院専門学校"
+                      description="Vision Craft エグゼクティブプロデューサー"
                       bio="バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。"
                       socialMediaLink1="https://x.com/mayanmoyan"
                       socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
@@ -538,9 +538,8 @@ export default function Home() {
               <SponsorCard
                 logo="/crossdevice-logo.png"
                 name="︎株式会社クロスデバイス"
-                link="https://www.z-lodge.com/"
+                link="https://www.crossdevice.co.jp/"
 	  	badgeStyle="venue"
-	        className="object-fill"
               />
 	      <div className="col-span-2">
 	      <h4 className="text-lg font-bold mb-4">コミュニティ・パートナー</h4>
