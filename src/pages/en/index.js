@@ -542,23 +542,29 @@ export default function Home() {
                 link="https://styly.inc/"
                 className="mt-5"
               />
-              <h4 className="text-lg font-bold mb-4">Venue Partner</h4>
+	    </div>
+
+              <h4 className="text-lg font-bold my-5">Venue Partner</h4>
+	      <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/lodge-logo.svg"
                 name="︎Open Collaboration Hub LODGE"
                 link="https://www.z-lodge.com/"
                 badgeStyle="venue"
               />
-	      <h4 className="text-lg font-bold mb-4">Filming Partner</h4>
+	   </div>
+
+	      <h4 className="text-lg font-bold my-5">Filming Partner</h4>
+	  <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/crossdevice-logo.png"
                 name="︎Crossdevice Inc."
                 link="https://www.crossdevice.co.jp/"
 	  	badgeStyle="venue"
               />
-	      <div className="col-span-2">
-	      <h4 className="text-lg font-bold mb-4">Community Partners</h4>
-	      </div>
+	  </div>
+	     	      <h4 className="text-lg font-bold my-5">Community Partners</h4>
+	      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <SponsorCard
                 logo="/iwaken-lab-logo.png"
                 name="︎Iwaken Lab."
@@ -1072,13 +1078,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   );
 }
 
-function SponsorCard({ logo, name, link, badgeStyle }) {
+function SponsorCard({ logo, name, link }) {
   return (
-    <div
-      className={`relative rounded-lg p-6 flex flex-col items-center ${
-        badgeStyle === "venue" ? "w-full sm:col-span-2" : ""
-      }`}
-    >
+    <div className="relative rounded-lg p-6 flex flex-col items-center">
       <img src={logo} alt={name} className="w-32 h-32 object-contain mb-4" />
       <h5 className="font-bold text-lg">{name}</h5>
 

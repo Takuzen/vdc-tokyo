@@ -527,23 +527,28 @@ export default function Home() {
                 link="https://styly.inc/"
                 className="mt-5"
               />
-              <h4 className="text-lg font-bold mb-4">会場協力</h4>
+	  </div>
+	 
+              <h4 className="text-lg font-bold my-5">会場協力</h4>
+	      <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/lodge-logo.svg"
                 name="︎オープンコラボレーションハブ LODGE"
                 link="https://www.z-lodge.com/"
-                badgeStyle="venue"
               />
-	      <h4 className="text-lg font-bold mb-4">撮影協力</h4>
+	      </div>
+	      
+	        <h4 className="text-lg font-bold my-5">撮影協力</h4>
+	      <div className="grid grid-cols-1">
               <SponsorCard
                 logo="/crossdevice-logo.png"
                 name="︎株式会社クロスデバイス"
                 link="https://www.crossdevice.co.jp/"
-	  	badgeStyle="venue"
               />
-	      <div className="col-span-2">
-	      <h4 className="text-lg font-bold mb-4">コミュニティ・パートナー</h4>
-	      </div>
+	  </div>
+
+	      <h4 className="text-lg font-bold my-5">コミュニティ・パートナー</h4>
+	      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <SponsorCard
                 logo="/iwaken-lab-logo.png"
                 name="︎Iwaken Lab."
@@ -554,7 +559,7 @@ export default function Home() {
                 name="︎KWDC"
                 link="https://kwdc.dev/"
               />
-            </div>
+	      </div>
           </div>
 
           <div className="flex flex-col items-center mt-16">
@@ -1052,13 +1057,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   );
 }
 
-function SponsorCard({ logo, name, link, badgeStyle }) {
+function SponsorCard({ logo, name, link }) {
   return (
-    <div
-      className={`relative rounded-lg p-6 flex flex-col items-center ${
-        badgeStyle === "venue" ? "w-full sm:col-span-2" : ""
-      }`}
-    >
+    <div className="relative rounded-lg p-6 flex flex-col items-center">
       <img src={logo} alt={name} className="w-32 h-32 object-contain mb-4" />
       <h5 className="font-bold text-lg">{name}</h5>
 
