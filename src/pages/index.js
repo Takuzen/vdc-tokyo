@@ -527,6 +527,11 @@ export default function Home() {
                 link="https://styly.inc/"
                 className="mt-5"
               />
+	      <SponsorCard
+                logo="/BT_Logo.svg"
+                name="︎Beautiful Things"
+                link="https://www.beautifulthings.xyz/"
+              />
 	  </div>
 	 
               <h4 className="text-lg font-bold my-5">会場協力</h4>
