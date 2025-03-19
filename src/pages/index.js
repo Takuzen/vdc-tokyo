@@ -564,6 +564,11 @@ export default function Home() {
                 name="︎KWDC"
                 link="https://kwdc.dev/"
               />
+	      <SponsorCard
+                logo="/awe-asia-logo.png"
+                name="︎AWE Asia"
+                link="https://www.aweasia.com/"
+              />
 	      </div>
           </div>
 
