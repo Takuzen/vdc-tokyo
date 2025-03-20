@@ -585,6 +585,12 @@ export default function Home() {
                 name="︎AWE Asia"
                 link="https://www.aweasia.com/"
               />
+	      <SponsorCard
+                logo="/xr-tokyo-logo.png"
+                name="︎XR Tokyo"
+                link="https://www.xrtokyo.com/"
+              />
+
             </div>
           </div>
 
