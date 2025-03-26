@@ -547,6 +547,11 @@ export default function Home() {
                 name="︎Beautiful Things"
                 link="https://www.beautifulthings.xyz/"
               />
+	      <SponsorCard
+	        logo="/reinforz-logo.png"
+	        name="Reinforz Insight"
+	        link="https://reinforz.co.jp/bizmedia/"
+	      />
 	    </div>
 
               <h4 className="text-lg font-bold my-5">Venue Partner</h4>
