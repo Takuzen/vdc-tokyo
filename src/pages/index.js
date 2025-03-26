@@ -100,6 +100,39 @@ const judges = [
   },
 ];
 
+const speakers = [
+  {
+    image: "/raven-zachary.jpg",
+    name: "Raven Zachary",
+    title: "ARound",
+    description: "Chief Operating Officer (COO)",
+    bio: "Raven Zachary is the Chief Operating Officer (COO) at ARound, focused on augmented reality experiences for live events. He has been working professionally with spatial computing since 2015 and Apple technology since 2007. In addition to his work concerning Apple Vision Pro and visionOS with AWE for the Vision Workshop and as the co-founder of VisionDevCamp, he was the co-founder of the Portland Virtual Reality Meetup and the founder of the Portland HoloLens Meetup. Raven joins ARound through Stagwell's acquisition of Object Theory, a leader in creating custom augmented reality applications for businesses using wearables, smartphones, and tablets.",
+    socialMedia: [
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/ravenzachary/", icon: "/linkedin-logo.png" },
+    ],
+  },
+  {
+    image: "/oliver-photo.png",
+    name: "Oliver Weidlich",
+    title: "Contxtual",
+    description: "Director of Design & Innovation",
+    bio: "With over 25 years in UX, Oliver has been exploring the research and design of Augmented Reality and Spatial Computing for the last 8 years. His company, Contxtual, has created a range of prototypes with Augmented Reality headsets to experiment with how people will use Spatial Computing. Their app, Day Ahead, is a glanceable information visualisation of your calendar information and was in the App Store for the launch day of the Apple Vision Pro launch in February last year. He is an Industry Mentor for the Apple Foundation Program at the University of Technology Sydney, including teaching students about how to design for visionOS on the Apple Vision Pro.",
+    socialMedia: [
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/oliverweidlich/", icon: "/linkedin-logo.png" },
+    ],
+  },
+  {
+    image: "/degly.png",
+    name: "Degly Sebastian Pava Pava",
+    title: "Senior XR Engineer | Creator",
+    description: "",
+    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    socialMedia: [
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/deglypava/", icon: "/linkedin-logo.png" },
+    ],
+  },
+];
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -120,7 +153,7 @@ export default function Home() {
       <main className="mt-16">
         <section
           id="top"
-          className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-12 overflow-hidden"
+          className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-red-900 to-black text-white px-8 py-12 overflow-hidden"
         >
           {/* Hero Image - Full width banner */}
           <div className="absolute inset-0 w-full h-full z-0">
@@ -154,8 +187,7 @@ export default function Home() {
 
               <div className="mt-8 text-center">
                 <p className="text-4xl sm:text-5xl font-bold text-red-400">
-                  04.11 <span className="text-2xl sm:text-3xl">金</span> - 13{" "}
-                  <span className="text-2xl sm:text-3xl">日</span>, 2025
+                  2025年4月11日<span className="text-2xl sm:text-3xl">（金）</span>～13日<span className="text-2xl sm:text-3xl">（日）</span>
                 </p>
               </div>
 
@@ -196,19 +228,19 @@ export default function Home() {
         </section>
 
         {/* Overview Section - New */}
-        <section id="overview" className="w-full bg-gradient-to-r from-[#2d3748] to-[#1a202c] py-20 text-white">
+        <section id="overview" className="w-full gradient-primary py-20 text-white">
           <div className="container mx-auto px-8">
             <div className="max-w-5xl mx-auto">
               <div className="relative mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-white relative inline-block">
                   VisionDevCamp Tokyo とは
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-red-500"></span>
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent"></span>
                 </h2>
               </div>
               
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-1/2">
-                  <div className="rounded-xl overflow-hidden shadow-2xl transform transition-transform hover:scale-105 duration-500">
+                  <div className="rounded-xl overflow-hidden shadow-2xl transform transition-transform hover:scale-105 duration-500 shadow-glow">
                     <img
                       src="/visiondevcamp2024-2.jpeg"
                       alt="VisionDevCamp 2024の参加者"
@@ -233,7 +265,7 @@ export default function Home() {
                   <div className="mt-8 flex">
                     <a 
                       href="#tickets" 
-                      className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg"
+                      className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
                     >
                       参加する →
                     </a>
@@ -246,17 +278,17 @@ export default function Home() {
 
         <section
           id="uniqueness"
-          className="w-full min-h-screen py-20 bg-gradient-to-b from-[#059d9f] to-[#05c7c9] text-white"
+          className="w-full min-h-screen py-20 gradient-secondary text-white"
         >
           <div className="container">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               特徴
-              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-white"></span>
+              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-vibrant"></span>
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="transform transition-transform hover:scale-105 duration-300">
-                <div className="overflow-hidden rounded-xl shadow-xl">
+                <div className="overflow-hidden rounded-xl shadow-xl shadow-glow">
                   <img
                     src="/visiondevcamp2024.jpg"
                     alt="VisionDevCamp Group"
@@ -286,18 +318,13 @@ export default function Home() {
 
             <div className="flex flex-col md:grid md:grid-cols-2 gap-10 items-center mt-20">
               <div className="md:order-2 transform transition-transform hover:scale-105 duration-300">
-                <div className="overflow-hidden rounded-xl shadow-xl relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent z-10"></div>
+                <div className="overflow-hidden rounded-xl shadow-xl relative shadow-glow">
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/70 to-transparent z-10"></div>
                   <img
                     src="/largest-vos-community-photo.jpg"
                     alt="VisionDevCamp 2024"
                     className="w-full h-[400px] object-cover hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute bottom-6 left-6 z-20">
-                    <span className="bg-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">
-                      世界最大級
-                    </span>
-                  </div>
                 </div>
               </div>
 
@@ -317,7 +344,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-20">
               <div className="transform transition-transform hover:scale-105 duration-300">
-                <div className="overflow-hidden rounded-xl shadow-xl">
+                <div className="overflow-hidden rounded-xl shadow-xl shadow-glow">
                   <img
                     src="/volunteer-operation-photo.png"
                     alt="Volunteer Team"
@@ -341,7 +368,7 @@ export default function Home() {
             <div className="mt-16 text-center">
               <Link
                 href="/history"
-                className="inline-block text-[#059d9f] bg-white py-3 px-8 rounded-full hover:bg-white/90 transition shadow-lg font-bold transform hover:scale-105 duration-300"
+                className="inline-block text-primary bg-light py-3 px-8 rounded-full hover:bg-white/90 transition shadow-lg font-bold transform hover:scale-105 duration-300 pulse-shadow"
               >
                 もっと詳しく知る →
               </Link>
@@ -350,20 +377,20 @@ export default function Home() {
         </section>
 
         {/* Venues Section - New */}
-        <section id="venues" className="w-full py-20 bg-gradient-to-b from-[#4a5568] to-[#2d3748] text-white">
+        <section id="venues" className="w-full py-20 gradient-accent text-white">
           <div className="container mx-auto px-8">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-white relative inline-block">
                   開催会場
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-red-500"></span>
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
                 </h2>
               </div>
               
               {/* Main Venues */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
                 {/* Tokyo Venue */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden">
                     <img 
                       src="/lodge.png" 
@@ -395,7 +422,7 @@ export default function Home() {
                 </div>
                 
                 {/* Online Venue */}
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden">
                     <img 
                       src="/online_venue.png" 
@@ -429,7 +456,7 @@ export default function Home() {
               
               {/* Satellite Venue */}
               <div className="max-w-2xl mx-auto">
-                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl">
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
                       <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
@@ -451,27 +478,27 @@ export default function Home() {
 
         <section
           id="schedule"
-          className="w-full min-h-screen flex flex-col bg-gradient-to-b from-blue-600 to-blue-400 text-white px-4 sm:px-8 py-20 relative overflow-hidden"
+          className="w-full min-h-screen flex flex-col gradient-primary text-white px-4 sm:px-8 py-20 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-300 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-700 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-dark rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
           
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 relative">
               スケジュール
-              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-white"></span>
+              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-vibrant"></span>
             </h3>
 
             <div className="mb-16 mt-10">
               <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl shadow-lg">
                 <h2 className="text-2xl font-bold text-white mb-6 relative inline-block">
                   メインイベント：VisionDevCamp Tokyo 2025
-                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-red-400"></span>
+                  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-accent"></span>
                 </h2>
                 
                 <div className="mb-8">
                   <div className="flex items-center">
-                    <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse mr-3"></div>
+                    <div className="w-4 h-4 bg-vibrant rounded-full animate-pulse mr-3"></div>
                     <p className="text-2xl font-bold text-white">2025年4月11日（金）- 13日（日）</p>
                   </div>
                   <p className="text-lg text-white ml-7 mt-2">会場: オープンコラボレーションハブ LODGE & オンライン</p>
@@ -479,7 +506,7 @@ export default function Home() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
                   {/* Day 1 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-pink-400">
+                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
                     <h4 className="text-xl font-bold mb-3">DAY 1: 4月11日(金)</h4>
                     <h5 className="font-semibold mb-2">チームビルディング</h5>
                     <ul className="space-y-2 text-sm">
@@ -492,7 +519,7 @@ export default function Home() {
                   </div>
                   
                   {/* Day 2 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-blue-400">
+                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
                     <h4 className="text-xl font-bold mb-3">DAY 2: 4月12日(土)</h4>
                     <h5 className="font-semibold mb-2">ハッカソン開発日</h5>
                     <ul className="space-y-2 text-sm">
@@ -506,7 +533,7 @@ export default function Home() {
                   </div>
                   
                   {/* Day 3 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-green-400">
+                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
                     <h4 className="text-xl font-bold mb-3">DAY 3: 4月13日(日)</h4>
                     <h5 className="font-semibold mb-2">デモ & 審査</h5>
                     <ul className="space-y-2 text-sm">
@@ -523,7 +550,7 @@ export default function Home() {
                 <div className="flex justify-center mt-8">
                   <a
                     href="https://lu.ma/wsqwzm4s"
-                    className="py-3 px-8 bg-white text-blue-600 font-bold rounded-full hover:bg-blue-100 transition tracking-wide shadow-lg transform hover:scale-105 duration-300"
+                    className="py-3 px-8 bg-vibrant text-primary-dark font-bold rounded-full hover:bg-white transition tracking-wide shadow-lg transform hover:scale-105 duration-300 pulse-shadow"
                   >
                     チケット購入 →
                   </a>
@@ -558,89 +585,119 @@ export default function Home() {
         </section>
         <section 
           id="judges" 
-          className="w-full flex flex-col bg-gradient-to-b from-pink-500 to-purple-500 text-white px-8 py-20 relative overflow-hidden"
+          className="w-full flex flex-col gradient-secondary text-white px-8 py-20 relative overflow-hidden"
         >
-          <div className="absolute top-0 left-0 w-64 h-64 bg-pink-300 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-purple-700 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute top-0 left-0 w-64 h-64 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
           
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               審査員
-              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-white"></span>
+              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-vibrant"></span>
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {judges.map((judge, index) => (
-                <div key={index} className="flex flex-col items-center transform transition-transform hover:scale-105 duration-300">
-                  <JudgeCard
-                    image={judge.image}
-                    name={judge.name}
-                    title={judge.title}
-                    description={judge.description}
-                    bio={judge.bio}
-                    socialMedia={judge.socialMedia}
-                  />
+                <div key={index} className="mb-10">
+                  <JudgeCard {...judge} />
                 </div>
               ))}
+            </div>
+            
+            <div className="flex justify-center mt-8">
+              <button 
+                onClick={() => window.open('https://visiondevcamp.org/judges', '_blank')}
+                className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-glow-accent pulse-shadow"
+              >
+                VisionDevCampの審査員について詳しく →
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section 
+          id="speakers" 
+          className="w-full flex flex-col gradient-accent text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+          
+          <div className="container relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
+              スピーカー
+              <span className="absolute -bottom-2 left-0 w-20 h-1 bg-vibrant"></span>
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+              {speakers.map((speaker, index) => (
+                <div key={index} className="mb-10">
+                  <SpeakerCard {...speaker} />
+                </div>
+              ))}
+            </div>
+            
+            <div className="flex justify-center mt-12">
+              <button 
+                onClick={() => window.open('https://visiondevcamp.org/speakers', '_blank')}
+                className="bg-vibrant hover:bg-opacity-90 text-primary-dark font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
+              >
+                VisionDevCampの登壇者について詳しく →
+              </button>
             </div>
           </div>
         </section>
 
         <section
           id="sponsors"
-          className="w-full flex flex-col bg-gradient-to-b from-gray-100 to-white text-gray-900 px-8 py-20 relative overflow-hidden"
+          className="w-full gradient-secondary text-white px-8 py-20 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gray-200 rounded-full filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-gray-300 rounded-full filter blur-3xl opacity-50 transform -translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
           
           <div className="container relative z-10 mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
-                <h3 className="text-3xl md:text-4xl font-bold text-gray-800 relative inline-block">
+                <h3 className="text-3xl md:text-4xl font-bold text-white relative inline-block">
                   スポンサー
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-pink-500"></span>
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
                 </h3>
               </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <SponsorCard
-                logo="/unity-logo-black.png"
-                name="ユニティ・テクノロジーズ・ジャパン株式会社"
-                link="https://unity3d.jp/"
-                tier="ゴールド"
-              />
-              <SponsorCard
-                logo="/styly-logo.png"
-                name="株式会社STYLY"
-                link="https://styly.inc/"
-                tier="ゴールド"
-              />
-              <SponsorCard
-                logo="/BT_Logo.svg"
-                name="︎Beautiful Things"
-                link="https://www.beautifulthings.xyz/"
-                tier="シルバー"
-              />
-            </div>
-          
-            <h4 className="text-xl font-bold mt-16 mb-8 text-gray-800">会場協力</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <SponsorCard
-                logo="/lodge-logo.svg"
-                name="︎オープンコラボレーションハブ LODGE"
-                link="https://www.z-lodge.com/"
-              />
-            </div>
-            
-            <h4 className="text-xl font-bold mt-16 mb-8 text-gray-800">撮影協力</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <SponsorCard
-                logo="/crossdevice-logo.png"
-                name="︎株式会社クロスデバイス"
-                link="https://www.crossdevice.co.jp/"
-              />
-            </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <SponsorCard
+                  logo="/unity-logo-black.png"
+                  name="ユニティ・テクノロジーズ・ジャパン株式会社"
+                  link="https://unity3d.jp/"
+                />
+                <SponsorCard
+                  logo="/styly-logo.png"
+                  name="株式会社STYLY"
+                  link="https://styly.inc/"
+                />
+                <SponsorCard
+                  logo="/BT_Logo.svg"
+                  name="︎Beautiful Things"
+                  link="https://www.beautifulthings.xyz/"
+                />
+              </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-gray-800">コミュニティ・パートナー</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">会場協力</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <SponsorCard
+                  logo="/lodge-logo.svg"
+                  name="︎オープンコラボレーションハブ LODGE"
+                  link="https://www.z-lodge.com/"
+                />
+              </div>
+
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">撮影協力</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <SponsorCard
+                  logo="/crossdevice-logo.png"
+                  name="︎株式会社クロスデバイス"
+                  link="https://www.crossdevice.co.jp/"
+                />
+              </div>
+
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">コミュニティ・パートナー</h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <SponsorCard
                   logo="/iwaken-lab-logo.png"
@@ -663,131 +720,290 @@ export default function Home() {
                   link="https://www.xrtokyo.com/"
                 />
               </div>
+
+              <div className="flex flex-col items-center mt-16">
+                <h4 className="text-xl font-bold text-white mb-6">
+                  スポンサー募集中！
+                </h4>
+                <a
+                  href="https://forms.gle/rkd5RQrNtSU4fYxF9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
+                >
+                  スポンサー応募フォーム →
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="news"
+          className="w-full gradient-accent text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
+          
+          <div className="container mx-auto max-w-4xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              お知らせ
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+              <div className="space-y-6">
+                <NewsItem
+                  linkText="VisionDevCamp Tokyo 2025の開催が決定しました！"
+                  link="#"
+                />
+                <NewsItem
+                  linkText="東京会場が決定: オープンコラボレーションハブ LODGE"
+                  link="#"
+                />
+                <NewsItem
+                  linkText="公式Discordサーバーが開設されました"
+                  link="https://discord.gg/visiondevcamp"
+                />
+                <NewsItem
+                  noLinkText="福岡サテライト会場の詳細は近日公開予定です"
+                />
+              </div>
             </div>
 
-            <div className="flex flex-col items-center mt-16">
-              <h4 className="text-xl font-bold text-purple-700 mb-6">
-                スポンサー募集中！
-              </h4>
-              <a
-                href="https://forms.gle/rkd5RQrNtSU4fYxF9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-purple-600 text-purple-700 font-bold py-3 px-8 rounded-full hover:bg-purple-600 hover:text-white transition-colors transform hover:scale-105 duration-300 shadow-lg"
+            <div className="mt-12 text-center">
+              <Link
+                href="/press"
+                className="inline-block bg-vibrant text-primary-dark font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg hover:bg-white"
               >
-                スポンサー応募フォーム →
-              </a>
+                プレスリリース →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="contact"
+          className="w-full gradient-primary text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+          
+          <div className="container mx-auto max-w-4xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              お問い合わせ
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h4 className="text-xl font-bold text-white mb-4">お問い合わせ先</h4>
+                  <p className="text-white mb-6">
+                    VisionDevCamp Tokyoに関するお問い合わせは以下のメールアドレスにお願いします。
+                  </p>
+                  <a 
+                    href="mailto:tokyo@visiondevcamp.org" 
+                    className="text-vibrant hover:text-white transition-colors font-bold text-lg"
+                  >
+                    tokyo@visiondevcamp.org
+                  </a>
+
+                  <div className="mt-8">
+                    <h5 className="font-bold text-white mb-2">ソーシャルメディア</h5>
+                    <div className="flex space-x-4 mt-4">
+                      <a
+                        href="https://x.com/devcamptokyo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
+                      >
+                        <img src="/x-logo.png" alt="Twitter" className="w-7 h-7" />
+                      </a>
+                      <a
+                        href="https://discord.gg/t5X6KZruQQ"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
+                      >
+                        <img src="/discord-logo.svg" alt="Discord" className="w-7 h-7 filter brightness-0 invert" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-bold text-white mb-4">スポンサー申し込み</h4>
+                  <p className="text-white mb-6">
+                    VisionDevCamp Tokyoのスポンサーとしてサポートいただける企業様は、以下のメールアドレスにご連絡ください。
+                  </p>
+                  <a 
+                    href="mailto:sponsor@visiondevcamp.org" 
+                    className="text-vibrant hover:text-white transition-colors font-bold text-lg"
+                  >
+                    sponsor@visiondevcamp.org
+                  </a>
+
+                  <div className="mt-8">
+                    <h5 className="font-bold text-white mb-2">主催</h5>
+                    <p className="text-white">
+                      VisionDevCamp Tokyo 実行委員会
+                    </p>
+                    <p className="text-white mt-2">
+                      <a 
+                        href="https://visiondevcamp.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-secondary hover:text-vibrant transition-colors underline"
+                      >
+                        visiondevcamp.org
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section
           id="tickets"
-          className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-purple-700 via-purple-600 to-indigo-700 text-white px-8 py-20 relative overflow-hidden"
+          className="w-full min-h-screen gradient-primary text-white px-4 sm:px-8 py-20 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-400 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-indigo-800 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
           
-          <div className="relative z-10 text-center max-w-4xl">
-            <h3 className="text-4xl sm:text-6xl font-bold mb-8">参加チケット</h3>
-            
-            <p className="text-xl text-white/90 mb-12">
-              一緒にVision Proの可能性を探求し、革新的なアプリケーションを作り上げましょう。<br />
-              以下から参加チケットをご購入いただけます。
-            </p>
-            
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-xl mb-10">
-              <h4 className="text-2xl font-bold mb-4">VisionDevCamp Tokyo 2025</h4>
-              <p className="text-lg mb-6">2025年4月11日(金) - 13日(日)</p>
-              
-              <div className="flex justify-center gap-6 flex-wrap">
-                <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-pink-400">
-                  <h5 className="font-bold mb-2">一般参加</h5>
-                  <p className="text-3xl font-bold mb-4">¥5,000 <span className="text-sm font-normal">(税込)</span></p>
-                  <ul className="text-sm space-y-2 mb-6 text-left">
-                    <li>• 3日間のイベント参加権</li>
-                    <li>• 食事・ドリンク</li>
-                    <li>• 公式グッズ</li>
-                    <li>• ネットワーキング</li>
-                  </ul>
-                </div>
-                
-                <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-blue-400">
-                  <h5 className="font-bold mb-2">学生参加</h5>
-                  <p className="text-3xl font-bold mb-4">¥2,500 <span className="text-sm font-normal">(税込)</span></p>
-                  <ul className="text-sm space-y-2 mb-6 text-left">
-                    <li>• 3日間のイベント参加権</li>
-                    <li>• 食事・ドリンク</li>
-                    <li>• 公式グッズ</li>
-                    <li>• ネットワーキング</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <a
-              href="https://lu.ma/wsqwzm4s"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-800 bg-white py-4 px-12 rounded-full hover:bg-purple-100 transition font-bold text-xl shadow-2xl transform hover:scale-105 duration-300"
-            >
-              チケットを購入する →
-            </a>
-          </div>
-        </section>
+          <div className="container mx-auto max-w-5xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-16 relative inline-block">
+              参加チケット
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
 
-        <section
-          id="contact"
-          className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-8 py-20 relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gray-700 rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-gray-800 rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
-          <div className="relative z-10 text-center max-w-4xl">
-            <h3 className="text-4xl sm:text-6xl font-bold mb-8">お問い合わせ</h3>
-            <p className="text-xl mb-10 text-gray-300">
-              VisionDevCamp Tokyoについてのお問い合わせや、スポンサー・メディア関係の方はこちらからご連絡ください。
-            </p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl shadow-lg">
-                <h4 className="text-xl font-bold mb-4">一般のお問い合わせ</h4>
-                <p className="text-base mb-6">
-                  参加方法、イベント内容、その他のご質問など
+            <div className="flex flex-col items-center">
+              <div className="w-full max-w-4xl bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg mb-12">
+                <h2 className="text-2xl font-bold text-white mb-3">VisionDevCamp Tokyo 2025</h2>
+                <p className="mb-6 text-lg">
+                  イベント参加費には、会場使用料、ケータリング、ハッカソン運営費、グッズの費用が含まれています。
                 </p>
-                <a
-                  href="https://forms.gle/UAUzjzJvSmNtKthg6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border-2 border-white text-white py-3 px-8 rounded-full hover:bg-white hover:text-black transition-colors font-bold shadow-lg transform hover:scale-105 duration-300"
-                >
-                  問い合わせフォーム →
-                </a>
-              </div>
-              
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-xl shadow-lg">
-                <h4 className="text-xl font-bold mb-4">コミュニティに参加</h4>
-                <p className="text-base mb-6">
-                  最新情報やイベント参加者との交流はこちら
-                </p>
-                <div className="flex justify-center space-x-6">
-                  <a 
-                    href="https://x.com/visiondevcamp" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-red-300 transition-colors transform hover:scale-110"
-                  >
-                    <img src="/x-logo.png" alt="X" className="w-10 h-10" />
-                  </a>
-                  <a 
-                    href="https://discord.gg/visiondevcamp" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-blue-300 transition-colors transform hover:scale-110"
-                  >
-                    <img src="/discord-mark-white.svg" alt="Discord" className="w-10 h-10" />
-                  </a>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-bold text-white">オンライン参加</h3>
+                      <span className="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
+                        ¥5,000
+                      </span>
+                    </div>
+                    <ul className="space-y-2 text-white mb-6">
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        Discordへのアクセス
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        ライブ配信の視聴
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        オンラインでのコラボレーション
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        デジタルグッズ
+                      </li>
+                    </ul>
+
+                    <div className="flex justify-center">
+                      <a
+                        href="https://lu.ma/wsqwzm4s"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-primary font-bold py-2 px-6 rounded-full transform transition-transform hover:scale-105 hover:bg-vibrant"
+                      >
+                        購入する →
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-accent to-primary p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300 relative overflow-hidden">
+                    <div className="absolute top-0 right-0">
+                      <div className="bg-vibrant text-primary-dark py-1 px-4 font-bold text-sm transform rotate-12 translate-x-2 -translate-y-2 shadow-lg">
+                        おすすめ
+                      </div>
+                    </div>
+                    
+                    <div className="flex justify-between items-start mb-4">
+                      <h3 className="text-xl font-bold text-white">会場参加</h3>
+                      <span className="bg-vibrant text-primary-dark px-3 py-1 rounded-full text-sm font-bold">
+                        ¥15,000
+                      </span>
+                    </div>
+                    <ul className="space-y-2 text-white mb-6">
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        会場でのハッカソン参加
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        食事（朝食・ランチ・軽食）
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        特典グッズ
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        ネットワーキング機会
+                      </li>
+                      <li className="flex items-center">
+                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                        </svg>
+                        審査員からのフィードバック
+                      </li>
+                    </ul>
+
+                    <div className="flex justify-center">
+                      <a
+                        href="https://lu.ma/wsqwzm4s"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-vibrant text-primary-dark font-bold py-2 px-6 rounded-full transform transition-transform hover:scale-105 hover:bg-white hover:text-primary pulse-shadow"
+                      >
+                        購入する →
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center max-w-xl">
+                <h3 className="text-xl font-bold text-white mb-4">学生割引</h3>
+                <p className="text-white mb-6">
+                  学生の方には50%の割引が適用されます。購入前に学生証の提示が必要です。詳細はお問い合わせください。
+                </p>
+                <a 
+                  href="mailto:tokyo@visiondevcamp.org" 
+                  className="text-secondary hover:text-vibrant transition-colors font-bold"
+                >
+                  tokyo@visiondevcamp.org
+                </a>
               </div>
             </div>
           </div>
@@ -816,6 +1032,7 @@ export default function Home() {
                 <Link href="#venues" className="hover:text-red-400 transition-colors">会場</Link>
                 <Link href="#schedule" className="hover:text-red-400 transition-colors">スケジュール</Link>
                 <Link href="#judges" className="hover:text-red-400 transition-colors">審査員</Link>
+                <Link href="#speakers" className="hover:text-red-400 transition-colors">スピーカー</Link>
                 <Link href="#sponsors" className="hover:text-red-400 transition-colors">スポンサー</Link>
                 <Link href="#tickets" className="hover:text-red-400 transition-colors">チケット</Link>
                 <Link href="#contact" className="hover:text-red-400 transition-colors">お問い合わせ</Link>
@@ -930,6 +1147,11 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
+              <Link href="#speakers" className="hover:underline font-bold">
+                スピーカー
+              </Link>
+            </li>
+            <li className="mb-2">
               <Link href="#sponsors" className="hover:underline font-bold">
                 スポンサー
               </Link>
@@ -982,6 +1204,11 @@ function Header() {
           <li>
             <Link href="#judges" className="hover:underline font-bold">
               審査員
+            </Link>
+          </li>
+          <li>
+            <Link href="#speakers" className="hover:underline font-bold">
+              スピーカー
             </Link>
           </li>
           <li>
@@ -1079,106 +1306,129 @@ function ScheduleItem({
   );
 }
 
-function SpeakerCard({
-  image,
-  name,
-  title,
-  description,
-  bio,
-  socialMediaLink1,
-  socialMediaLink2,
-}) {
-  const [isModalOpen, setModalOpen] = useState(false);
+function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+  };
 
   return (
     <>
-      {/* Clickable Speaker Profile */}
       <div
         onClick={openModal}
-        className="flex items-center cursor-pointer hover:opacity-80 transition"
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
       >
-        <img
-          src={image}
-          alt={name}
-          className="w-12 h-12 rounded-full object-cover mr-2"
-        />
-        <div>
-          <p className="text-[8px] sm:text-sm">スピーカー</p>
-          <p className="text-[11px] sm:text-sm font-bold">{name}</p>
+        <div className="flex flex-col h-full items-center pt-6">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            <p className="text-white/90 text-sm">{title}</p>
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+          </div>
+          <div className="p-4 pt-0 flex-grow">
+            <p className="text-white/80 text-sm line-clamp-3">{bio}</p>
+          </div>
+          {socialMedia.length > 0 && (
+            <div className="p-4 pt-0 flex space-x-2">
+              {socialMedia.map((platform, index) => (
+                <a
+                  key={index}
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
+                >
+                  <img
+                    src={platform.icon}
+                    alt={platform.platform}
+                    className="w-4 h-4"
+                  />
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       </div>
 
-      {/* Modal with Speaker Details */}
-      {isModalOpen && (
+      {modalOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center"
+          className="fixed inset-0 flex items-center justify-center z-50 px-4"
           onClick={closeModal}
         >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
-            className="relative bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-lg"
+            className="gradient-primary rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button */}
             <button
-              className="absolute top-2 right-4 text-gray-500 hover:text-black"
               onClick={closeModal}
-              aria-label="Close Modal"
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-accent transition-colors"
             >
-              ✕
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-            <div className="flex flex-col items-center">
-              <img
-                src={image}
-                alt={name}
-                className="w-24 h-24 rounded-full mb-4 object-cover"
-              />
-              <h4 className="font-bold text-xl text-black">{name}</h4>
-              <p className="text-md font-medium text-gray-700 mt-2">{title}</p>
 
-              {/* Description Section */}
-              {description && (
-                <p className="text-sm text-gray-600 text-center mt-1">
-                  {description}
-                </p>
-              )}
-
-              {/* Bio Section (Now Aligned to Start) */}
-              {bio && (
-                <p className="mt-4 text-gray-800 text-left leading-relaxed">
-                  {bio}
-                </p>
-              )}
-
-              {/* Social Media Links (Optional) */}
-              <div className="flex space-x-4 mt-4">
-                {socialMediaLink1 && (
-                  <a
-                    href={socialMediaLink1}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="/x-logo.png"
-                      alt="X"
-                      className="w-6 h-6 hover:opacity-80 transition"
-                    />
-                  </a>
+            <div className="flex flex-col items-center p-6">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                <p className="text-secondary font-semibold mb-1">{title}</p>
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
                 )}
-                {socialMediaLink2 && (
-                  <a
-                    href={socialMediaLink2}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src="/globe-outline.svg"
-                      alt="GitHub"
-                      className="w-6 h-6 hover:opacity-80 transition"
-                    />
-                  </a>
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
+
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3 justify-center">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
                 )}
               </div>
             </div>
@@ -1189,104 +1439,131 @@ function SpeakerCard({
   );
 }
 
-function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
-  const [isModalOpen, setModalOpen] = useState(false);
+function SpeakerCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+  };
 
   return (
     <>
       <div
         onClick={openModal}
-        className="bg-white/10 backdrop-blur-sm text-white rounded-xl shadow-lg p-8 flex flex-col items-center cursor-pointer hover:shadow-2xl transition w-full h-full"
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
       >
-        <img
-          src={image}
-          alt={name}
-          className="w-24 h-24 rounded-full mb-6 object-cover shadow-md border-2 border-white/20"
-        />
-        <h4 className="font-bold text-xl hover:underline text-center">{name}</h4>
-        <p className="text-sm md:text-base text-gray-200 mt-2 text-center">{title}</p>
-        {description && (
-          <p className="text-xs text-gray-300 mt-1 text-center">{description}</p>
-        )}
-        {socialMedia?.length > 0 && (
-          <div className="flex space-x-3 mt-4">
-            {socialMedia.map((link, index) => (
-              <a
-                key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <img
-                  src={link.icon}
-                  alt={link.platform}
-                  className="w-5 h-5 opacity-70 hover:opacity-100 transition"
-                />
-              </a>
-            ))}
+        <div className="flex flex-col h-full items-center pt-6">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
           </div>
-        )}
+          <div className="p-4 text-center">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            <p className="text-white/90 text-sm">{title}</p>
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+          </div>
+          <div className="p-4 pt-0 flex-grow">
+            <p className="text-white/80 text-sm line-clamp-3">{bio}</p>
+          </div>
+          {socialMedia.length > 0 && (
+            <div className="p-4 pt-0 flex space-x-2">
+              {socialMedia.map((platform, index) => (
+                <a
+                  key={index}
+                  href={platform.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
+                >
+                  <img
+                    src={platform.icon}
+                    alt={platform.platform}
+                    className="w-4 h-4"
+                  />
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
 
-      {isModalOpen && (
+      {modalOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center"
+          className="fixed inset-0 flex items-center justify-center z-50 px-4"
           onClick={closeModal}
         >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
-            className="relative bg-white rounded-xl shadow-2xl p-8 w-11/12 max-w-lg"
+            className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute top-4 right-4 text-gray-500 hover:text-black"
               onClick={closeModal}
-              aria-label="Close Modal"
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
             >
-              ✕
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
             </button>
-            <div className="flex flex-col items-center">
-              <img
-                src={image}
-                alt={name}
-                className="w-28 h-28 rounded-full mb-6 object-cover shadow-lg border-4 border-gray-100"
-              />
-              <h4 className="font-bold text-2xl text-gray-900">{name}</h4>
-              <p className="text-md font-medium text-gray-700 mt-2">{title}</p>
 
-              {description && (
-                <p className="text-sm text-gray-600 text-center mt-1">
-                  {description}
-                </p>
-              )}
+            <div className="flex flex-col items-center p-6">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                <p className="text-vibrant font-semibold mb-1">{title}</p>
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
+                )}
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
 
-              {bio && (
-                <p className="mt-6 text-gray-800 text-left leading-relaxed">
-                  {bio}
-                </p>
-              )}
-
-              {socialMedia?.length > 0 && (
-                <div className="flex space-x-4 mt-6">
-                  {socialMedia.map((link, index) => (
-                    <a
-                      key={index}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={link.icon}
-                        alt={link.platform}
-                        className="w-6 h-6 hover:opacity-80 transition"
-                      />
-                    </a>
-                  ))}
-                </div>
-              )}
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3 justify-center">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -1297,50 +1574,47 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
 
 function SponsorCard({ logo, name, link, tier }) {
   return (
-    <div className="relative rounded-xl p-6 flex flex-col items-center bg-white shadow-md hover:shadow-xl transition transform hover:scale-105 duration-300">
-      {tier && (
-        <div className="absolute top-3 right-3">
-          <span className={`text-xs font-bold px-3 py-1 rounded-full ${
-            tier === "ゴールド" ? "bg-yellow-400 text-yellow-900" :
-            tier === "シルバー" ? "bg-gray-300 text-gray-700" :
-            tier === "ブロンズ" ? "bg-amber-700 text-amber-100" : "bg-blue-100 text-blue-700"
-          }`}>
-            {tier}
-          </span>
+    <div className="bg-white/20 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg transform transition-all hover:scale-105 duration-300 hover:shadow-glow border border-white/10 hover:border-accent group">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block p-5"
+      >
+        <div className="h-32 flex items-center justify-center bg-white rounded-lg p-4 mb-2 overflow-hidden">
+          <img
+            src={logo}
+            alt={name}
+            className="max-h-full max-w-full object-contain transition-transform hover:scale-110 duration-300"
+          />
         </div>
-      )}
-      <div className="h-32 flex items-center justify-center">
-        <img src={logo} alt={name} className="max-h-24 max-w-[200px] object-contain" />
-      </div>
-      <h5 className="font-bold text-gray-800 text-center mt-4">{name}</h5>
-
-      {link && (
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-4 text-blue-600 hover:text-blue-800 underline font-bold"
-        >
-          公式サイト →
-        </a>
-      )}
+        <div className="mt-4 text-center">
+          <p className="font-medium text-white transition-colors group-hover:text-accent">{name}</p>
+        </div>
+      </a>
     </div>
   );
 }
 
 function NewsItem({ linkText, link, noLinkText }) {
+  if (linkText && link) {
+    return (
+      <div className="border-l-4 border-accent pl-4 py-2 hover:bg-white/5 transition-colors">
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white hover:text-secondary transition-colors block"
+        >
+          <p className="font-semibold">{linkText}</p>
+        </a>
+      </div>
+    );
+  }
+
   return (
-    <div className="flex items-center space-x-4 hover:bg-white/10 p-3 rounded-lg transition-colors">
-      <div className="text-2xl font-bold text-white">›</div>
-
-      <Link
-        href={link}
-        className="text-lg sm:text-xl font-medium text-white hover:text-red-100 transition-colors"
-      >
-        {linkText}
-      </Link>
-
-      <p className="text-lg sm:text-xl font-medium">{noLinkText}</p>
+    <div className="border-l-4 border-white/30 pl-4 py-2">
+      <p className="text-white/70 font-medium">{noLinkText}</p>
     </div>
   );
 }

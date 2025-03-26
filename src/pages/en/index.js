@@ -73,7 +73,7 @@ const judges = [
     name: "Ikkou Morohoshi",
     title: "ONE SHOT STAR",
     description: "LODGE XR Talk",
-    bio: "2024-2025 Microsoft MVP / A strong advocate for WebXR and visionOS! Hosting the monthly “LODGE XR Talk” at the open collaboration hub LODGE, featuring discussions and hands-on experiences on the latest XR trends.",
+    bio: "2024-2025 Microsoft MVP / A strong advocate for WebXR and visionOS! Hosting the monthly "LODGE XR Talk" at the open collaboration hub LODGE, featuring discussions and hands-on experiences on the latest XR trends.",
     socialMedia: [
       { platform: "X", url: "https://x.com/ikkou", icon: "/x-logo.png" },
       {
@@ -151,13 +151,13 @@ export default function Home() {
           </p>
 
           <p className="text-md sm:text-lg mt-4 text-center font-medium">
-            Whether you’re working individually or in a team, let’s bring Vision
+            Whether you're working individually or in a team, let's bring Vision
             Pro ideas to life together!
           </p>
 
           <div className="mt-8 text-center">
             <p className="text-4xl sm:text-5xl font-bold text-red-400">
-              04.11 <span className="text-2xl sm:text-3xl">Fri</span> - 13{" "}
+              April 11 <span className="text-2xl sm:text-3xl">Fri</span> - 13{" "}
               <span className="text-2xl sm:text-3xl">Sun</span>, 2025
             </p>
           </div>
@@ -262,14 +262,14 @@ export default function Home() {
 
               <div className="md:order-1">
                 <h2 className="text-2xl font-bold">
-                  One of the world’s largest visionOS developer communities
+                  One of the world's largest visionOS developer communities
                 </h2>
                 <p className="mt-4">
                   The first VisionDevCamp in March 2024 attracted visionOS
                   developers from around the world.
                 </p>
                 <p className="mt-2">
-                  Despite the product’s recent launch, over 100 Vision Pro
+                  Despite the product's recent launch, over 100 Vision Pro
                   devices and developers participated in the hackathon.
                 </p>
               </div>
@@ -365,7 +365,7 @@ export default function Home() {
                       name="Junichiro Koyama"
                       title="Nihon Kogakuin College"
                       description="Vision Craft Executive Producer"
-                      bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including &#8220;The Idolmaster&#8221;, &#8220;Mobile Suit Gundam: Bonds of the Battlefield&#8221;, and &#8220;Fishing Spirits&#8221;, and produced &#8220;VR ZONE&#8221;. Currently, he leads the educational innovation project &#8220;Vision Craft&#8221; at Japan Engineering College."
+                      bio="During his tenure at Bandai Namco Group, he developed over 100 projects, including \"The Idolmaster\", \"Mobile Suit Gundam: Bonds of the Battlefield\", and \"Fishing Spirits\", and produced \"VR ZONE\". Currently, he leads the educational innovation project \"Vision Craft\" at Japan Engineering College."
                       socialMediaLink1="https://x.com/mayanmoyan"
                       socialMediaLink2="https://bandainamco-am.co.jp/others/vrzone-portal/"
                     />
@@ -374,7 +374,7 @@ export default function Home() {
                       name="Wildman"
                       title="Wildman Inc."
                       description="CEO"
-                      bio="In 2012, he debated between Sony&#8242;s HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of &#8220;Panzer Dragoon Voyage Record&#8221; at Wildman Inc."
+                      bio="In 2012, he debated between Sony's HMZ-T2 and the Oculus Rift DK1 crowdfunding and chose the Oculus Rift DK1. Since spring 2013, he has been developing VR games as a doujin creator, distributing and exhibiting them at events such as Comic Market, BitSummit, and Digital Game Expo. Since 2015, he has transitioned to VR as his main profession, working at gumi Inc. and SHOWROOM Inc. before assuming his current role. Currently, he is engaged in the production of \"Panzer Dragoon Voyage Record\" at Wildman Inc."
                       socialMediaLink1="https://x.com/yasei_no_otoko"
                       socialMediaLink2="https://www.wildman.co.jp/"
                     />

@@ -5,6 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* 新しいカラーパレット */
+  --color-primary: #5928e5;     /* 鮮やかな紫 - メインカラー */
+  --color-secondary: #00bcd4;   /* ティール - アクセントカラー */
+  --color-accent: #ff4081;      /* ピンク - アクセントカラー */
+  --color-vibrant: #ffde03;     /* 明るい黄色 - 注目要素用 */
+  --color-dark: #2d1b69;        /* 暗い紫 - 背景用 */
+  --color-light: #f5f8ff;       /* 明るい青白 - 明るい背景用 */
+  --color-success: #00e676;     /* 緑 - 成功メッセージ用 */
+  --color-info: #29b6f6;        /* 明るい青 - 情報メッセージ用 */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,4 +36,38 @@ body {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+/* グラデーションの定義 */
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+}
+
+.gradient-vibrant {
+  background: linear-gradient(135deg, var(--color-vibrant), var(--color-accent));
+}
+
+/* アニメーションエフェクト */
+.pulse-shadow {
+  animation: pulse-shadow 2s infinite;
+}
+
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(89, 40, 229, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(89, 40, 229, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(89, 40, 229, 0);
+  }
 }
