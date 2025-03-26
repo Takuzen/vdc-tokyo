@@ -56,7 +56,7 @@ const judges = [
   {
     image: "/koyama-san-profile-image.png",
     name: "コヤ所長",
-    title: "日本工学院専門学校",
+    title: "日本工学院",
     description: "Vision Craft エグゼクティブプロデューサー",
     bio: "バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。",
     socialMedia: [
