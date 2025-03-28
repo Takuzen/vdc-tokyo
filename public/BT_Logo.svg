@@ -1,11 +1,13 @@
-<svg width="1254" height="1255" viewBox="0 0 1254 1255" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="626.5" cy="133" rx="133.5" ry="133" fill="black"/>
-<ellipse cx="626.5" cy="626.5" rx="133.5" ry="132.5" fill="black"/>
-<ellipse cx="278" cy="978" rx="132" ry="133" fill="black"/>
-<ellipse cx="976" cy="278.5" rx="133" ry="133.5" fill="black"/>
-<circle cx="976" cy="978" r="133" fill="black"/>
-<ellipse cx="278" cy="278.5" rx="132" ry="133.5" fill="black"/>
-<ellipse cx="132" cy="626.5" rx="132" ry="132.5" fill="black"/>
-<ellipse cx="1120.5" cy="626.5" rx="133.5" ry="132.5" fill="black"/>
-<ellipse cx="626.5" cy="1122" rx="133.5" ry="133" fill="black"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1254 1255">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <ellipse cx="150.1" cy="31.9" rx="32" ry="31.9"/>
+  <ellipse cx="150.1" cy="150.1" rx="32" ry="31.7"/>
+  <ellipse cx="66.6" cy="234.3" rx="31.6" ry="31.9"/>
+  <ellipse cx="233.8" cy="66.7" rx="31.9" ry="32"/>
+  <circle cx="233.8" cy="234.3" r="31.9"/>
+  <ellipse cx="66.6" cy="66.7" rx="31.6" ry="32"/>
+  <ellipse cx="31.6" cy="150.1" rx="31.6" ry="31.7"/>
+  <ellipse cx="268.4" cy="150.1" rx="32" ry="31.7"/>
+  <ellipse cx="150.1" cy="268.8" rx="32" ry="31.9"/>
 </svg>

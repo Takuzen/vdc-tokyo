@@ -58,8 +58,8 @@ const judges = [
   {
     image: "/koyama-san-profile-image.png",
     name: "コヤ所長",
-    title: "日本工学院専門学校",
-    description: "日本工学院　Vision Craft エグゼクティブプロデューサー",
+    title: "日本工学院",
+    description: "Vision Craft エグゼクティブプロデューサー",
     bio: "バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。",
     socialMedia: [
       { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
@@ -151,7 +151,7 @@ export default function Home() {
     >
       <Header />
 
-      <main className="mt-16">
+      <main className="mt-16 sm:mt-20">
         <section
           id="top"
           className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-red-900 to-black text-white px-8 py-12 overflow-hidden"
@@ -162,17 +162,17 @@ export default function Home() {
             <img
               src="/visiondevcamp2024.jpg"
               alt="VisionDevCamp 2024 Event"
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-center sm:object-top"
             />
           </div>
 
           {/* Content Overlay */}
-          <div className="relative z-20 text-center max-w-4xl mx-auto px-4 py-16">
-            <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
-              <h1 className="text-5xl sm:text-7xl font-bold text-white leading-tight">
-                VisionDevCamp <span className="text-black">Tokyo</span> 2025
-              </h1>
-            </div>
+          <div className="relative z-20 text-center w-full max-w-6xl mx-auto py-16">
+  <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
+    <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+      VisionDevCamp <span className="text-black">Tokyo</span> 2025
+    </h1>
+  </div>
 
             <div className="mt-6 bg-black bg-opacity-70 p-5 rounded-xl shadow-xl">
               <a
@@ -221,13 +221,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Stylized decorative elements */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
-            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-          </div>
         </section>
 
         {/* Overview Section - New */}
@@ -270,7 +263,7 @@ export default function Home() {
                       href="https://lu.ma/wsqwzm4s" 
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
+                      className="bg-red-500 hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
                     >
                       参加する →
                     </a>
@@ -877,7 +870,7 @@ export default function Home() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
+                  className="bg-vibrant hover:bg-white text-primary-dark font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
                 >
                   スポンサー応募フォーム →
                 </a>
@@ -898,7 +891,7 @@ export default function Home() {
             href="https://lu.ma/wsqwzm4s"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+            className="text-black bg-red-500 text-white font-bold py-2 px-6 rounded-full hover:bg-orange-300 transition"
           >
             購入はこちら →
           </a>
@@ -965,7 +958,7 @@ export default function Home() {
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
+                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 rounded-full shadow-lg transform transition hover:scale-105 whitespace-nowrap"
                   >
                     スポンサー申し込みフォーム →
                   </a>
@@ -992,7 +985,7 @@ export default function Home() {
                 <img
                   src="/visiondevcamp-logo-only.png"
                   alt="VisionDevCamp Logo"
-                  className="w-10 h-10 mr-3 object-contain"
+                  className="w-10 h-10 mr-3 object-fit rounded-full"
                 />
                 <div className="text-xl font-bold">
                   VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
