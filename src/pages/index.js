@@ -41,12 +41,13 @@ const judges = [
     ],
   },
   {
-    image: "/shinobu-takahashi-icon.png",
+    image: "/shinobu-takahasi.jpg",
     name: "高橋 忍",
     title: "Unity Technologies Japan",
     description: "Solution Architect",
-    bio: "産業分野のお客様向けにUnityを使った 3DやXR技術を利用したアプリケーションの開発等をご提案しています。国土交通省 PLATEAU Advocate。",
+    bio: "日本マイクロソフトで主にテクニカルエバンジェリストとして Windows, Mobile, HoloLens などのアプリケーション開発技術の訴求に努める。現在は Unity Technologies で ソリューションアーキテクトとして産業分野向けに xR関連技術をはじめUnity製品や技術の訴求のために活動しています。",
     socialMedia: [
+      { platform: "X", url: "https://x.com/shinoblogavi", icon: "/x-logo.png" },
       {
         platform: "Website",
         url: "https://unity3d.jp/",
@@ -58,7 +59,7 @@ const judges = [
     image: "/koyama-san-profile-image.png",
     name: "コヤ所長",
     title: "日本工学院専門学校",
-    description: "Vision Craft エグゼクティブプロデューサー",
+    description: "日本工学院　Vision Craft エグゼクティブプロデューサー",
     bio: "バンダイナムコグループ在籍中に『アイドルマスター』、『機動戦士ガンダム戦場の絆』、『釣りスピリッツ』など100以上を開発し『VR ZONE』をプロデュース。現在は日本工学院にて教育革新プロジェクト「Vision Craft」を指揮。",
     socialMedia: [
       { platform: "X", url: "https://x.com/mayanmoyan", icon: "/x-logo.png" },
@@ -118,7 +119,7 @@ const speakers = [
     description: "Director of Design & Innovation",
     bio: "With over 25 years in UX, Oliver has been exploring the research and design of Augmented Reality and Spatial Computing for the last 8 years. His company, Contxtual, has created a range of prototypes with Augmented Reality headsets to experiment with how people will use Spatial Computing. Their app, Day Ahead, is a glanceable information visualisation of your calendar information and was in the App Store for the launch day of the Apple Vision Pro launch in February last year. He is an Industry Mentor for the Apple Foundation Program at the University of Technology Sydney, including teaching students about how to design for visionOS on the Apple Vision Pro.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/oliverweidlich/", icon: "/linkedin-logo.png" },
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/oliverw/", icon: "/linkedin-logo.png" },
     ],
   },
   {
@@ -210,7 +211,9 @@ export default function Home() {
 
               <div className="mt-10">
                 <a
-                  href="#tickets"
+                  href="https://lu.ma/wsqwzm4s"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
                 >
                   参加登録はこちら →
@@ -251,7 +254,7 @@ export default function Home() {
                 
                 <div className="lg:w-1/2">
                   <p className="text-xl leading-relaxed mb-6">
-                    VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、開発者、デザイナー、起業家が集まる世界最大級の非営利ハッカソンです。
+                    VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、開発者、デザイナー、起業家が集まる非営利のハッカソンイベントです。
                   </p>
                   
                   <p className="text-xl leading-relaxed mb-6">
@@ -264,7 +267,9 @@ export default function Home() {
                   
                   <div className="mt-8 flex">
                     <a 
-                      href="#tickets" 
+                      href="https://lu.ma/wsqwzm4s" 
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
                     >
                       参加する →
@@ -303,7 +308,7 @@ export default function Home() {
                 <ul className="list-disc pl-5 mt-6 space-y-4 text-white">
                   <li>
                     VisionDevCampは、Apple Vision
-                    ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利の開発者向けイベントです。
+                    ProとvisionOS向けのアプリケーション開発に焦点を当てた、非営利のハッカソンイベントです。
                   </li>
                   <li>
                     経験豊富なボランティアチームがApple Vision
@@ -408,7 +413,7 @@ export default function Home() {
                       最新の設備が整った開放的な空間で、他の開発者と対面で交流しながら開発に取り組めます。食事や電源、高速インターネットを完備し、開発に集中できる環境を提供します。
                     </p>
                     <div className="flex justify-between items-center mt-4">
-                      <span className="text-sm text-gray-400">東京都千代田区神田練塀町300番地</span>
+                      <span className="text-sm text-gray-400"></span>
                       <a 
                         href="https://www.z-lodge.com/" 
                         target="_blank" 
@@ -423,11 +428,16 @@ export default function Home() {
                 
                 {/* Online Venue */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
-                  <div className="h-64 overflow-hidden">
+                  <div className="h-64 overflow-hidden flex flex-col">
                     <img 
                       src="/online_venue.png" 
                       alt="オンライン会場" 
-                      className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                      className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                    <img 
+                      src="/online_venue2.png" 
+                      alt="オンライン会場" 
+                      className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <div className="p-6">
@@ -435,19 +445,19 @@ export default function Home() {
                       <div className="w-3 h-3 bg-blue-500 rounded-full mr-2 animate-pulse"></div>
                       <h3 className="text-2xl font-bold">オンライン会場</h3>
                     </div>
-                    <h4 className="text-xl font-semibold mb-3">バーチャル開発空間</h4>
+                    <h4 className="text-xl font-semibold mb-3">DevCamp</h4>
                     <p className="text-gray-300 mb-4">
-                      遠方からでも参加可能なオンライン会場では、リアルタイムの配信やコミュニケーションツールを通じて、場所を問わず他の参加者と協力して開発を進めることができます。
+                      遠方からでも参加可能なオンライン会場では、場所を問わず他の参加者と協力して開発を進めることができます。
                     </p>
                     <div className="flex justify-between items-center mt-4">
-                      <span className="text-sm text-gray-400">Discord & オンラインコラボレーションツール</span>
+                      <span className="text-sm text-gray-400"></span>
                       <a 
-                        href="https://discord.gg/visiondevcamp" 
+                        href="https://devcamp.social/ja/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
-                        参加する →
+                        詳細 →
                       </a>
                     </div>
                   </div>
@@ -462,12 +472,20 @@ export default function Home() {
                       <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
                       <h3 className="text-2xl font-bold">サテライト会場（福岡）</h3>
                     </div>
-                    <h4 className="text-xl font-semibold mb-3">福岡サテライト</h4>
+                    <h4 className="text-xl font-semibold mb-3">EngineerCafe</h4>
                     <p className="text-gray-300 mb-4">
                       有志のボランティアによって運営される福岡サテライト会場。メイン会場と同様に開発環境を整え、九州地方からの参加者をサポートします。
                     </p>
                     <div className="flex justify-between items-center mt-4">
-                      <span className="text-sm text-gray-400">詳細は近日公開</span>
+                      <span className="text-sm text-gray-400"></span>
+                      <a 
+                        href="https://engineercafe.connpass.com/event/348799/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-red-300 font-bold"
+                      >
+                        詳細 →
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -507,53 +525,177 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
                   {/* Day 1 */}
                   <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
-                    <h4 className="text-xl font-bold mb-3">DAY 1: 4月11日(金)</h4>
-                    <h5 className="font-semibold mb-2">チームビルディング</h5>
-                    <ul className="space-y-2 text-sm">
-                      <li><span className="font-semibold">17:00</span> - 開場・受付開始</li>
-                      <li><span className="font-semibold">17:00-19:00</span> - 食事付き交流会</li>
-                      <li><span className="font-semibold">19:00-19:30</span> - ウェルカム & 自己紹介</li>
-                      <li><span className="font-semibold">19:30-21:00</span> - チーム編成 & アイデアピッチ</li>
-                      <li><span className="font-semibold">22:00</span> - 閉場</li>
-                    </ul>
+                    <h4 className="text-xl font-bold mb-3 flex items-center">
+                      <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
+                      DAY 1: 4月11日(金)
+                    </h4>
+                    <h5 className="font-semibold mb-3 text-vibrant">チームビルディング</h5>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <tbody>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:30</td>
+                            <td className="py-2">
+                              <div className="font-medium">開場</div>
+                              <div className="text-white/70 text-xs">参加者受付開始</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00-19:15</td>
+                            <td className="py-2">
+                              <div className="font-medium">オープニング</div>
+                              <div className="text-white/70 text-xs">オーガナイザーからの歓迎挨拶</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:15-19:45</td>
+                            <td className="py-2">
+                              <div className="font-medium">ショートキーノート</div>
+                              <div className="text-white/70 text-xs">
+                                スポンサー企業からのショートキーノート
+                              </div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:45-20:30</td>
+                            <td className="py-2">
+                              <div className="font-medium">自己紹介</div>
+                              <div className="text-white/70 text-xs">参加者が開発したいアイデアを1分程度で簡易ピッチ</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">20:30-21:30</td>
+                            <td className="py-2">
+                              <div className="font-medium">チーム編成(食事付き交流会)</div>
+                              <div className="text-white/70 text-xs">夕食<br />立食形式で参加者同士が交流</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">閉場</div>
+                              <div className="text-white/70 text-xs">初日終了</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   
                   {/* Day 2 */}
                   <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
-                    <h4 className="text-xl font-bold mb-3">DAY 2: 4月12日(土)</h4>
-                    <h5 className="font-semibold mb-2">ハッカソン開発日</h5>
-                    <ul className="space-y-2 text-sm">
-                      <li><span className="font-semibold">9:00</span> - 朝食</li>
-                      <li><span className="font-semibold">9:30</span> - オープンマイク</li>
-                      <li><span className="font-semibold">10:00</span> - 基調講演 & トーク</li>
-                      <li><span className="font-semibold">10:30-13:00</span> - 開発作業時間</li>
-                      <li><span className="font-semibold">13:00</span> - ランチ</li>
-                      <li><span className="font-semibold">14:00-19:00</span> - 開発作業時間</li>
-                    </ul>
+                    <h4 className="text-xl font-bold mb-3 flex items-center">
+                      <span className="w-3 h-3 bg-secondary rounded-full mr-2 animate-pulse"></span>
+                      DAY 2: 4月12日(土)
+                    </h4>
+                    <h5 className="font-semibold mb-3 text-vibrant">開発</h5>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <tbody>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2">
+                              <div className="font-medium">朝食</div>
+                              <div className="text-white/70 text-xs">参加者同士やスポンサー企業との交流</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~</td>
+                            <td className="py-2">
+                              <div className="font-medium">アイデアの共有&フィードバック</div>
+                              <div className="text-white/70 text-xs">チームごとに「現状何を作っているか」を1分程度で共有</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:00~</td>
+                            <td className="py-2">
+                              <div className="font-medium">スピーカーセッション</div>
+                              <div className="text-white/70 text-xs">ゲストスピーカーによるトークセッション</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:30~22:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">開発作業時間</div>
+                              <div className="text-white/70 text-xs">
+                                13:00~ 昼食<br />
+                                19:00~ 夕食
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">閉場</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                   
                   {/* Day 3 */}
                   <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
-                    <h4 className="text-xl font-bold mb-3">DAY 3: 4月13日(日)</h4>
-                    <h5 className="font-semibold mb-2">デモ & 審査</h5>
-                    <ul className="space-y-2 text-sm">
-                      <li><span className="font-semibold">9:00</span> - 朝食</li>
-                      <li><span className="font-semibold">9:30-12:00</span> - 最終開発作業</li>
-                      <li><span className="font-semibold">12:00</span> - ランチ</li>
-                      <li><span className="font-semibold">13:00-16:00</span> - プロジェクトデモ & 審査</li>
-                      <li><span className="font-semibold">16:30-17:30</span> - 表彰式</li>
-                      <li><span className="font-semibold">17:30-19:00</span> - 閉会・ネットワーキング</li>
-                    </ul>
+                    <h4 className="text-xl font-bold mb-3 flex items-center">
+                      <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
+                      DAY 3: 4月13日(日)
+                    </h4>
+                    <h5 className="font-semibold mb-3 text-vibrant">デモ & 審査</h5>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-sm">
+                        <tbody>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2">
+                              <div className="font-medium">朝食</div>
+                              <div className="text-white/70 text-xs">参加者同士・スポンサー企業エンジニアとの交流</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~15:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">開発作業時間</div>
+                              <div className="text-white/70 text-xs">
+                                13:00~ 昼食
+                              </div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">15:00~17:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">最終成果発表</div>
+                              <div className="text-white/70 text-xs">1チーム3~5分で発表</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">17:00~18:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">審査</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:00~</td>
+                            <td className="py-2">
+                              <div className="font-medium">結果発表</div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00~</td>
+                            <td className="py-2">
+                              <div className="font-medium">懇親会</div>
+                              <div className="text-white/70 text-xs">夕食</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">21:00</td>
+                            <td className="py-2">
+                              <div className="font-medium">閉場</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex justify-center mt-8">
-                  <a
-                    href="https://lu.ma/wsqwzm4s"
-                    className="py-3 px-8 bg-vibrant text-primary-dark font-bold rounded-full hover:bg-white transition tracking-wide shadow-lg transform hover:scale-105 duration-300 pulse-shadow"
-                  >
-                    チケット購入 →
-                  </a>
                 </div>
               </div>
             </div>
@@ -561,24 +703,43 @@ export default function Home() {
             <div>
               <h4 className="text-xl font-bold text-white mb-6">プレイベント <span className="text-white/70 text-base font-normal">(終了)</span></h4>
               
+              <p className="text-white mb-6">
+                ※プレイベントへの参加はハッカソン参加の必須条件ではありません。どなたでもハッカソン本編にご参加いただけます。
+              </p>
+              
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400">
+                <a 
+                  href="https://visiondevcamp.connpass.com/event/344662/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
+                >
                   <h5 className="text-lg font-semibold mb-2">講演会 <span className="text-sm font-normal">(終了)</span></h5>
                   <p className="text-sm">VisionDevCamp講演会: ビジョンをクラフトするには？</p>
                   <div className="text-xs mt-2">2025.03.04</div>
-                </div>
+                </a>
                 
-                <div className="bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400">
+                <a 
+                  href="https://lu.ma/7zomrwt6" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
+                >
                   <h5 className="text-lg font-semibold mb-2">アイデアソン <span className="text-sm font-normal">(終了)</span></h5>
                   <p className="text-sm">空間コンピューティング×AIで創る次世代ライフスタイル</p>
                   <div className="text-xs mt-2">2025.03.16</div>
-                </div>
+                </a>
                 
-                <div className="bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400">
+                <a 
+                  href="https://melting-hack.connpass.com/event/347737/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
+                >
                   <h5 className="text-lg font-semibold mb-2">環境構築セッション <span className="text-sm font-normal">(終了)</span></h5>
                   <p className="text-sm">Vision Pro開発環境構築イベント</p>
                   <div className="text-xs mt-2">2025.03.20</div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -602,15 +763,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            
-            <div className="flex justify-center mt-8">
-              <button 
-                onClick={() => window.open('https://visiondevcamp.org/judges', '_blank')}
-                className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-glow-accent pulse-shadow"
-              >
-                VisionDevCampの審査員について詳しく →
-              </button>
-            </div>
           </div>
         </section>
 
@@ -632,15 +784,6 @@ export default function Home() {
                   <SpeakerCard {...speaker} />
                 </div>
               ))}
-            </div>
-            
-            <div className="flex justify-center mt-12">
-              <button 
-                onClick={() => window.open('https://visiondevcamp.org/speakers', '_blank')}
-                className="bg-vibrant hover:bg-opacity-90 text-primary-dark font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
-              >
-                VisionDevCampの登壇者について詳しく →
-              </button>
             </div>
           </div>
         </section>
@@ -676,6 +819,11 @@ export default function Home() {
                   logo="/BT_Logo.svg"
                   name="︎Beautiful Things"
                   link="https://www.beautifulthings.xyz/"
+                />
+                <SponsorCard
+                  logo="/Reinforz-Insight-logo.png"
+                  name="Reinforz Insight"
+                  link="https://reinforz.co.jp/bizmedia/"
                 />
               </div>
 
@@ -726,7 +874,7 @@ export default function Home() {
                   スポンサー募集中！
                 </h4>
                 <a
-                  href="https://forms.gle/rkd5RQrNtSU4fYxF9"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
@@ -739,47 +887,21 @@ export default function Home() {
         </section>
 
         <section
-          id="news"
-          className="w-full gradient-accent text-white px-8 py-20 relative overflow-hidden"
+          id="tickets"
+          className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <div className="absolute top-0 left-0 w-64 h-64 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
-          
-          <div className="container mx-auto max-w-4xl relative z-10">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
-              お知らせ
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
-            </h3>
+          <h3 className="text-3xl sm:text-5xl font-bold mb-4">
+            参加チケット
+          </h3>
 
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg">
-              <div className="space-y-6">
-                <NewsItem
-                  linkText="VisionDevCamp Tokyo 2025の開催が決定しました！"
-                  link="#"
-                />
-                <NewsItem
-                  linkText="東京会場が決定: オープンコラボレーションハブ LODGE"
-                  link="#"
-                />
-                <NewsItem
-                  linkText="公式Discordサーバーが開設されました"
-                  link="https://discord.gg/visiondevcamp"
-                />
-                <NewsItem
-                  noLinkText="福岡サテライト会場の詳細は近日公開予定です"
-                />
-              </div>
-            </div>
-
-            <div className="mt-12 text-center">
-              <Link
-                href="/press"
-                className="inline-block bg-vibrant text-primary-dark font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg hover:bg-white"
-              >
-                プレスリリース →
-              </Link>
-            </div>
-          </div>
+          <a
+            href="https://lu.ma/wsqwzm4s"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+          >
+            購入はこちら →
+          </a>
         </section>
 
         <section
@@ -800,13 +922,15 @@ export default function Home() {
                 <div>
                   <h4 className="text-xl font-bold text-white mb-4">お問い合わせ先</h4>
                   <p className="text-white mb-6">
-                    VisionDevCamp Tokyoに関するお問い合わせは以下のメールアドレスにお願いします。
+                    VisionDevCamp Tokyoに関するお問い合わせは以下のフォームからお願いします。
                   </p>
                   <a 
-                    href="mailto:tokyo@visiondevcamp.org" 
-                    className="text-vibrant hover:text-white transition-colors font-bold text-lg"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=dialog" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
                   >
-                    tokyo@visiondevcamp.org
+                    お問い合わせフォーム →
                   </a>
 
                   <div className="mt-8">
@@ -835,29 +959,21 @@ export default function Home() {
                 <div>
                   <h4 className="text-xl font-bold text-white mb-4">スポンサー申し込み</h4>
                   <p className="text-white mb-6">
-                    VisionDevCamp Tokyoのスポンサーとしてサポートいただける企業様は、以下のメールアドレスにご連絡ください。
+                    VisionDevCamp Tokyoのスポンサーとしてサポートいただける企業様は、以下のフォームからお申し込みください。
                   </p>
                   <a 
-                    href="mailto:sponsor@visiondevcamp.org" 
-                    className="text-vibrant hover:text-white transition-colors font-bold text-lg"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
                   >
-                    sponsor@visiondevcamp.org
+                    スポンサー申し込みフォーム →
                   </a>
 
                   <div className="mt-8">
                     <h5 className="font-bold text-white mb-2">主催</h5>
                     <p className="text-white">
-                      VisionDevCamp Tokyo 実行委員会
-                    </p>
-                    <p className="text-white mt-2">
-                      <a 
-                        href="https://visiondevcamp.org/" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-secondary hover:text-vibrant transition-colors underline"
-                      >
-                        visiondevcamp.org
-                      </a>
+                      VisionDevCamp Tokyo
                     </p>
                   </div>
                 </div>
@@ -866,148 +982,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="tickets"
-          className="w-full min-h-screen gradient-primary text-white px-4 sm:px-8 py-20 relative overflow-hidden"
-        >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
-          <div className="container mx-auto max-w-5xl relative z-10">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-16 relative inline-block">
-              参加チケット
-              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
-            </h3>
-
-            <div className="flex flex-col items-center">
-              <div className="w-full max-w-4xl bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg mb-12">
-                <h2 className="text-2xl font-bold text-white mb-3">VisionDevCamp Tokyo 2025</h2>
-                <p className="mb-6 text-lg">
-                  イベント参加費には、会場使用料、ケータリング、ハッカソン運営費、グッズの費用が含まれています。
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-gradient-to-br from-primary to-primary-dark p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300">
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-xl font-bold text-white">オンライン参加</h3>
-                      <span className="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">
-                        ¥5,000
-                      </span>
-                    </div>
-                    <ul className="space-y-2 text-white mb-6">
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        Discordへのアクセス
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        ライブ配信の視聴
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        オンラインでのコラボレーション
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        デジタルグッズ
-                      </li>
-                    </ul>
-
-                    <div className="flex justify-center">
-                      <a
-                        href="https://lu.ma/wsqwzm4s"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white text-primary font-bold py-2 px-6 rounded-full transform transition-transform hover:scale-105 hover:bg-vibrant"
-                      >
-                        購入する →
-                      </a>
-                    </div>
-                  </div>
-
-                  <div className="bg-gradient-to-br from-accent to-primary p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105 duration-300 relative overflow-hidden">
-                    <div className="absolute top-0 right-0">
-                      <div className="bg-vibrant text-primary-dark py-1 px-4 font-bold text-sm transform rotate-12 translate-x-2 -translate-y-2 shadow-lg">
-                        おすすめ
-                      </div>
-                    </div>
-                    
-                    <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-xl font-bold text-white">会場参加</h3>
-                      <span className="bg-vibrant text-primary-dark px-3 py-1 rounded-full text-sm font-bold">
-                        ¥15,000
-                      </span>
-                    </div>
-                    <ul className="space-y-2 text-white mb-6">
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        会場でのハッカソン参加
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        食事（朝食・ランチ・軽食）
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        特典グッズ
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        ネットワーキング機会
-                      </li>
-                      <li className="flex items-center">
-                        <svg className="w-5 h-5 mr-2 text-vibrant" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
-                        </svg>
-                        審査員からのフィードバック
-                      </li>
-                    </ul>
-
-                    <div className="flex justify-center">
-                      <a
-                        href="https://lu.ma/wsqwzm4s"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-vibrant text-primary-dark font-bold py-2 px-6 rounded-full transform transition-transform hover:scale-105 hover:bg-white hover:text-primary pulse-shadow"
-                      >
-                        購入する →
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-center max-w-xl">
-                <h3 className="text-xl font-bold text-white mb-4">学生割引</h3>
-                <p className="text-white mb-6">
-                  学生の方には50%の割引が適用されます。購入前に学生証の提示が必要です。詳細はお問い合わせください。
-                </p>
-                <a 
-                  href="mailto:tokyo@visiondevcamp.org" 
-                  className="text-secondary hover:text-vibrant transition-colors font-bold"
-                >
-                  tokyo@visiondevcamp.org
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer className="bg-black text-white py-12 px-8">
@@ -1034,7 +1008,6 @@ export default function Home() {
                 <Link href="#judges" className="hover:text-red-400 transition-colors">審査員</Link>
                 <Link href="#speakers" className="hover:text-red-400 transition-colors">スピーカー</Link>
                 <Link href="#sponsors" className="hover:text-red-400 transition-colors">スポンサー</Link>
-                <Link href="#tickets" className="hover:text-red-400 transition-colors">チケット</Link>
                 <Link href="#contact" className="hover:text-red-400 transition-colors">お問い合わせ</Link>
               </div>
             </div>
@@ -1162,11 +1135,6 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
-              <Link href="#tickets" className="hover:underline font-bold">
-                チケット
-              </Link>
-            </li>
-            <li className="mb-2">
               <Link href="#contact" className="hover:underline font-bold">
                 お問い合わせ
               </Link>
@@ -1219,11 +1187,6 @@ function Header() {
           <li>
             <Link href="/press" className="hover:underline font-bold">
               プレス
-            </Link>
-          </li>
-          <li>
-            <Link href="#tickets" className="hover:underline font-bold">
-              チケット
             </Link>
           </li>
           <li>
@@ -1341,26 +1304,6 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
           <div className="p-4 pt-0 flex-grow">
             <p className="text-white/80 text-sm line-clamp-3">{bio}</p>
           </div>
-          {socialMedia.length > 0 && (
-            <div className="p-4 pt-0 flex space-x-2">
-              {socialMedia.map((platform, index) => (
-                <a
-                  key={index}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
-                >
-                  <img
-                    src={platform.icon}
-                    alt={platform.platform}
-                    className="w-4 h-4"
-                  />
-                </a>
-              ))}
-            </div>
-          )}
         </div>
       </div>
 
@@ -1474,26 +1417,6 @@ function SpeakerCard({ image, name, title, description, bio, socialMedia = [] })
           <div className="p-4 pt-0 flex-grow">
             <p className="text-white/80 text-sm line-clamp-3">{bio}</p>
           </div>
-          {socialMedia.length > 0 && (
-            <div className="p-4 pt-0 flex space-x-2">
-              {socialMedia.map((platform, index) => (
-                <a
-                  key={index}
-                  href={platform.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
-                >
-                  <img
-                    src={platform.icon}
-                    alt={platform.platform}
-                    className="w-4 h-4"
-                  />
-                </a>
-              ))}
-            </div>
-          )}
         </div>
       </div>
 
