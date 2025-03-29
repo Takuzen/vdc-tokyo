@@ -521,7 +521,7 @@ export default function Home() {
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
                   {/* Day 1 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
+                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
                       DAY 1: April 11 (Fri)
@@ -580,7 +580,7 @@ export default function Home() {
                   </div>
                   
                   {/* Day 2 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
+                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-secondary rounded-full mr-2 animate-pulse"></span>
                       DAY 2: April 12 (Sat)
@@ -632,7 +632,7 @@ export default function Home() {
                   </div>
                   
                   {/* Day 3 */}
-                  <div className="bg-white/5 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
+                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
                       DAY 3: April 13 (Sun)
