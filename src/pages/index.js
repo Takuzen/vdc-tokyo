@@ -109,7 +109,11 @@ const speakers = [
     description: "Chief Operating Officer (COO)",
     bio: "Raven Zachary is the Chief Operating Officer (COO) at ARound, focused on augmented reality experiences for live events. He has been working professionally with spatial computing since 2015 and Apple technology since 2007. In addition to his work concerning Apple Vision Pro and visionOS with AWE for the Vision Workshop and as the co-founder of VisionDevCamp, he was the co-founder of the Portland Virtual Reality Meetup and the founder of the Portland HoloLens Meetup. Raven joins ARound through Stagwell's acquisition of Object Theory, a leader in creating custom augmented reality applications for businesses using wearables, smartphones, and tablets.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/ravenzachary/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/ravenzachary/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
   {
@@ -119,7 +123,11 @@ const speakers = [
     description: "Director of Design & Innovation",
     bio: "With over 25 years in UX, Oliver has been exploring the research and design of Augmented Reality and Spatial Computing for the last 8 years. His company, Contxtual, has created a range of prototypes with Augmented Reality headsets to experiment with how people will use Spatial Computing. Their app, Day Ahead, is a glanceable information visualisation of your calendar information and was in the App Store for the launch day of the Apple Vision Pro launch in February last year. He is an Industry Mentor for the Apple Foundation Program at the University of Technology Sydney, including teaching students about how to design for visionOS on the Apple Vision Pro.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/oliverw/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/oliverw/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
   {
@@ -129,7 +137,11 @@ const speakers = [
     description: "",
     bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/deglypava/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/deglypava/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
 ];
@@ -168,11 +180,11 @@ export default function Home() {
 
           {/* Content Overlay */}
           <div className="relative z-20 text-center w-full max-w-6xl mx-auto py-16">
-  <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
-    <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
-      VisionDevCamp <span className="text-black">Tokyo</span> 2025
-    </h1>
-  </div>
+            <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+                VisionDevCamp <span className="text-black">Tokyo</span> 2025
+              </h1>
+            </div>
 
             <div className="mt-6 bg-black bg-opacity-70 p-5 rounded-xl shadow-xl">
               <a
@@ -188,7 +200,9 @@ export default function Home() {
 
               <div className="mt-8 text-center">
                 <p className="text-4xl sm:text-5xl font-bold text-red-400">
-                  2025年4月11日<span className="text-2xl sm:text-3xl">（金）</span>～13日<span className="text-2xl sm:text-3xl">（日）</span>
+                  2025年4月11日
+                  <span className="text-2xl sm:text-3xl">（金）</span>～13日
+                  <span className="text-2xl sm:text-3xl">（日）</span>
                 </p>
               </div>
 
@@ -224,7 +238,10 @@ export default function Home() {
         </section>
 
         {/* Overview Section - New */}
-        <section id="overview" className="w-full gradient-primary py-20 text-white">
+        <section
+          id="overview"
+          className="w-full gradient-primary py-20 text-white"
+        >
           <div className="container mx-auto px-8">
             <div className="max-w-5xl mx-auto">
               <div className="relative mb-12">
@@ -233,7 +250,7 @@ export default function Home() {
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent"></span>
                 </h2>
               </div>
-              
+
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-1/2">
                   <div className="rounded-xl overflow-hidden shadow-2xl transform transition-transform hover:scale-105 duration-500 shadow-glow">
@@ -244,23 +261,24 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="lg:w-1/2">
                   <p className="text-xl leading-relaxed mb-6">
-                    VisionDevCampは、Apple Vision ProとvisionOS向けのアプリケーション開発に焦点を当てた、開発者、デザイナー、起業家が集まる非営利のハッカソンイベントです。
+                    VisionDevCampは、Apple Vision
+                    ProとvisionOS向けのアプリケーション開発に焦点を当てた、開発者、デザイナー、起業家が集まる非営利のハッカソンイベントです。
                   </p>
-                  
+
                   <p className="text-xl leading-relaxed mb-6">
                     2007年にシリコンバレーで始まり、今回が初の日本開催となります。週末の3日間、参加者はチームを組んでアイデアを形にし、最終日には審査員の前でデモンストレーションを行います。
                   </p>
-                  
+
                   <p className="text-xl leading-relaxed">
                     経験豊富なボランティアチームが皆さまの開発をサポートし、食事、電源、インターネット、ネットワーキングの機会などを提供いたします。
                   </p>
-                  
+
                   <div className="mt-8 flex">
-                    <a 
-                      href="https://lu.ma/wsqwzm4s" 
+                    <a
+                      href="https://lu.ma/wsqwzm4s"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-red-500 hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
@@ -375,7 +393,10 @@ export default function Home() {
         </section>
 
         {/* Venues Section - New */}
-        <section id="venues" className="w-full py-20 gradient-accent text-white">
+        <section
+          id="venues"
+          className="w-full py-20 gradient-accent text-white"
+        >
           <div className="container mx-auto px-8">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
@@ -384,15 +405,15 @@ export default function Home() {
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
                 </h2>
               </div>
-              
+
               {/* Main Venues */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
                 {/* Tokyo Venue */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden">
-                    <img 
-                      src="/lodge.png" 
-                      alt="LODGE会場" 
+                    <img
+                      src="/lodge.png"
+                      alt="LODGE会場"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -401,15 +422,17 @@ export default function Home() {
                       <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                       <h3 className="text-2xl font-bold">メイン会場（東京）</h3>
                     </div>
-                    <h4 className="text-xl font-semibold mb-3">オープンコラボレーションハブ LODGE</h4>
+                    <h4 className="text-xl font-semibold mb-3">
+                      オープンコラボレーションハブ LODGE
+                    </h4>
                     <p className="text-gray-300 mb-4">
                       最新の設備が整った開放的な空間で、他の開発者と対面で交流しながら開発に取り組めます。食事や電源、高速インターネットを完備し、開発に集中できる環境を提供します。
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://www.z-lodge.com/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.z-lodge.com/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -418,18 +441,18 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Online Venue */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden flex flex-col">
-                    <img 
-                      src="/online_venue.png" 
-                      alt="オンライン会場" 
+                    <img
+                      src="/online_venue.png"
+                      alt="オンライン会場"
                       className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
                     />
-                    <img 
-                      src="/online_venue2.png" 
-                      alt="オンライン会場" 
+                    <img
+                      src="/online_venue2.png"
+                      alt="オンライン会場"
                       className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -444,9 +467,9 @@ export default function Home() {
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://devcamp.social/ja/" 
-                        target="_blank" 
+                      <a
+                        href="https://devcamp.social/ja/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -456,14 +479,16 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Satellite Venue */}
               <div className="max-w-2xl mx-auto">
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
                       <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
-                      <h3 className="text-2xl font-bold">サテライト会場（福岡）</h3>
+                      <h3 className="text-2xl font-bold">
+                        サテライト会場（福岡）
+                      </h3>
                     </div>
                     <h4 className="text-xl font-semibold mb-3">EngineerCafe</h4>
                     <p className="text-gray-300 mb-4">
@@ -471,9 +496,9 @@ export default function Home() {
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://engineercafe.connpass.com/event/348799/" 
-                        target="_blank" 
+                      <a
+                        href="https://engineercafe.connpass.com/event/348799/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -493,7 +518,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-dark rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 relative">
               スケジュール
@@ -506,15 +531,19 @@ export default function Home() {
                   メインイベント：VisionDevCamp Tokyo 2025
                   <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-accent"></span>
                 </h2>
-                
+
                 <div className="mb-8">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-vibrant rounded-full animate-pulse mr-3"></div>
-                    <p className="text-2xl font-bold text-white">2025年4月11日（金）- 13日（日）</p>
+                    <p className="text-2xl font-bold text-white">
+                      2025年4月11日（金）- 13日（日）
+                    </p>
                   </div>
-                  <p className="text-lg text-white ml-7 mt-2">会場: オープンコラボレーションハブ LODGE & オンライン</p>
+                  <p className="text-lg text-white ml-7 mt-2">
+                    会場: オープンコラボレーションハブ LODGE & オンライン
+                  </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
                   {/* Day 1 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
@@ -522,59 +551,89 @@ export default function Home() {
                       <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
                       DAY 1: 4月11日(金)
                     </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">チームビルディング</h5>
+                    <h5 className="font-semibold mb-3 text-vibrant">
+                      チームビルディング
+                    </h5>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              18:30
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">開場</div>
-                              <div className="text-white/70 text-xs">参加者受付開始</div>
+                              <div className="text-white/70 text-xs">
+                                参加者受付開始
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00-19:15</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:00-19:15
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">オープニング</div>
-                              <div className="text-white/70 text-xs">オーガナイザーからの歓迎挨拶</div>
+                              <div className="text-white/70 text-xs">
+                                オーガナイザーからの歓迎挨拶
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:15-19:45</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:15-19:45
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">ショートキーノート</div>
+                              <div className="font-medium">
+                                ショートキーノート
+                              </div>
                               <div className="text-white/70 text-xs">
                                 スポンサー企業からのショートキーノート
                               </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:45-20:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:45-20:30
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">自己紹介</div>
-                              <div className="text-white/70 text-xs">参加者が開発したいアイデアを1分程度で簡易ピッチ</div>
+                              <div className="text-white/70 text-xs">
+                                参加者が開発したいアイデアを1分程度で簡易ピッチ
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">20:30-21:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              20:30-21:30
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">チーム編成(食事付き交流会)</div>
-                              <div className="text-white/70 text-xs">夕食<br />立食形式で参加者同士が交流</div>
+                              <div className="font-medium">
+                                チーム編成(食事付き交流会)
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                夕食
+                                <br />
+                                立食形式で参加者同士が交流
+                              </div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              22:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">閉場</div>
-                              <div className="text-white/70 text-xs">初日終了</div>
+                              <div className="text-white/70 text-xs">
+                                初日終了
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  
+
                   {/* Day 2 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
@@ -586,38 +645,59 @@ export default function Home() {
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">朝食</div>
-                              <div className="text-white/70 text-xs">参加者同士やスポンサー企業との交流</div>
+                              <div className="text-white/70 text-xs">
+                                参加者同士やスポンサー企業との交流
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:30~
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">アイデアの共有&フィードバック</div>
-                              <div className="text-white/70 text-xs">チームごとに「現状何を作っているか」を1分程度で共有</div>
+                              <div className="font-medium">
+                                アイデアの共有&フィードバック
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                チームごとに「現状何を作っているか」を1分程度で共有
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              10:00~
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">スピーカーセッション</div>
-                              <div className="text-white/70 text-xs">ゲストスピーカーによるトークセッション</div>
+                              <div className="font-medium">
+                                スピーカーセッション
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                ゲストスピーカーによるトークセッション
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:30~22:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              10:30~22:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">開発作業時間</div>
                               <div className="text-white/70 text-xs">
-                                13:00~ 昼食<br />
+                                13:00~ 昼食
+                                <br />
                                 19:00~ 夕食
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              22:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">閉場</div>
                             </td>
@@ -626,26 +706,34 @@ export default function Home() {
                       </table>
                     </div>
                   </div>
-                  
+
                   {/* Day 3 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
                       DAY 3: 4月13日(日)
                     </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">デモ & 審査</h5>
+                    <h5 className="font-semibold mb-3 text-vibrant">
+                      デモ & 審査
+                    </h5>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">朝食</div>
-                              <div className="text-white/70 text-xs">参加者同士・スポンサー企業エンジニアとの交流</div>
+                              <div className="text-white/70 text-xs">
+                                参加者同士・スポンサー企業エンジニアとの交流
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~15:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:30~15:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">開発作業時間</div>
                               <div className="text-white/70 text-xs">
@@ -654,33 +742,45 @@ export default function Home() {
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">15:00~17:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              15:00~17:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">最終成果発表</div>
-                              <div className="text-white/70 text-xs">1チーム3~5分で発表</div>
+                              <div className="text-white/70 text-xs">
+                                1チーム3~5分で発表
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">17:00~18:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              17:00~18:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">審査</div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              18:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">結果発表</div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">懇親会</div>
                               <div className="text-white/70 text-xs">夕食</div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">21:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              21:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">閉場</div>
                             </td>
@@ -692,44 +792,61 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div>
-              <h4 className="text-xl font-bold text-white mb-6">プレイベント <span className="text-white/70 text-base font-normal">(終了)</span></h4>
-              
+              <h4 className="text-xl font-bold text-white mb-6">
+                プレイベント{" "}
+                <span className="text-white/70 text-base font-normal">
+                  (終了)
+                </span>
+              </h4>
+
               <p className="text-white mb-6">
                 ※プレイベントへの参加はハッカソン参加の必須条件ではありません。どなたでもハッカソン本編にご参加いただけます。
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a 
-                  href="https://visiondevcamp.connpass.com/event/344662/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://visiondevcamp.connpass.com/event/344662/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">講演会 <span className="text-sm font-normal">(終了)</span></h5>
-                  <p className="text-sm">VisionDevCamp講演会: ビジョンをクラフトするには？</p>
+                  <h5 className="text-lg font-semibold mb-2">
+                    講演会 <span className="text-sm font-normal">(終了)</span>
+                  </h5>
+                  <p className="text-sm">
+                    VisionDevCamp講演会: ビジョンをクラフトするには？
+                  </p>
                   <div className="text-xs mt-2">2025.03.04</div>
                 </a>
-                
-                <a 
-                  href="https://lu.ma/7zomrwt6" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://lu.ma/7zomrwt6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">アイデアソン <span className="text-sm font-normal">(終了)</span></h5>
-                  <p className="text-sm">空間コンピューティング×AIで創る次世代ライフスタイル</p>
+                  <h5 className="text-lg font-semibold mb-2">
+                    アイデアソン{" "}
+                    <span className="text-sm font-normal">(終了)</span>
+                  </h5>
+                  <p className="text-sm">
+                    空間コンピューティング×AIで創る次世代ライフスタイル
+                  </p>
                   <div className="text-xs mt-2">2025.03.16</div>
                 </a>
-                
-                <a 
-                  href="https://melting-hack.connpass.com/event/347737/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://melting-hack.connpass.com/event/347737/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">環境構築セッション <span className="text-sm font-normal">(終了)</span></h5>
+                  <h5 className="text-lg font-semibold mb-2">
+                    環境構築セッション{" "}
+                    <span className="text-sm font-normal">(終了)</span>
+                  </h5>
                   <p className="text-sm">Vision Pro開発環境構築イベント</p>
                   <div className="text-xs mt-2">2025.03.20</div>
                 </a>
@@ -737,13 +854,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section 
-          id="judges" 
+        <section
+          id="judges"
           className="w-full flex flex-col gradient-secondary text-white px-8 py-20 relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-64 h-64 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               審査員
@@ -759,13 +876,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section 
-          id="speakers" 
+        <section
+          id="speakers"
           className="w-full flex flex-col gradient-accent text-white px-8 py-20 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               スピーカー
@@ -787,7 +904,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10 mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
@@ -820,7 +937,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">会場協力</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                会場協力
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <SponsorCard
                   logo="/lodge-logo.svg"
@@ -829,7 +948,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">撮影協力</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                撮影協力
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <SponsorCard
                   logo="/crossdevice-logo.png"
@@ -838,7 +959,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">コミュニティ・パートナー</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                コミュニティ・パートナー
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <SponsorCard
                   logo="/iwaken-lab-logo.png"
@@ -883,9 +1006,7 @@ export default function Home() {
           id="tickets"
           className="min-h-screen flex flex-col items-center justify-center bg-purple-600 text-white px-8 py-12"
         >
-          <h3 className="text-3xl sm:text-5xl font-bold mb-4">
-            参加チケット
-          </h3>
+          <h3 className="text-3xl sm:text-5xl font-bold mb-4">参加チケット</h3>
 
           <a
             href="https://lu.ma/wsqwzm4s"
@@ -903,7 +1024,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container mx-auto max-w-4xl relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
               お問い合わせ
@@ -913,12 +1034,15 @@ export default function Home() {
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-xl font-bold text-white mb-4">お問い合わせ先</h4>
+                  <h4 className="text-xl font-bold text-white mb-4">
+                    お問い合わせ先
+                  </h4>
                   <p className="text-white mb-6">
-                    VisionDevCamp Tokyoに関するお問い合わせは以下のフォームからお願いします。
+                    VisionDevCamp
+                    Tokyoに関するお問い合わせは以下のフォームからお願いします。
                   </p>
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=dialog" 
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
@@ -927,7 +1051,9 @@ export default function Home() {
                   </a>
 
                   <div className="mt-8">
-                    <h5 className="font-bold text-white mb-2">ソーシャルメディア</h5>
+                    <h5 className="font-bold text-white mb-2">
+                      ソーシャルメディア
+                    </h5>
                     <div className="flex space-x-4 mt-4">
                       <a
                         href="https://x.com/devcamptokyo"
@@ -935,7 +1061,11 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
                       >
-                        <img src="/x-logo.png" alt="Twitter" className="w-7 h-7" />
+                        <img
+                          src="/x-logo.png"
+                          alt="Twitter"
+                          className="w-7 h-7"
+                        />
                       </a>
                       <a
                         href="https://discord.gg/t5X6KZruQQ"
@@ -943,19 +1073,26 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
                       >
-                        <img src="/discord-logo.svg" alt="Discord" className="w-7 h-7 filter brightness-0 invert" />
+                        <img
+                          src="/discord-logo.svg"
+                          alt="Discord"
+                          className="w-7 h-7 filter brightness-0 invert"
+                        />
                       </a>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-white mb-4">スポンサー申し込み</h4>
+                  <h4 className="text-xl font-bold text-white mb-4">
+                    スポンサー申し込み
+                  </h4>
                   <p className="text-white mb-6">
-                    VisionDevCamp Tokyoのスポンサーとしてサポートいただける企業様は、以下のフォームからお申し込みください。
+                    VisionDevCamp
+                    Tokyoのスポンサーとしてサポートいただける企業様は、以下のフォームからお申し込みください。
                   </p>
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog" 
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-6 rounded-full shadow-lg transform transition hover:scale-105 whitespace-nowrap"
@@ -965,16 +1102,13 @@ export default function Home() {
 
                   <div className="mt-8">
                     <h5 className="font-bold text-white mb-2">主催</h5>
-                    <p className="text-white">
-                      VisionDevCamp Tokyo
-                    </p>
+                    <p className="text-white">VisionDevCamp Tokyo</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
       </main>
 
       <footer className="bg-black text-white py-12 px-8">
@@ -991,20 +1125,65 @@ export default function Home() {
                   VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
                 </div>
               </div>
-              
+
               <div className="flex flex-wrap justify-center gap-6">
-                <Link href="#top" className="hover:text-red-400 transition-colors">トップ</Link>
-                <Link href="#overview" className="hover:text-red-400 transition-colors">概要</Link>
-                <Link href="#uniqueness" className="hover:text-red-400 transition-colors">特徴</Link>
-                <Link href="#venues" className="hover:text-red-400 transition-colors">会場</Link>
-                <Link href="#schedule" className="hover:text-red-400 transition-colors">スケジュール</Link>
-                <Link href="#judges" className="hover:text-red-400 transition-colors">審査員</Link>
-                <Link href="#speakers" className="hover:text-red-400 transition-colors">スピーカー</Link>
-                <Link href="#sponsors" className="hover:text-red-400 transition-colors">スポンサー</Link>
-                <Link href="#contact" className="hover:text-red-400 transition-colors">お問い合わせ</Link>
+                <Link
+                  href="#top"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  トップ
+                </Link>
+                <Link
+                  href="#overview"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  概要
+                </Link>
+                <Link
+                  href="#uniqueness"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  特徴
+                </Link>
+                <Link
+                  href="#venues"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  会場
+                </Link>
+                <Link
+                  href="#schedule"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  スケジュール
+                </Link>
+                <Link
+                  href="#judges"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  審査員
+                </Link>
+                <Link
+                  href="#speakers"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  スピーカー
+                </Link>
+                <Link
+                  href="#sponsors"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  スポンサー
+                </Link>
+                <Link
+                  href="#contact"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  お問い合わせ
+                </Link>
               </div>
             </div>
-            
+
             <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
               <p>Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.</p>
             </div>
@@ -1223,7 +1402,9 @@ function ScheduleItem({
   return (
     <div
       className={`rounded-xl shadow-lg p-6 ${
-        dimmed ? "bg-gray-400/70 backdrop-blur-sm text-gray-800" : "bg-white/20 backdrop-blur-sm text-white"
+        dimmed
+          ? "bg-gray-400/70 backdrop-blur-sm text-gray-800"
+          : "bg-white/20 backdrop-blur-sm text-white"
       } ${customClass || ""}`}
     >
       <div className="flex items-start justify-between">
@@ -1345,7 +1526,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
                   <p className="text-white/80 mb-4">{description}</p>
                 )}
                 <div className="h-px w-full bg-white/20 my-4"></div>
-                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">
+                  {bio}
+                </p>
 
                 {socialMedia.length > 0 && (
                   <div className="mt-6 flex space-x-3 justify-center">
@@ -1375,7 +1558,14 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   );
 }
 
-function SpeakerCard({ image, name, title, description, bio, socialMedia = [] }) {
+function SpeakerCard({
+  image,
+  name,
+  title,
+  description,
+  bio,
+  socialMedia = [],
+}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
@@ -1458,7 +1648,9 @@ function SpeakerCard({ image, name, title, description, bio, socialMedia = [] })
                   <p className="text-white/80 mb-4">{description}</p>
                 )}
                 <div className="h-px w-full bg-white/20 my-4"></div>
-                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">
+                  {bio}
+                </p>
 
                 {socialMedia.length > 0 && (
                   <div className="mt-6 flex space-x-3 justify-center">
@@ -1505,7 +1697,9 @@ function SponsorCard({ logo, name, link, tier }) {
           />
         </div>
         <div className="mt-4 text-center">
-          <p className="font-medium text-white transition-colors group-hover:text-accent">{name}</p>
+          <p className="font-medium text-white transition-colors group-hover:text-accent">
+            {name}
+          </p>
         </div>
       </a>
     </div>
@@ -1575,4 +1769,3 @@ const styles = {
     marginTop: "20px",
   },
 };
-

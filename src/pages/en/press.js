@@ -39,7 +39,7 @@ const Press = () => {
                                     href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=header" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    className="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
+                                    className="bg-vibrant hover:bg-white text-primary-dark font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
                                 >
                                     Contact Form
                                 </a>
@@ -103,7 +103,7 @@ const Press = () => {
                                 <img
                                     src="/visiondevcamp-logo-only.png"
                                     alt="VisionDevCamp Logo"
-                                    className="w-10 h-10 mr-3 object-contain"
+                                    className="w-10 h-10 mr-3 object-fit rounded-full"
                                 />
                                 <div className="text-xl font-bold">
                                     VisionDevCamp <span className="text-red-500">Tokyo</span> 2025

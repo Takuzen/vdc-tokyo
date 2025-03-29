@@ -26,7 +26,7 @@ const judges = [
     name: "Aimi Sekiguchi",
     title: "XR / Spatial Artist",
     description: "",
-    bio: "Has been working as an artist creating 3D paintings in VR space since 2016. Received art commissions and live painting requests from 13 countries worldwide. Her solo exhibition in the metaverse attracted many visitors from around the world and was selected for the VR category at the Venice International Film Festival. Her first NFT artwork was sold for approximately 13 million yen, making headlines. Selected as one of the \"Forbes Japan 100\" in 2021. Officially recognized as an artist by the Dubai government.",
+    bio: 'Has been working as an artist creating 3D paintings in VR space since 2016. Received art commissions and live painting requests from 13 countries worldwide. Her solo exhibition in the metaverse attracted many visitors from around the world and was selected for the VR category at the Venice International Film Festival. Her first NFT artwork was sold for approximately 13 million yen, making headlines. Selected as one of the "Forbes Japan 100" in 2021. Officially recognized as an artist by the Dubai government.',
     socialMedia: [
       {
         platform: "X",
@@ -75,7 +75,7 @@ const judges = [
     name: "Ikkou Morohoshi",
     title: "ONE SHOT STAR",
     description: "LODGE XR Talk",
-    bio: "2024-2025 Microsoft MVP / A strong advocate for WebXR and visionOS! Hosting the monthly \"LODGE XR Talk\" at the open collaboration hub LODGE, featuring discussions and hands-on experiences on the latest XR trends.",
+    bio: '2024-2025 Microsoft MVP / A strong advocate for WebXR and visionOS! Hosting the monthly "LODGE XR Talk" at the open collaboration hub LODGE, featuring discussions and hands-on experiences on the latest XR trends.',
     socialMedia: [
       { platform: "X", url: "https://x.com/ikkou", icon: "/x-logo.png" },
       {
@@ -109,7 +109,11 @@ const speakers = [
     description: "Chief Operating Officer (COO)",
     bio: "Raven Zachary is the Chief Operating Officer (COO) at ARound, focused on augmented reality experiences for live events. He has been working professionally with spatial computing since 2015 and Apple technology since 2007. In addition to his work concerning Apple Vision Pro and visionOS with AWE for the Vision Workshop and as the co-founder of VisionDevCamp, he was the co-founder of the Portland Virtual Reality Meetup and the founder of the Portland HoloLens Meetup. Raven joins ARound through Stagwell's acquisition of Object Theory, a leader in creating custom augmented reality applications for businesses using wearables, smartphones, and tablets.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/ravenzachary/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/ravenzachary/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
   {
@@ -119,7 +123,11 @@ const speakers = [
     description: "Director of Design & Innovation",
     bio: "With over 25 years in UX, Oliver has been exploring the research and design of Augmented Reality and Spatial Computing for the last 8 years. His company, Contxtual, has created a range of prototypes with Augmented Reality headsets to experiment with how people will use Spatial Computing. Their app, Day Ahead, is a glanceable information visualisation of your calendar information and was in the App Store for the launch day of the Apple Vision Pro launch in February last year. He is an Industry Mentor for the Apple Foundation Program at the University of Technology Sydney, including teaching students about how to design for visionOS on the Apple Vision Pro.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/oliverw/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/oliverw/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
   {
@@ -129,7 +137,11 @@ const speakers = [
     description: "",
     bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
     socialMedia: [
-      { platform: "LinkedIn", url: "https://www.linkedin.com/in/deglypava/", icon: "/linkedin-logo.png" },
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/deglypava/",
+        icon: "/linkedin-logo.png",
+      },
     ],
   },
 ];
@@ -167,9 +179,9 @@ export default function Home() {
           </div>
 
           {/* Content Overlay */}
-          <div className="relative z-20 text-center max-w-4xl mx-auto px-4 py-16">
+          <div className="relative z-20 text-center w-full max-w-6xl mx-auto py-16">
             <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
-              <h1 className="text-5xl sm:text-7xl font-bold text-white leading-tight">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
                 VisionDevCamp <span className="text-black">Tokyo</span> 2025
               </h1>
             </div>
@@ -179,16 +191,19 @@ export default function Home() {
                 href="https://visiondevcamp.org/"
                 className="text-xl sm:text-2xl font-medium text-white hover:text-red-300 transition-colors"
               >
-                The historic hackathon that has continued in Silicon Valley since 2007 is coming to Japan for the first time!
+                The historic hackathon that has continued in Silicon Valley
+                since 2007 is coming to Japan for the first time!
               </a>
 
               <p className="text-xl sm:text-2xl mt-4 text-white font-medium">
-                Whether you&apos;re working individually or in a team, let&apos;s bring Vision Pro ideas to life together!
+                Whether you&apos;re working individually or in a team,
+                let&apos;s bring Vision Pro ideas to life together!
               </p>
 
               <div className="mt-8 text-center">
                 <p className="text-4xl sm:text-5xl font-bold text-red-400">
-                  April 11<span className="text-2xl sm:text-3xl"> (Fri)</span> - 13<span className="text-2xl sm:text-3xl"> (Sun)</span>, 2025
+                  April 11<span className="text-2xl sm:text-3xl"> (Fri)</span> -
+                  13<span className="text-2xl sm:text-3xl"> (Sun)</span>, 2025
                 </p>
               </div>
 
@@ -221,17 +236,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Stylized decorative elements */}
-          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-3">
-            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-            <div className="w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-          </div>
         </section>
 
         {/* Overview Section - New */}
-        <section id="overview" className="w-full gradient-primary py-20 text-white">
+        <section
+          id="overview"
+          className="w-full gradient-primary py-20 text-white"
+        >
           <div className="container mx-auto px-8">
             <div className="max-w-5xl mx-auto">
               <div className="relative mb-12">
@@ -240,7 +251,7 @@ export default function Home() {
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent"></span>
                 </h2>
               </div>
-              
+
               <div className="flex flex-col lg:flex-row gap-12 items-center">
                 <div className="lg:w-1/2">
                   <div className="rounded-xl overflow-hidden shadow-2xl transform transition-transform hover:scale-105 duration-500 shadow-glow">
@@ -251,26 +262,34 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                
+
                 <div className="lg:w-1/2">
                   <p className="text-xl leading-relaxed mb-6">
-                    VisionDevCamp is a nonprofit developer event focused on app development for Apple Vision Pro and visionOS, bringing together developers, designers, entrepreneurs, and enthusiasts.
+                    VisionDevCamp is a nonprofit developer event focused on app
+                    development for Apple Vision Pro and visionOS, bringing
+                    together developers, designers, entrepreneurs, and
+                    enthusiasts.
                   </p>
-                  
+
                   <p className="text-xl leading-relaxed mb-6">
-                    Started in Silicon Valley in 2007, this is the first time it will be held in Japan. Over three days, participants will form teams to bring ideas to life, culminating in demonstrations in front of judges on the final day.
+                    Started in Silicon Valley in 2007, this is the first time it
+                    will be held in Japan. Over three days, participants will
+                    form teams to bring ideas to life, culminating in
+                    demonstrations in front of judges on the final day.
                   </p>
-                  
+
                   <p className="text-xl leading-relaxed">
-                    An experienced team of volunteers will support your development, providing meals, power, internet, and networking opportunities.
+                    An experienced team of volunteers will support your
+                    development, providing meals, power, internet, and
+                    networking opportunities.
                   </p>
-                  
+
                   <div className="mt-8 flex">
-                    <a 
-                      href="https://lu.ma/wsqwzm4s" 
+                    <a
+                      href="https://lu.ma/wsqwzm4s"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
+                      className="bg-red-500 hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-glow-accent pulse-shadow"
                     >
                       Participate →
                     </a>
@@ -307,13 +326,18 @@ export default function Home() {
                 </h2>
                 <ul className="list-disc pl-5 mt-6 space-y-4 text-white">
                   <li>
-                    VisionDevCamp is a nonprofit developer event focused on app development for Apple Vision Pro and visionOS.
+                    VisionDevCamp is a nonprofit developer event focused on app
+                    development for Apple Vision Pro and visionOS.
                   </li>
                   <li>
-                    A team of experienced volunteers supports developers, designers, entrepreneurs, and enthusiasts working on Vision Pro and visionOS.
+                    A team of experienced volunteers supports developers,
+                    designers, entrepreneurs, and enthusiasts working on Vision
+                    Pro and visionOS.
                   </li>
                   <li>
-                    The event takes place from Friday to Sunday, where participants collaborate on projects both individually and in teams.
+                    The event takes place from Friday to Sunday, where
+                    participants collaborate on projects both individually and
+                    in teams.
                   </li>
                 </ul>
               </div>
@@ -336,10 +360,12 @@ export default function Home() {
                   One of the world&apos;s largest visionOS developer communities
                 </h2>
                 <p className="mt-6 text-white">
-                  The first VisionDevCamp in March 2024 attracted visionOS developers from around the world.
+                  The first VisionDevCamp in March 2024 attracted visionOS
+                  developers from around the world.
                 </p>
                 <p className="mt-4 text-white">
-                  Despite the product&apos;s recent launch, over 100 Vision Pro devices and developers participated in the hackathon.
+                  Despite the product&apos;s recent launch, over 100 Vision Pro
+                  devices and developers participated in the hackathon.
                 </p>
               </div>
             </div>
@@ -359,10 +385,13 @@ export default function Home() {
                   Nonprofit, volunteer-run operation
                 </h2>
                 <p className="mt-6 text-white">
-                  A nonprofit event operated by volunteers, funded by both sponsors and participants.
+                  A nonprofit event operated by volunteers, funded by both
+                  sponsors and participants.
                 </p>
                 <p className="mt-4 text-white">
-                  Aims to keep participation costs low while providing space, meals, power, internet, and networking opportunities to help participants focus on building great applications.
+                  Aims to keep participation costs low while providing space,
+                  meals, power, internet, and networking opportunities to help
+                  participants focus on building great applications.
                 </p>
               </div>
             </div>
@@ -377,9 +406,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         {/* Venues Section - New */}
-        <section id="venues" className="w-full py-20 gradient-accent text-white">
+        <section
+          id="venues"
+          className="w-full py-20 gradient-accent text-white"
+        >
           <div className="container mx-auto px-8">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
@@ -388,15 +420,15 @@ export default function Home() {
                   <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
                 </h2>
               </div>
-              
+
               {/* Main Venues */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
                 {/* Tokyo Venue */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden">
-                    <img 
-                      src="/lodge.png" 
-                      alt="LODGE Venue" 
+                    <img
+                      src="/lodge.png"
+                      alt="LODGE Venue"
                       className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -405,15 +437,21 @@ export default function Home() {
                       <div className="w-3 h-3 bg-green-500 rounded-full mr-2 animate-pulse"></div>
                       <h3 className="text-2xl font-bold">Main Venue (Tokyo)</h3>
                     </div>
-                    <h4 className="text-xl font-semibold mb-3">Open Collaboration Hub LODGE</h4>
+                    <h4 className="text-xl font-semibold mb-3">
+                      Open Collaboration Hub LODGE
+                    </h4>
                     <p className="text-gray-300 mb-4">
-                      An open space with the latest facilities where you can develop while interacting face-to-face with other developers. Equipped with meals, power, and high-speed internet to provide an environment where you can concentrate on development.
+                      An open space with the latest facilities where you can
+                      develop while interacting face-to-face with other
+                      developers. Equipped with meals, power, and high-speed
+                      internet to provide an environment where you can
+                      concentrate on development.
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://www.z-lodge.com/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.z-lodge.com/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -422,18 +460,18 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Online Venue */}
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow transition-transform hover:scale-105 duration-300">
                   <div className="h-64 overflow-hidden flex flex-col">
-                    <img 
-                      src="/online_venue.png" 
-                      alt="Online Venue" 
+                    <img
+                      src="/online_venue.png"
+                      alt="Online Venue"
                       className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
                     />
-                    <img 
-                      src="/online_venue2.png" 
-                      alt="Online Venue" 
+                    <img
+                      src="/online_venue2.png"
+                      alt="Online Venue"
                       className="w-full h-1/2 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </div>
@@ -444,13 +482,15 @@ export default function Home() {
                     </div>
                     <h4 className="text-xl font-semibold mb-3">DevCamp</h4>
                     <p className="text-gray-300 mb-4">
-                      In the online venue accessible from anywhere, you can collaborate with other participants and progress your development regardless of location.
+                      In the online venue accessible from anywhere, you can
+                      collaborate with other participants and progress your
+                      development regardless of location.
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://devcamp.social/" 
-                        target="_blank" 
+                      <a
+                        href="https://devcamp.social/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -460,24 +500,28 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Satellite Venue */}
               <div className="max-w-2xl mx-auto">
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden shadow-xl shadow-glow">
                   <div className="p-6">
                     <div className="flex items-center mb-4">
                       <div className="w-3 h-3 bg-yellow-500 rounded-full mr-2"></div>
-                      <h3 className="text-2xl font-bold">Satellite Venue (Fukuoka)</h3>
+                      <h3 className="text-2xl font-bold">
+                        Satellite Venue (Fukuoka)
+                      </h3>
                     </div>
                     <h4 className="text-xl font-semibold mb-3">EngineerCafe</h4>
                     <p className="text-gray-300 mb-4">
-                      Fukuoka satellite venue operated by volunteer enthusiasts. It provides a development environment similar to the main venue and supports participants from the Kyushu region.
+                      Fukuoka satellite venue operated by volunteer enthusiasts.
+                      It provides a development environment similar to the main
+                      venue and supports participants from the Kyushu region.
                     </p>
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
-                      <a 
-                        href="https://engineercafe.connpass.com/event/348799/" 
-                        target="_blank" 
+                      <a
+                        href="https://engineercafe.connpass.com/event/348799/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
                       >
@@ -497,7 +541,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-dark rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 relative">
               Schedule
@@ -510,15 +554,19 @@ export default function Home() {
                   Main Event: VisionDevCamp Tokyo 2025
                   <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-accent"></span>
                 </h2>
-                
+
                 <div className="mb-8">
                   <div className="flex items-center">
                     <div className="w-4 h-4 bg-vibrant rounded-full animate-pulse mr-3"></div>
-                    <p className="text-2xl font-bold text-white">April 11 (Fri) - 13 (Sun), 2025</p>
+                    <p className="text-2xl font-bold text-white">
+                      April 11 (Fri) - 13 (Sun), 2025
+                    </p>
                   </div>
-                  <p className="text-lg text-white ml-7 mt-2">Venue: Open Collaboration Hub LODGE & Online</p>
+                  <p className="text-lg text-white ml-7 mt-2">
+                    Venue: Open Collaboration Hub LODGE & Online
+                  </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
                   {/* Day 1 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
@@ -526,26 +574,38 @@ export default function Home() {
                       <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
                       DAY 1: April 11 (Fri)
                     </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">Team Building</h5>
+                    <h5 className="font-semibold mb-3 text-vibrant">
+                      Team Building
+                    </h5>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              18:30
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Doors Open</div>
-                              <div className="text-white/70 text-xs">Registration starts</div>
+                              <div className="text-white/70 text-xs">
+                                Registration starts
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00-19:15</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:00-19:15
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Opening</div>
-                              <div className="text-white/70 text-xs">Welcome address from organizers</div>
+                              <div className="text-white/70 text-xs">
+                                Welcome address from organizers
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:15-19:45</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:15-19:45
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Short Keynotes</div>
                               <div className="text-white/70 text-xs">
@@ -554,74 +614,118 @@ export default function Home() {
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:45-20:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:45-20:30
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Self-introductions</div>
-                              <div className="text-white/70 text-xs">Participants pitch their ideas in about 1 minute</div>
+                              <div className="font-medium">
+                                Self-introductions
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                Participants pitch their ideas in about 1 minute
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">20:30-21:30</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              20:30-21:30
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Team Formation (with dinner)</div>
-                              <div className="text-white/70 text-xs">Dinner<br />Standing buffet style networking</div>
+                              <div className="font-medium">
+                                Team Formation (with dinner)
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                Dinner
+                                <br />
+                                Standing buffet style networking
+                              </div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              22:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Venue Closes</div>
-                              <div className="text-white/70 text-xs">End of Day 1</div>
+                              <div className="text-white/70 text-xs">
+                                End of Day 1
+                              </div>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
                   </div>
-                  
+
                   {/* Day 2 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-secondary rounded-full mr-2 animate-pulse"></span>
                       DAY 2: April 12 (Sat)
                     </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">Development</h5>
+                    <h5 className="font-semibold mb-3 text-vibrant">
+                      Development
+                    </h5>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Breakfast</div>
-                              <div className="text-white/70 text-xs">Networking with participants and sponsors</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~</td>
-                            <td className="py-2">
-                              <div className="font-medium">Ideas & Feedback</div>
-                              <div className="text-white/70 text-xs">Teams share what they&apos;re working on in about 1 minute</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:00~</td>
-                            <td className="py-2">
-                              <div className="font-medium">Speaker Sessions</div>
-                              <div className="text-white/70 text-xs">Talk sessions by guest speakers</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">10:30~22:00</td>
-                            <td className="py-2">
-                              <div className="font-medium">Development Time</div>
                               <div className="text-white/70 text-xs">
-                                13:00~ Lunch<br />
+                                Networking with participants and sponsors
+                              </div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:30~
+                            </td>
+                            <td className="py-2">
+                              <div className="font-medium">
+                                Ideas & Feedback
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                Teams share what they&apos;re working on in
+                                about 1 minute
+                              </div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              10:00~
+                            </td>
+                            <td className="py-2">
+                              <div className="font-medium">
+                                Speaker Sessions
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                Talk sessions by guest speakers
+                              </div>
+                            </td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              10:30~22:00
+                            </td>
+                            <td className="py-2">
+                              <div className="font-medium">
+                                Development Time
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                13:00~ Lunch
+                                <br />
                                 19:00~ Dinner
                               </div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">22:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              22:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Venue Closes</div>
                             </td>
@@ -630,61 +734,92 @@ export default function Home() {
                       </table>
                     </div>
                   </div>
-                  
+
                   {/* Day 3 */}
                   <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
                     <h4 className="text-xl font-bold mb-3 flex items-center">
                       <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
                       DAY 3: April 13 (Sun)
                     </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">Demos & Judging</h5>
+                    <h5 className="font-semibold mb-3 text-vibrant">
+                      Demos & Judging
+                    </h5>
                     <div className="overflow-x-auto">
                       <table className="w-full text-sm">
                         <tbody>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:00~
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Breakfast</div>
-                              <div className="text-white/70 text-xs">Networking with participants and sponsor engineers</div>
+                              <div className="text-white/70 text-xs">
+                                Networking with participants and sponsor
+                                engineers
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">9:30~15:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              9:30~15:00
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Development Time</div>
+                              <div className="font-medium">
+                                Development Time
+                              </div>
                               <div className="text-white/70 text-xs">
                                 13:00~ Lunch
                               </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">15:00~17:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              15:00~17:00
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Final Presentations</div>
-                              <div className="text-white/70 text-xs">3-5 minutes per team</div>
+                              <div className="font-medium">
+                                Final Presentations
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                3-5 minutes per team
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">17:00~18:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              17:00~18:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Judging</div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">18:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              18:00~
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Results Announcement</div>
+                              <div className="font-medium">
+                                Results Announcement
+                              </div>
                             </td>
                           </tr>
                           <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">19:00~</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              19:00~
+                            </td>
                             <td className="py-2">
-                              <div className="font-medium">Networking Party</div>
-                              <div className="text-white/70 text-xs">Dinner</div>
+                              <div className="font-medium">
+                                Networking Party
+                              </div>
+                              <div className="text-white/70 text-xs">
+                                Dinner
+                              </div>
                             </td>
                           </tr>
                           <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">21:00</td>
+                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
+                              21:00
+                            </td>
                             <td className="py-2">
                               <div className="font-medium">Venue Closes</div>
                             </td>
@@ -696,58 +831,81 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
             <div>
-              <h4 className="text-xl font-bold text-white mb-6">Pre-Events <span className="text-white/70 text-base font-normal">(Completed)</span></h4>
-              
+              <h4 className="text-xl font-bold text-white mb-6">
+                Pre-Events{" "}
+                <span className="text-white/70 text-base font-normal">
+                  (Completed)
+                </span>
+              </h4>
+
               <p className="text-white mb-6">
-                Note: Participation in pre-events is not mandatory. Anyone can join the main hackathon regardless of whether they attended the pre-events.
+                Note: Participation in pre-events is not mandatory. Anyone can
+                join the main hackathon regardless of whether they attended the
+                pre-events.
               </p>
-              
+
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <a 
-                  href="https://visiondevcamp.connpass.com/event/344662/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://visiondevcamp.connpass.com/event/344662/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">Lecture <span className="text-sm font-normal">(Completed)</span></h5>
-                  <p className="text-sm">VisionDevCamp Lecture: How to Craft a Vision?</p>
+                  <h5 className="text-lg font-semibold mb-2">
+                    Lecture{" "}
+                    <span className="text-sm font-normal">(Completed)</span>
+                  </h5>
+                  <p className="text-sm">
+                    VisionDevCamp Lecture: How to Craft a Vision?
+                  </p>
                   <div className="text-xs mt-2">2025.03.04</div>
                 </a>
-                
-                <a 
-                  href="https://lu.ma/7zomrwt6" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://lu.ma/7zomrwt6"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">Ideathon <span className="text-sm font-normal">(Completed)</span></h5>
-                  <p className="text-sm">Creating the Next-Generation Lifestyle with Spatial Computing × AI</p>
+                  <h5 className="text-lg font-semibold mb-2">
+                    Ideathon{" "}
+                    <span className="text-sm font-normal">(Completed)</span>
+                  </h5>
+                  <p className="text-sm">
+                    Creating the Next-Generation Lifestyle with Spatial
+                    Computing × AI
+                  </p>
                   <div className="text-xs mt-2">2025.03.16</div>
                 </a>
-                
-                <a 
-                  href="https://melting-hack.connpass.com/event/347737/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+
+                <a
+                  href="https://melting-hack.connpass.com/event/347737/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block bg-gray-500/30 backdrop-blur-sm text-white/70 rounded-xl shadow-lg p-4 border-l-4 border-gray-400 hover:bg-gray-500/40 transition-colors"
                 >
-                  <h5 className="text-lg font-semibold mb-2">Setup Session <span className="text-sm font-normal">(Completed)</span></h5>
-                  <p className="text-sm">Vision Pro Development Environment Setup Event</p>
+                  <h5 className="text-lg font-semibold mb-2">
+                    Setup Session{" "}
+                    <span className="text-sm font-normal">(Completed)</span>
+                  </h5>
+                  <p className="text-sm">
+                    Vision Pro Development Environment Setup Event
+                  </p>
                   <div className="text-xs mt-2">2025.03.20</div>
                 </a>
               </div>
             </div>
           </div>
         </section>
-        <section 
-          id="judges" 
+        <section
+          id="judges"
           className="w-full flex flex-col gradient-secondary text-white px-8 py-20 relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 w-64 h-64 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               Judges
@@ -763,13 +921,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section 
-          id="speakers" 
+        <section
+          id="speakers"
           className="w-full flex flex-col gradient-accent text-white px-8 py-20 relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-vibrant rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative">
               Speakers
@@ -791,7 +949,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container relative z-10 mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="relative mb-12">
@@ -813,7 +971,7 @@ export default function Home() {
                   link="https://styly.inc/"
                 />
                 <SponsorCard
-                  logo="/BT_Logo.svg"
+                  logo="/beautiful-things-logo.png"
                   name="︎Beautiful Things"
                   link="https://www.beautifulthings.xyz/"
                 />
@@ -824,7 +982,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">Venue Partner</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                Venue Partner
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <SponsorCard
                   logo="/lodge-logo.svg"
@@ -833,7 +993,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">Filming Partner</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                Filming Partner
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <SponsorCard
                   logo="/crossdevice-logo.png"
@@ -842,7 +1004,9 @@ export default function Home() {
                 />
               </div>
 
-              <h4 className="text-xl font-bold mt-16 mb-8 text-white">Community Partners</h4>
+              <h4 className="text-xl font-bold mt-16 mb-8 text-white">
+                Community Partners
+              </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <SponsorCard
                   logo="/iwaken-lab-logo.png"
@@ -874,7 +1038,7 @@ export default function Home() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
+                  className="bg-vibrant hover:bg-white text-primary-dark font-bold py-3 px-8 rounded-full transform hover:scale-105 duration-300 shadow-glow-accent pulse-shadow"
                 >
                   Apply Here →
                 </a>
@@ -895,7 +1059,7 @@ export default function Home() {
             href="https://lu.ma/wsqwzm4s"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-black bg-white py-2 px-6 rounded-full hover:bg-orange-300 transition"
+            className="text-white font-bold bg-red-500 py-2 px-6 rounded-full hover:bg-orange-300 transition"
           >
             Purchase here →
           </a>
@@ -907,7 +1071,7 @@ export default function Home() {
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-secondary rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
-          
+
           <div className="container mx-auto max-w-4xl relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
               Contact
@@ -917,12 +1081,15 @@ export default function Home() {
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl shadow-lg">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-xl font-bold text-white mb-4">Contact Us</h4>
+                  <h4 className="text-xl font-bold text-white mb-4">
+                    Contact Us
+                  </h4>
                   <p className="text-white mb-6">
-                    For inquiries about VisionDevCamp Tokyo, please use the form below.
+                    For inquiries about VisionDevCamp Tokyo, please use the form
+                    below.
                   </p>
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=dialog" 
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf3lzhgMm-RZ_YexT_8lEzDx8W8N-B2aeZd_gdadvGdNhaNow/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
@@ -939,7 +1106,11 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
                       >
-                        <img src="/x-logo.png" alt="Twitter" className="w-7 h-7" />
+                        <img
+                          src="/x-logo.png"
+                          alt="Twitter"
+                          className="w-7 h-7"
+                        />
                       </a>
                       <a
                         href="https://discord.gg/t5X6KZruQQ"
@@ -947,31 +1118,36 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="bg-white/30 p-3 rounded-full hover:bg-accent transition-colors shadow-md"
                       >
-                        <img src="/discord-logo.svg" alt="Discord" className="w-7 h-7 filter brightness-0 invert" />
+                        <img
+                          src="/discord-logo.svg"
+                          alt="Discord"
+                          className="w-7 h-7 filter brightness-0 invert"
+                        />
                       </a>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-white mb-4">Sponsorship Inquiries</h4>
+                  <h4 className="text-xl font-bold text-white mb-4">
+                    Sponsorship Inquiries
+                  </h4>
                   <p className="text-white mb-6">
-                    If your company would like to support VisionDevCamp Tokyo as a sponsor, please apply using the form below.
+                    If your company would like to support VisionDevCamp Tokyo as
+                    a sponsor, please apply using the form below.
                   </p>
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog" 
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeCHHuGLjmH_vxy6apuSrb9fIgeTaIq75-QQeQ21Pf4Y3JVRQ/viewform?usp=dialog"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-vibrant hover:bg-white text-primary-dark font-bold py-2 px-6 rounded-full transition"
+                    className="bg-vibrant hover:bg-white text-primary-dark font-bold text-sm sm:text-base py-2 px-6 sm:py-3 sm:px-6 rounded-full shadow-lg transform transition hover:scale-105 whitespace-nowrap"
                   >
-                    Sponsorship Application Form →
+                    Sponsorship Application →
                   </a>
 
                   <div className="mt-8">
                     <h5 className="font-bold text-white mb-2">Organizer</h5>
-                    <p className="text-white">
-                      VisionDevCamp Tokyo
-                    </p>
+                    <p className="text-white">VisionDevCamp Tokyo</p>
                   </div>
                 </div>
               </div>
@@ -988,26 +1164,71 @@ export default function Home() {
                 <img
                   src="/visiondevcamp-logo-only.png"
                   alt="VisionDevCamp Logo"
-                  className="w-10 h-10 mr-3 object-contain"
+                  className="w-10 h-10 mr-3 object-fit rounded-full"
                 />
                 <div className="text-xl font-bold">
                   VisionDevCamp <span className="text-red-500">Tokyo</span> 2025
                 </div>
               </div>
-              
+
               <div className="flex flex-wrap justify-center gap-6">
-                <Link href="#top" className="hover:text-red-400 transition-colors">Top</Link>
-                <Link href="#overview" className="hover:text-red-400 transition-colors">Overview</Link>
-                <Link href="#uniqueness" className="hover:text-red-400 transition-colors">Uniqueness</Link>
-                <Link href="#venues" className="hover:text-red-400 transition-colors">Venues</Link>
-                <Link href="#schedule" className="hover:text-red-400 transition-colors">Schedule</Link>
-                <Link href="#judges" className="hover:text-red-400 transition-colors">Judges</Link>
-                <Link href="#speakers" className="hover:text-red-400 transition-colors">Speakers</Link>
-                <Link href="#sponsors" className="hover:text-red-400 transition-colors">Sponsors</Link>
-                <Link href="#contact" className="hover:text-red-400 transition-colors">Contact</Link>
+                <Link
+                  href="#top"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Top
+                </Link>
+                <Link
+                  href="#overview"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Overview
+                </Link>
+                <Link
+                  href="#uniqueness"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Uniqueness
+                </Link>
+                <Link
+                  href="#venues"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Venues
+                </Link>
+                <Link
+                  href="#schedule"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Schedule
+                </Link>
+                <Link
+                  href="#judges"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Judges
+                </Link>
+                <Link
+                  href="#speakers"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Speakers
+                </Link>
+                <Link
+                  href="#sponsors"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Sponsors
+                </Link>
+                <Link
+                  href="#contact"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Contact
+                </Link>
               </div>
             </div>
-            
+
             <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
               <p>Copyright ©︎ VisionDevCamp Tokyo 2025 All Rights Reserved.</p>
             </div>
@@ -1349,7 +1570,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
                   <p className="text-white/80 mb-4">{description}</p>
                 )}
                 <div className="h-px w-full bg-white/20 my-4"></div>
-                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">
+                  {bio}
+                </p>
 
                 {socialMedia.length > 0 && (
                   <div className="mt-6 flex space-x-3 justify-center">
@@ -1379,7 +1602,14 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   );
 }
 
-function SpeakerCard({ image, name, title, description, bio, socialMedia = [] }) {
+function SpeakerCard({
+  image,
+  name,
+  title,
+  description,
+  bio,
+  socialMedia = [],
+}) {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
@@ -1462,7 +1692,9 @@ function SpeakerCard({ image, name, title, description, bio, socialMedia = [] })
                   <p className="text-white/80 mb-4">{description}</p>
                 )}
                 <div className="h-px w-full bg-white/20 my-4"></div>
-                <p className="text-white/90 text-sm leading-relaxed max-w-xl">{bio}</p>
+                <p className="text-white/90 text-sm leading-relaxed max-w-xl">
+                  {bio}
+                </p>
 
                 {socialMedia.length > 0 && (
                   <div className="mt-6 flex space-x-3 justify-center">
@@ -1509,7 +1741,9 @@ function SponsorCard({ logo, name, link, tier }) {
           />
         </div>
         <div className="mt-4 text-center">
-          <p className="font-medium text-white transition-colors group-hover:text-accent">{name}</p>
+          <p className="font-medium text-white transition-colors group-hover:text-accent">
+            {name}
+          </p>
         </div>
       </a>
     </div>
