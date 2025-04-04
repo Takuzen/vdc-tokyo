@@ -106,8 +106,8 @@ const speakers = [
     image: "/raven-zachary.jpg",
     name: "Raven Zachary",
     title: "ARound",
-    description: "Chief Operating Officer (COO)",
-    bio: "Raven Zachary is the Chief Operating Officer (COO) at ARound, focused on augmented reality experiences for live events. He has been working professionally with spatial computing since 2015 and Apple technology since 2007. In addition to his work concerning Apple Vision Pro and visionOS with AWE for the Vision Workshop and as the co-founder of VisionDevCamp, he was the co-founder of the Portland Virtual Reality Meetup and the founder of the Portland HoloLens Meetup. Raven joins ARound through Stagwell's acquisition of Object Theory, a leader in creating custom augmented reality applications for businesses using wearables, smartphones, and tablets.",
+    description: "最高執行責任者(COO)",
+    bio: "Raven ZacharyはARoundの最高執行責任者(COO)であり、ライブイベント向けの拡張現実体験に注力しています。2015年から空間コンピューティングの分野で、また2007年からApple関連技術に携わってきました。Apple Vision ProやvisionOSに関するAWEでのVision Workshopでの活動、そしてVisionDevCampの共同設立者としての取り組みに加え、彼はPortland Virtual Reality Meetupの共同設立者およびPortland HoloLens Meetupの創設者でもあります。Ravenは、ウェアラブル端末、スマートフォン、タブレットを用いて企業向けのカスタム拡張現実アプリケーションを制作するリーダーであるObject TheoryがStagwellに買収されたことで、ARoundに参加しました。",
     socialMedia: [
       {
         platform: "LinkedIn",
@@ -117,11 +117,39 @@ const speakers = [
     ],
   },
   {
+    image: "/degly.png",
+    name: "Degly Sebastian Pava Pava",
+    title: "Senior XR Engineer | Creator",
+    description: "",
+    bio: "Degly Sebastian Pava Pavaは、誰もが楽しめるARおよびVR体験の実現に向けて世界と協働しています。VisionProなどのプラットフォームを通じたXR体験の提供や、UnityおよびAR/VR技術を駆使してビジョンを没入型の現実に変換する取り組みを行っています。工学、コンピュータサイエンス、ライティング＆XRの三つの修士号と、光学、画像、コンピュータビジョン、マルチメディアの修士号(MSc)を取得しており、常に限界に挑戦し、顧客とのエンゲージメント向上と革新的な体験の提供に取り組んでいます。Unity、C#、C++に精通し、シェーダー、アニメーション、UI/UXデザインの専門知識を有し、英語、フランス語、日本語、スペイン語の多言語に対応しています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/deglypava/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/minji-lee.jpeg",
+    name: "Minji Lee",
+    title: "Apple Developer Academy @ POSTECH",
+    description: "テクニカルメンター",
+    bio: "Minji Leeは以前、AR企業でiOS開発者として勤務していました。現在はvisionOSの多様な側面を探求しており、韓国や海外の複数の会議でこのテーマについて講演を行っています。また、Udemyで教育コンテンツを公開し、Appleの空間コンピューティングに興味を持つ開発者やデザイナー向けのコミュニティを韓国で運営しています。これらの継続的な取り組みを通じ、得た知識や洞察をより広いコミュニティと共有することに努めています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/minjimindi/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
     image: "/oliver-photo.png",
     name: "Oliver Weidlich",
     title: "Contxtual",
-    description: "Director of Design & Innovation",
-    bio: "With over 25 years in UX, Oliver has been exploring the research and design of Augmented Reality and Spatial Computing for the last 8 years. His company, Contxtual, has created a range of prototypes with Augmented Reality headsets to experiment with how people will use Spatial Computing. Their app, Day Ahead, is a glanceable information visualisation of your calendar information and was in the App Store for the launch day of the Apple Vision Pro launch in February last year. He is an Industry Mentor for the Apple Foundation Program at the University of Technology Sydney, including teaching students about how to design for visionOS on the Apple Vision Pro.",
+    description: "デザイン＆イノベーション ディレクター",
+    bio: "OliverはUX分野で25年以上の経験を持ち、過去8年間にわたって拡張現実および空間コンピューティングの研究とデザインに取り組んできました。彼の会社Contxtualは、拡張現実ヘッドセットを用いたさまざまなプロトタイプを開発し、人々がどのように空間コンピューティングを活用するかを実験しています。同社のアプリ「Day Ahead」は、カレンダー情報を一目で確認できる情報視覚化ツールであり、昨年2月のApple Vision Pro発表日にApp Storeで公開されました。また、シドニー工科大学のApple Foundation Programの業界メンターとして、Apple Vision Pro上でのvisionOSデザインについて学生に教えています。",
     socialMedia: [
       {
         platform: "LinkedIn",
@@ -131,15 +159,29 @@ const speakers = [
     ],
   },
   {
-    image: "/degly.png",
-    name: "Degly Sebastian Pava Pava",
-    title: "Senior XR Engineer | Creator",
+    image: "/mikaela-caron.jpg",
+    name: "Mikaela Caron",
+    title: "iOSエンジニア",
     description: "",
-    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    bio: "Mikaela Caronは独立したiOSエンジニアで、ソーシャルメディアを通じてiOS開発、公開アプリの構築、フリーランスに関する知識を積極的に発信しています。彼女は、人々が会議で他者と繋がる手助けをする個人開発アプリ「Fruitful」の開発を続けながら、可能な限り多くの旅行も楽しんでいます。また、iOSDevHappyHourのオーガナイザーとしてコミュニティへの貢献にも力を入れています。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://mikaelacaron.com/links/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/warren-stringer.jpg",
+    name: "Warren Stringer",
+    title: "DeepMuse",
+    description: "創業者",
+    bio: "昔、ダグラス・エンゲルバートにお会いしたことがあります。彼のチームは、マウスや画面上のテキストを発明しました。今日では、コードを駆使しながら、マウスがどのように手のジェスチャーへと進化していったのか、そして画面が私たちの目の延長として機能するようになったのかを探求しています。",
     socialMedia: [
       {
         platform: "LinkedIn",
-        url: "https://www.linkedin.com/in/deglypava/",
+        url: "https://www.linkedin.com/in/warrenstringer/",
         icon: "/linkedin-logo.png",
       },
     ],
@@ -468,7 +510,7 @@ export default function Home() {
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
                       <a
-                        href="https://devcamp.social/ja/"
+                        href="https://github.com/visiondevcamptokyo/devcamp"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
@@ -956,6 +998,11 @@ export default function Home() {
                   logo="/crossdevice-logo.png"
                   name="︎株式会社クロスデバイス"
                   link="https://www.crossdevice.co.jp/"
+                />
+                <SponsorCard
+                  logo="/techworld-logo.jpg"
+                  name="︎TECH WORLD"
+                  link="https://www.youtube.com/@TECHWORLD111"
                 />
               </div>
 
@@ -1446,12 +1493,19 @@ function ScheduleItem({
 function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1483,8 +1537,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
@@ -1568,12 +1623,19 @@ function SpeakerCard({
 }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1605,8 +1667,9 @@ function SpeakerCard({
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div

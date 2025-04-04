@@ -117,6 +117,34 @@ const speakers = [
     ],
   },
   {
+    image: "/degly.png",
+    name: "Degly Sebastian Pava Pava",
+    title: "Senior XR Engineer | Creator",
+    description: "",
+    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/deglypava/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/minji-lee.jpeg",
+    name: "Minji Lee",
+    title: "Apple Developer Academy @ POSTECH",
+    description: "Tech Mentor",
+    bio: "Previously worked at an AR company as an iOS developer. Currently exploring various aspects of visionOS and has given talks on the topic at multiple conferences in Korea and abroad. Also published educational content on Udemy and runs a community in Korea for developers and designers interested in Apple's Spatial Computing. Through these ongoing explorations, is committed to sharing the knowledge and insights gained from experience with the broader community.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/minjimindi/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
     image: "/oliver-photo.png",
     name: "Oliver Weidlich",
     title: "Contxtual",
@@ -131,15 +159,29 @@ const speakers = [
     ],
   },
   {
-    image: "/degly.png",
-    name: "Degly Sebastian Pava Pava",
-    title: "Senior XR Engineer | Creator",
+    image: "/mikaela-caron.jpg",
+    name: "Mikaela Caron",
+    title: "Independent iOS Engineer",
     description: "",
-    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    bio: "Mikaela Caron is an independent iOS Engineer who actively shares her expertise on social media, focusing on iOS development, building apps in public, and freelancing. She's continuing to work on her indie app Fruitful, which helps people connect with others at conferences, while also traveling as much as she can. She's also an organizer for iOSDevHappyHour and loves giving back to the community.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://mikaelacaron.com/links/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/warren-stringer.jpg",
+    name: "Warren Stringer",
+    title: "DeepMuse",
+    description: "Founder",
+    bio: "A long time ago, I met up with Doug Engelbart — his team invented the mouse and text on screen. Today, I'm exploring (with code) how the mouse has evolved into hand pose. And of how screens have become an extension of our eyes.",
     socialMedia: [
       {
         platform: "LinkedIn",
-        url: "https://www.linkedin.com/in/deglypava/",
+        url: "https://www.linkedin.com/in/warrenstringer/",
         icon: "/linkedin-logo.png",
       },
     ],
@@ -489,7 +531,7 @@ export default function Home() {
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
                       <a
-                        href="https://devcamp.social/"
+                        href="https://github.com/visiondevcamptokyo/devcamp"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
@@ -1002,6 +1044,11 @@ export default function Home() {
                   name="︎Crossdevice Inc."
                   link="https://www.crossdevice.co.jp/"
                 />
+                <SponsorCard
+                  logo="/techworld-logo.jpg"
+                  name="︎TECH WORLD"
+                  link="https://www.youtube.com/@TECHWORLD111"
+                />
               </div>
 
               <h4 className="text-xl font-bold mt-16 mb-8 text-white">
@@ -1490,12 +1537,19 @@ function ScheduleItem({
 function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1527,8 +1581,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
@@ -1612,12 +1667,19 @@ function SpeakerCard({
 }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1649,8 +1711,9 @@ function SpeakerCard({
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
