@@ -177,7 +177,7 @@ const speakers = [
     name: "Warren Stringer",
     title: "DeepMuse",
     description: "Founder",
-    bio: "Previously pioneered the foundations of content distribution. Now exploring new ways to engage with immersive content.",
+    bio: "A long time ago, I met up with Doug Engelbart — his team invented the mouse and text on screen. Today, I'm exploring (with code) how the mouse has evolved into hand pose. And of how screens have become an extension of our eyes.",
     socialMedia: [
       {
         platform: "LinkedIn",
