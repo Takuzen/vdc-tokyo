@@ -510,7 +510,7 @@ export default function Home() {
                     <div className="flex justify-between items-center mt-4">
                       <span className="text-sm text-gray-400"></span>
                       <a
-                        href="https://devcamp.social/ja/"
+                        href="https://github.com/visiondevcamptokyo/devcamp"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-white hover:text-red-300 font-bold"
@@ -998,6 +998,11 @@ export default function Home() {
                   logo="/crossdevice-logo.png"
                   name="︎株式会社クロスデバイス"
                   link="https://www.crossdevice.co.jp/"
+                />
+                <SponsorCard
+                  logo="/techworld-logo.jpg"
+                  name="︎TECH WORLD"
+                  link="https://www.youtube.com/@TECHWORLD111"
                 />
               </div>
 
