@@ -117,6 +117,34 @@ const speakers = [
     ],
   },
   {
+    image: "/degly.png",
+    name: "Degly Sebastian Pava Pava",
+    title: "Senior XR Engineer | Creator",
+    description: "",
+    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/deglypava/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/minji-lee.jpeg",
+    name: "Minji Lee",
+    title: "Apple Developer Academy @ POSTECH",
+    description: "Tech Mentor",
+    bio: "Previously worked at an AR company as an iOS developer. Currently exploring various aspects of visionOS and has given talks on the topic at multiple conferences in Korea and abroad. Also published educational content on Udemy and runs a community in Korea for developers and designers interested in Apple's Spatial Computing. Through these ongoing explorations, is committed to sharing the knowledge and insights gained from experience with the broader community.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/minjimindi/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
     image: "/oliver-photo.png",
     name: "Oliver Weidlich",
     title: "Contxtual",
@@ -131,15 +159,29 @@ const speakers = [
     ],
   },
   {
-    image: "/degly.png",
-    name: "Degly Sebastian Pava Pava",
-    title: "Senior XR Engineer | Creator",
+    image: "/mikaela-caron.jpg",
+    name: "Mikaela Caron",
+    title: "Independent iOS Engineer",
     description: "",
-    bio: "Working with the world to make AR and VR experiences for everyone. Bringing XR experiences through VisionPro and other platforms. Transforming visions into immersive realities using Unity and AR/VR technologies. Triple Master's degrees in Engineering, Computer Science, Lighting & XR, and a MSc in Optics, Image, Computer Vision, and Multimedia. Committed to pushing boundaries, enhancing customer engagement, and delivering innovative experiences. Proficient in Unity, C#, and C++, with expertise in shaders, animations, and UI/UX design. Multilingual: English, French, Japanese, and Spanish.",
+    bio: "Mikaela Caron is an independent iOS Engineer who actively shares her expertise on social media, focusing on iOS development, building apps in public, and freelancing. She's continuing to work on her indie app Fruitful, which helps people connect with others at conferences, while also traveling as much as she can. She's also an organizer for iOSDevHappyHour and loves giving back to the community.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://mikaelacaron.com/links/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/warren-stringer.jpg",
+    name: "Warren Stringer",
+    title: "DeepMuse",
+    description: "Founder",
+    bio: "Previously pioneered the foundations of content distribution. Now exploring new ways to engage with immersive content.",
     socialMedia: [
       {
         platform: "LinkedIn",
-        url: "https://www.linkedin.com/in/deglypava/",
+        url: "https://www.linkedin.com/in/warrenstringer/",
         icon: "/linkedin-logo.png",
       },
     ],
