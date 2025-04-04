@@ -114,7 +114,7 @@ const History = () => {
                                 開発者コミュニティにおけるインクルージョン、多様性、エンパワーメントを促進しており、毎年、何百人もの開発者、デザイナー、愛好家が集まり、iPhone、iPad、iOS向けのアプリを作成してきました。
                             </p>
                             <ul className="list-disc pl-6 mb-8 space-y-2">
-                                <li>Oauthのような著名なオープンソースプロジェクトから、Block（旧Square）のような上場企業に至るまで、多くのものを生み出してきました。</li>
+                                <li>Oauthのような著名なオープンソースプロジェクトから、Block(旧Square)のような上場企業に至るまで、多くのものを生み出してきました。</li>
                                 <li>Getaround、Obama &apos;08アプリ、AppleのTestFlightなどもすべてここから生まれました。</li>
                             </ul>
                             
