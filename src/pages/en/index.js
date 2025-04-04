@@ -1537,12 +1537,19 @@ function ScheduleItem({
 function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1574,8 +1581,9 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
@@ -1659,12 +1667,19 @@ function SpeakerCard({
 }) {
   const [modalOpen, setModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
+  const openModal = () => {
+    setModalOpen(true);
+    // Prevent scrolling when modal is open
+    document.body.style.overflow = "hidden";
+  };
+  
   const closeModal = (e) => {
     if (e) {
       e.stopPropagation();
     }
     setModalOpen(false);
+    // Re-enable scrolling when modal is closed
+    document.body.style.overflow = "auto";
   };
 
   return (
@@ -1696,8 +1711,9 @@ function SpeakerCard({
 
       {modalOpen && (
         <div
-          className="fixed inset-0 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
           onClick={closeModal}
+          style={{ isolation: "isolate" }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
           <div
