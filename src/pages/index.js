@@ -94,7 +94,7 @@ const judges = [
     socialMedia: [
       {
         platform: "Website",
-        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        url: "https://amc.geidai.ac.jp/",
         icon: "/globe-outline.svg",
       },
     ],
@@ -1071,6 +1071,383 @@ export default function Home() {
         </section>
 
         <section
+          id="faq"
+          className="w-full gradient-secondary text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+          <div className="container mx-auto max-w-5xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              よくあるお問い合わせ
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="space-y-6">
+              {/* FAQ Item 1 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">開発経験がないのですが、ハッカソンは初心者でも参加できますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>もちろん参加いただけます。ハッカソンには必ずしも開発経験が豊富なエンジニアだけが参加するわけではありません。例えば、3Dモデラーやデザイナー、PM、映像関係の方など、コードを書いたことがない方でもご参加いただけますし、最低限コンピュータを扱うのに抵抗がない方であればどなたでも歓迎しています。</p>
+                    <p className="mt-3">開発未経験でもApple Vision ProやvisionOSに興味があれば参加可能ですが、1人またはチームで力を合わせてアプリケーションを完成させようとする自発的な姿勢が求められます。会場では経験豊富なボランティアスタッフやメンターが開発をサポートしてくれるため、安心して取り組める環境が用意されています。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 2 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">MacBookなどのMacを持っておらず、Windows PCしかありません。それでもvisionOS向けの開発は技術的に可能ですか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>残念ながら、基本的にWindows PCのみの環境ではvisionOS向けの開発は行えません。Appleの公式ドキュメントにもあるように、visionOSの開発にはAppleシリコン搭載のMacと、macOS上で動作するXcodeが必須です。Macをお持ちでない場合は、チーム内でMac環境を共有するなどの対応が必要となります。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 3 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Unityを使用して開発する場合、個人でUnity Proのライセンスを持っている必要がありますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Vision Proアプリ開発におけるUnityのvisionOSサポート(PolySpatial)は、Unity Pro／Enterprise／Industryプランの利用者向けに提供されています。そのため、無料のUnity Personalでは公式にサポートされていません。もしまだライセンスをお持ちでなければ、<a href="https://unity.com/ja/products/unity-pro" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">30日間の体験版でUnity Pro</a>をご利用いただくか、Apple純正のSDK（SwiftUIやRealityKitなど）を利用する方法もご検討ください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 4 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">個人(1人)で申し込んだ場合、ハッカソン当日はずっと一人で開発することになるのでしょうか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>個人参加でも、イベント初日の自己紹介やアイデア共有のセッションを通じて、他の参加者とチームを組むことが可能です。VisionDevCampではイベント初日に参加者同士の自己紹介やアイデアを共有する時間が設けられており、そこでチームビルディングが行われます。参加者が無事にチームを組み、ベストな状態で臨めるようにスタッフが全力でサポートします！</p>
+                    <p className="mt-3">もちろん個人で開発することも可能ですが、基本的にはチームを編成して開発することを推奨しています(その方がアプリを開発しやすいし、何より楽しいです！)。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 5 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">1日目の4月11日(金)だけ予定があり、どうしても参加できません。土日のみの参加でも問題ないでしょうか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>はい、土日のみでも参加いただくことは可能です。ただしチーム編成は1日目の夜〜2日目のアイデア共有時に行われることが多いので、事前にDiscordなどでアイデアや興味のある領域を表明し、参加者同士でチームを組めるように準備しておくとスムーズです。1日目に参加できない旨を事前アンケートなどで連絡していただければ、運営ができる限りサポートします。詳細はメールまたはDiscordをご確認ください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 6 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">チームはどのように決まりますか？Discordにてチーム募集はありますがどのようにしてチームを作るのかが分かりません。</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>1日目の夜に自己紹介とアイデアの共有があり、その後の時間で参加者同士が自由に声を掛け合いながらチームを作ります。主催者やスタッフもサポートに入りますので、1人で参加された方でも安心してチームを組むことができます。また、あえて個人で開発を進める選択も可能です。必ずしも当日にチームを編成しなければいけないわけではなく、予めチームで参加したり事前に<a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord</a>等でチームを組むことも可能です。</p>
+                    <p className="mt-3">事前にチーム形成を始めたい場合は、まず<a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord</a>で自己紹介をして、アイデアを共有するのが第一歩です。自分が作ってみたいものを表明したり、メンバーを募集したりするのに「#team-formation・チーム編成」チャンネルを活用してください。他の参加者のアイデアや技術スタックを確認して、興味のあるプロジェクトに参加することもできます。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 7 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">ハッカソン未経験で不安ですが、Apple Vision ProやXRに興味があり「勢いで参加」しても大丈夫でしょうか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>大歓迎です！VisionDevCamp Tokyo 2025は初心者・未経験者も積極的に受け入れています。メンターや経験豊富なスタッフが常駐しており、疑問点や技術的な課題を相談できる環境があります。チームビルディングやアイデアソンを通じて参加者同士が協力し合い、楽しみながら学んでいくことが目的の一つになっています。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 8 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">外部モニタの貸し出しはありますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>ございません。必要な方はご自身でお持ち込みください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 9 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">決済先の会社とVisionDevCamp Tokyoの関係性は何でしょうか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>決済先である株式会社IoTone Japanは、本イベントの共同運営者の一人が所有する法人で、<strong>決済処理の管理</strong>を行う主体として利用されています。そのため、支払い等の事務手続きはIoTone Japan経由で行われます。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 10 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">チケットの譲渡はできますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>lumaの規則に従ってください。運営として個別対応は致しかねますので、譲渡を希望される場合はlumaの規定に沿ってお手続きください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 11 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">当日の持ち物は何が必要ですか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <ul className="list-disc pl-5 space-y-1">
+                      <li>Mac(Appleシリコン搭載)</li>
+                      <li>もしお持ちであればVision Pro本体や関連アクセサリー</li>
+                      <li>各自必要なもの（延長コードや充電器など）</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 12 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">カンファレンスはどの言語で開催されますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p><strong>基本的には日本語</strong>で行われますが、英語話者の参加者も多いため、登壇時は英語の字幕がつく予定です。また、英語を話せるスタッフも常時いますので、英語での質問や相談も可能です。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 13 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">会場は飲食可能ですか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>はい、飲食可です。チケットに7食分が含まれており、軽食やドリンクなども自由に持ち込んでいただいて構いません。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 14 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">チケットのキャンセルポリシーについて教えてください</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>イベント開催の2週間前を過ぎてからのキャンセルはご遠慮いただいています。詳しくはチケット販売ページの規約やlu.maの利用規約をお確かめください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 15 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">領収書・請求書は発行できますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>個別の発行には対応しておりませんが、<a href="https://lu.ma/settings/payment" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Lumaの決済履歴画面</a>からご自身で領収書を作成することが可能です。宛名を変更したい場合は、<a href="https://lu.ma/settings" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Lumaの設定</a>でアカウント名を一時的に変更し、再度領収書を作成してください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 16 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">当日までにやることはありますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>VisionDevCamp Tokyoの<a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discordサーバー</a>に参加する</li>
+                      <li>事前に自己紹介スライドを作成する</li>
+                      <li>チーム参加を希望する方は、<a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discordサーバー</a>の[#self-introduction・自己紹介]や[#team-formation・チーム編成]チャンネルなどでアイデアの共有や情報収集を行う</li>
+                      <li>Unityを使う方はUnity Proの体験版準備や必要なSDKのインストール</li>
+                      <li>Mac環境のセットアップ(Xcodeや必要なライブラリのダウンロードなど)</li>
+                      <li><strong>以下の公式ドキュメントを一読しておくと開発がスムーズになります：</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                          <li><a href="https://developer.apple.com/jp/visionos/pathway/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">visionOS Pathway</a> - visionOSアプリを作り始めるための参考ドキュメント等をまとめたページ</li>
+                          <li><a href="https://developer.apple.com/documentation/visionos/introductory-visionos-samples" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Introductory visionOS samples</a> - 基本的な要素ごとのサンプルコード</li>
+                          <li><a href="https://developer.apple.com/learn/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Swift開発のチュートリアル</a> - SwiftUI等アップルのプラットフォームに慣れてない方が基本を学ぶチュートリアル</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 17 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">電源タップは必要ですか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>会場にも用意はありますが、数に限りがある場合もございます。複数のデバイスを同時に充電する場合は、各自電源タップをご持参いただくとより快適です。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 18 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">開発環境構築を含むプレイベントに欠席してしまったのですが、参加できますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>問題ありません。当日はメンターが会場にいますので、わからないところでつまずいたらその場で質問できます。ただし、時間短縮のためにも、できる範囲で事前にXcodeやUnityのセットアップを済ませておくと良いでしょう。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 19 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">本イベントでは宿泊のサポートはありますか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>申し訳ございませんが、宿泊施設の手配は各自でお願いしております。必要に応じてホテルなどをご予約ください。</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 20 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">チームは絶対に作らなければいけないのでしょうか？チームビルディングへの参加は必須ですか？</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p><strong>必須ではありません。個人での参加も可能</strong>です。しかしながら、チーム開発は多角的な視点やアイデアが得られるほか、技術や作業量を分担できるため、結果としてより完成度の高いプロダクトを目指しやすい傾向があります。何より、仲間と協力して開発に没頭できる楽しさや学びはチームならではの醍醐味なので、できる限りチーム参加を検討してみることをおすすめします。</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
           id="contact"
           className="w-full gradient-primary text-white px-8 py-20 relative overflow-hidden"
         >
@@ -1228,6 +1605,12 @@ export default function Home() {
                   スポンサー
                 </Link>
                 <Link
+                  href="#faq"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  よくある質問
+                </Link>
+                <Link
                   href="#contact"
                   className="hover:text-red-400 transition-colors"
                 >
@@ -1359,6 +1742,11 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
+              <Link href="#faq" className="hover:underline font-bold">
+                よくある質問
+              </Link>
+            </li>
+            <li className="mb-2">
               <Link href="#contact" className="hover:underline font-bold">
                 お問い合わせ
               </Link>
@@ -1411,6 +1799,11 @@ function Header() {
           <li>
             <Link href="/press" className="hover:underline font-bold">
               プレス
+            </Link>
+          </li>
+          <li>
+            <Link href="#faq" className="hover:underline font-bold">
+              よくある質問
             </Link>
           </li>
           <li>

@@ -94,7 +94,7 @@ const judges = [
     socialMedia: [
       {
         platform: "Website",
-        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        url: "https://amc.geidai.ac.jp/",
         icon: "/globe-outline.svg",
       },
     ],
@@ -1118,6 +1118,386 @@ export default function Home() {
         </section>
 
         <section
+          id="faq"
+          className="w-full gradient-secondary text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+          <div className="container mx-auto max-w-5xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              Frequently Asked Questions
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="space-y-6">
+              {/* FAQ Item 1 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">I have no development experience. Can beginners participate in the hackathon?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Yes, you can definitely participate. Hackathons aren&apos;t just for experienced engineers. For example, 3D modelers, designers, project managers, and professionals from media-related fields can participate even without coding experience. We welcome anyone who is comfortable working with computers.</p>
+                    <p className="mt-3">Even if you have no development experience, you can participate if you&apos;re interested in Apple Vision Pro or visionOS. You&apos;ll need a proactive attitude to complete an application either individually or as part of a team. Experienced volunteer staff and mentors will be available at the venue to support your development, providing a comfortable environment to work in.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 2 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">I don&apos;t have a Mac, only a Windows PC. Is it still technically possible to develop for visionOS?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Unfortunately, visionOS development cannot be done solely with a Windows PC. As stated in Apple&apos;s official documentation, visionOS development requires a Mac with Apple Silicon and Xcode running on macOS. If you don&apos;t have a Mac, you&apos;ll need to share resources with a team member who does have a Mac environment.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 3 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Do I need a personal Unity Pro license to develop using Unity?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Unity&apos;s visionOS support (PolySpatial) for Vision Pro app development is available for Unity Pro/Enterprise/Industry plan subscribers. It is not officially supported on the free Unity Personal edition. If you don&apos;t have a license yet, you can use the <a href="https://unity.com/ja/products/unity-pro" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">30-day trial of Unity Pro</a> or consider using Apple&apos;s native SDKs (SwiftUI, RealityKit, etc.).</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 4 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">If I register as an individual, will I be developing alone throughout the hackathon?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Even if you register individually, you can form a team with other participants through the self-introduction and idea sharing sessions on the first day. VisionDevCamp has dedicated time for participant introductions and idea sharing on the first day, which is when team building takes place. Our staff will do their best to ensure that participants successfully form teams and can perform at their best!</p>
+                    <p className="mt-3">While it&apos;s possible to develop individually, we generally recommend forming a team (it&apos;s easier to develop an app that way, and more fun!).</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 5 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">I can&apos;t attend the first day (April 11, Friday) due to prior commitments. Is it okay to participate only on Saturday and Sunday?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Yes, you can still participate on just Saturday and Sunday. However, since team formation usually happens on the first night through the second day&apos;s idea sharing session, it&apos;s advisable to express your ideas and areas of interest in advance on Discord to facilitate team formation with other participants. If you let us know about your absence on the first day through the pre-event survey, the organizing team will provide as much support as possible. Please check your email or Discord for more details.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 6 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">How are teams formed? I see team recruitment in Discord but I&apos;m not sure how to create a team.</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>On the first evening, there will be self-introductions and idea sharing, after which participants will freely interact and form teams. The organizers and staff will provide support, so even if you attend alone, you can confidently join a team. You can also choose to develop individually if you prefer. It&apos;s not mandatory to form teams on the day of the event - you can participate with a pre-existing team or form one in advance through <a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord</a>.</p>
+                    <p className="mt-3">If you want to start team formation before the event, the first step is to introduce yourself and share your ideas on <a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord</a>. Use the &quot;#team-formation&quot; channel to express what you&apos;d like to create or to recruit members for your team. You can also check other participants&apos; ideas and tech stacks, and reach out to join projects that interest you.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 7 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">I&apos;ve never been to a hackathon before and I&apos;m nervous, but I&apos;m interested in Apple Vision Pro and XR. Is it okay to just jump in?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Absolutely! VisionDevCamp Tokyo 2025 actively welcomes beginners and those with no prior experience. Mentors and experienced staff will be on site to help with any questions or technical challenges. Team building and ideation sessions are designed to help participants collaborate and learn from each other while having fun.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 8 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Will external monitors be available for participants?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>No, we don&apos;t provide monitors. Please bring your own if needed.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 9 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">What is the relationship between the payment processor company and VisionDevCamp Tokyo?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>IoTone Japan, the company handling payments, is a corporation owned by one of the co-organizers of this event and serves as the entity managing <strong>payment processing</strong>. Therefore, administrative procedures for payments are conducted through IoTone Japan.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 10 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Can tickets be transferred to someone else?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Please follow Luma&apos;s regulations. The organizers cannot provide individual support, so if you wish to transfer your ticket, please follow Luma&apos;s procedures.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 11 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">What should I bring on the day of the event?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Your laptop (Mac with Apple Silicon is required for visionOS development)</li>
+                      <li>Charger and any necessary adapters</li>
+                      <li>Headphones/earbuds (if you want to work with audio without disturbing others)</li>
+                      <li>Water bottle</li>
+                      <li>Comfortable clothes (the venue will be air-conditioned, so layers are recommended)</li>
+                      <li>Any special equipment you need for your project (e.g., additional monitors, peripherals)</li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 12 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">What language will the conference be conducted in?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>The conference will <strong>primarily be conducted in Japanese</strong>, but since there will be many English-speaking participants, presentations will have English subtitles. English-speaking staff will also be available at all times to answer questions and provide assistance in English.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 13 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Will food be provided at the event?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Yes, meals will be provided at the venue according to the schedule. If you have any dietary restrictions or allergies, please inform us in advance through the pre-event questionnaire.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 14 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Can I cancel my registration? Is there a refund policy?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Please follow Luma&apos;s cancellation and refund policy. The organizers cannot provide individual support for refunds, so please check Luma&apos;s terms and conditions regarding cancellations.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 15 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Can I get a receipt or invoice?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>We don&apos;t provide individual receipts, but you can create your own receipt from <a href="https://lu.ma/settings/payment" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Luma&apos;s payment history screen</a>. If you need to change the name on the receipt, you can temporarily change your account name in <a href="https://lu.ma/settings" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Luma&apos;s settings</a> and create the receipt again.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 16 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">What should I do before the event?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>Join the VisionDevCamp Tokyo <a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord server</a></li>
+                      <li>Prepare a self-introduction slide in advance</li>
+                      <li>If you&apos;re looking for a team, share ideas and gather information in the <a href="https://discord.gg/t5X6KZruQQ" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Discord server</a>&apos;s [#self-introduction] and [#team-formation] channels</li>
+                      <li>If you&apos;re using Unity, prepare the Unity Pro trial version and install necessary SDKs</li>
+                      <li>Set up your Mac environment (download Xcode and necessary libraries)</li>
+                      <li><strong>Reading the following official documentation will help make development smoother:</strong>
+                        <ul className="list-disc pl-5 mt-2 space-y-1">
+                          <li><a href="https://developer.apple.com/jp/visionos/pathway/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">visionOS Pathway</a> - A collection of reference documents for getting started with visionOS app development</li>
+                          <li><a href="https://developer.apple.com/documentation/visionos/introductory-visionos-samples" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Introductory visionOS samples</a> - Sample code for basic elements</li>
+                          <li><a href="https://developer.apple.com/learn/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Swift development tutorials</a> - Basic tutorials for those unfamiliar with Apple platforms like SwiftUI (English only)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 17 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Do I need to bring a power strip?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>The venue will have power strips available, but the quantity may be limited. If you need to charge multiple devices simultaneously, bringing your own power strip would be more comfortable.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 18 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">I missed the pre-event that included development environment setup. Can I still participate?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>Yes, absolutely. Mentors will be available at the venue to answer questions if you encounter any issues. However, to save time, it&apos;s best to set up Xcode and Unity in advance if possible.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 19 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Is there accommodation support for this event?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p>We apologize, but accommodation arrangements are the responsibility of each participant. Please book hotels or other lodging as needed.</p>
+                  </div>
+                </details>
+              </div>
+
+              {/* FAQ Item 20 */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden shadow-lg border border-white/10 hover:border-accent/50 transition-colors duration-300">
+                <details className="group">
+                  <summary className="flex justify-between items-center font-semibold p-5 cursor-pointer">
+                    <span className="text-lg">Do I have to form or join a team? Is participating in team building mandatory?</span>
+                    <span className="transition group-open:rotate-180">
+                      <svg fill="none" height="24" width="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24">
+                        <path d="M6 9l6 6 6-6"></path>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div className="px-5 pb-5 text-white/90">
+                    <p><strong>It&apos;s not mandatory. Individual participation is possible.</strong> However, team development tends to yield more comprehensive products as it brings diverse perspectives and ideas, and allows for sharing technical responsibilities and workload. Most importantly, the joy and learning experience of collaborating with teammates to immerse yourself in development is a unique pleasure of team participation, so we recommend considering a team if possible.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
           id="contact"
           className="w-full gradient-primary text-white px-8 py-20 relative overflow-hidden"
         >
@@ -1273,6 +1653,12 @@ export default function Home() {
                   Sponsors
                 </Link>
                 <Link
+                  href="#faq"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  FAQ
+                </Link>
+                <Link
                   href="#contact"
                   className="hover:text-red-400 transition-colors"
                 >
@@ -1401,6 +1787,11 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
+              <Link href="#faq" className="hover:underline font-bold">
+                FAQ
+              </Link>
+            </li>
+            <li className="mb-2">
               <Link href="/en/press" className="hover:underline font-bold">
                 Press
               </Link>
@@ -1453,6 +1844,11 @@ function Header() {
           <li>
             <Link href="#sponsors" className="hover:underline font-bold">
               Sponsors
+            </Link>
+          </li>
+          <li>
+            <Link href="#faq" className="hover:underline font-bold">
+              FAQ
             </Link>
           </li>
           <li>
