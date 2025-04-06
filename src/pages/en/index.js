@@ -94,7 +94,7 @@ const judges = [
     socialMedia: [
       {
         platform: "Website",
-        url: "https://mvp.microsoft.com/ja-JP/mvp/profile/079f69c6-5c01-eb11-a815-000d3a8ccaf5",
+        url: "https://amc.geidai.ac.jp/",
         icon: "/globe-outline.svg",
       },
     ],
