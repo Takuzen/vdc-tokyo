@@ -1016,6 +1016,16 @@ export default function Home() {
                   link="https://x.com/iwakenlab"
                 />
                 <SponsorCard
+                  logo="/xr-tokyo-logo.png"
+                  name="︎XR Tokyo"
+                  link="https://www.xrtokyo.com/"
+                />
+                <SponsorCard
+                  logo="/spatial-developers-korea-logo.png"
+                  name="Spatial Developers Korea"
+                  link="https://x.com/spatialdevs"
+                />
+                <SponsorCard
                   logo="/kwdc25-logo.png"
                   name="︎KWDC"
                   link="https://kwdc.dev/"
@@ -1024,11 +1034,6 @@ export default function Home() {
                   logo="/awe-asia-logo.png"
                   name="︎AWE Asia"
                   link="https://www.aweasia.com/"
-                />
-                <SponsorCard
-                  logo="/xr-tokyo-logo.png"
-                  name="︎XR Tokyo"
-                  link="https://www.xrtokyo.com/"
                 />
               </div>
 
