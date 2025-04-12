@@ -731,7 +731,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">開場</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:30</span>
@@ -744,7 +744,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">オープニング</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00-19:15</span>
@@ -757,7 +757,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">ショートキーノート</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:15-19:45</span>
@@ -770,7 +770,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">自己紹介</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:45-20:30</span>
@@ -783,7 +783,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">チーム編成(食事付き交流会)</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">20:30-21:45</span>
@@ -796,7 +796,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">閉場</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
@@ -825,7 +825,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">朝食</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:00~</span>
@@ -838,7 +838,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">アイデアの共有&フィードバック</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">09:30~</span>
@@ -854,7 +854,7 @@ export default function Home() {
                             <div className="w-4 h-4 rounded-full bg-secondary"></div>
                             <div className="absolute top-4 left-2 bottom-0 w-0.5 bg-white/20"></div>
                           </div>
-                          <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                               <h5 className="font-medium text-white">開発作業時間</h5>
                               <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">10:00~22:00</span>
@@ -879,7 +879,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-accent"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <div>
                                   <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
@@ -906,7 +906,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-accent"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <div>
                                   <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
@@ -933,7 +933,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-accent"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <div>
                                   <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
@@ -960,7 +960,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-accent"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <div>
                                   <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
@@ -987,7 +987,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-accent"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <div>
                                   <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
@@ -1004,7 +1004,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-vibrant"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <h5 className="font-medium text-white">昼食</h5>
                                 <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">13:00~</span>
@@ -1018,7 +1018,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-vibrant"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <h5 className="font-medium text-white">夕食</h5>
                                 <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
@@ -1033,7 +1033,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">閉場</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
@@ -1061,7 +1061,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">朝食</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">09:00-09:30</span>
@@ -1077,7 +1077,7 @@ export default function Home() {
                             <div className="w-4 h-4 rounded-full bg-success"></div>
                             <div className="absolute top-4 left-2 bottom-0 w-0.5 bg-white/20"></div>
                           </div>
-                          <div className="bg-success/20 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                             <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                               <h5 className="font-medium text-white">開発作業時間</h5>
                               <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:30-15:00</span>
@@ -1092,7 +1092,7 @@ export default function Home() {
                             <div className="mr-4 relative">
                               <div className="w-3 h-3 rounded-full bg-vibrant"></div>
                             </div>
-                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                            <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-3 flex-grow">
                               <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                                 <h5 className="font-medium text-white">昼食</h5>
                                 <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">13:00~</span>
@@ -1107,7 +1107,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">最終成果発表</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">15:00-17:00</span>
@@ -1120,7 +1120,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">審査時間</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">17:00-18:00</span>
@@ -1132,7 +1132,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">結果発表</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:00~</span>
@@ -1144,7 +1144,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">懇親会</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
@@ -1157,7 +1157,7 @@ export default function Home() {
                         <div className="mr-4 relative">
                           <div className="w-4 h-4 rounded-full bg-white/30"></div>
                         </div>
-                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                        <div className="bg-gray-800 backdrop-blur-sm rounded-xl p-4 flex-grow">
                           <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                             <h5 className="font-medium text-white">閉場</h5>
                             <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">21:00</span>
