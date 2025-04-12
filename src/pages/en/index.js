@@ -198,14 +198,138 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const organizers = [
+  {
+    image: "/takuzen-toh.jpg",
+    name: "Takuzen Toh / 鄧卓然",
+    title: "Co-organizer of VisionDevCamp Tokyo",
+    description: "Engineer",
+    bio: "Co-organizer of VisionDevCamp Tokyo 2025 · Winner of Most Useful App at VisionDevCamp · Speaker at Let's Vision 2025 · Creator of Caspy, an immersive video app built for Apple Vision Pro",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/takuzentoh",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/yugoatobe.jpg",
+    name: "Yugo Atobe",
+    title: "Co-organizer of VisionDevCamp Tokyo",
+    description: "",
+    bio: "Organizing the [visionOS Study Group](https://scrapbox.io/visionOS/) since 2023.\nDesigner and developer of DevCamp.\nInterested in development models and funding mechanisms that incentivize open source and open standards.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://yugoatobe.com/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+];
+
+const tokyoTeam = [
+  {
+    image: "/kazuhiro-hara.jpg",
+    name: "Kara_d / Kazuhiro Hara",
+    title: "",
+    description: "",
+    bio: "Organizer of [Yorihiroi Frontend](https://yorihiroi-frontend.engineer/). XR Developer and Apple Vision Pro holder. Freelance developer and founder of Kansock Industries (https://kansock.industries/ja/). ARJAM award winner (hosted by XREAL). Co-organizer of VisionDevCamp Tokyo.",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/kara_d",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/munenori-koyasu.jpg",
+    name: "Koyasu Munenori",
+    title: "Designer",
+    description: "",
+    bio: "UX designer based in Tokyo.\nEngaged in UX design for web systems and website design.\nCurrently enrolled in the doctoral program at Tokyo Denki University, deepening his knowledge of UX.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://uxkys-pf.studio.site/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/morinosuke.jpg",
+    name: "Morinosuke / Seinosuke Saito",
+    title: "",
+    description: "",
+    bio: "4th-year engineering student at the University of Tokyo\nSoftware engineer\nDeveloped 'DevCamp', an Apple Vision Pro app that serves as the online venue for Vision Dev Camp Tokyo 2025.",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/morinosuke361",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+];
+
+const fukuokaTeam = [
+  {
+    image: "/david_kordsmeier.jpg",
+    name: "David Kordsmeier",
+    title: "",
+    description: "",
+    bio: "David Kordsmeier is a software developer with experience working for a large tech company early in his career on Java and mobile and embedded systems. David currently runs a boutique consultancy focused on startup company innovation, with over 30 startup clients in the company portfolio. He currently is focused on launching a new AR/VR/IoT startup venture in called IoTone Japan, based in Fukuoka.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/dkords/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/kanako_nagiri.jpg",
+    name: "Kanako Nakiri",
+    title: "",
+    description: "",
+    bio: "She is a member of Roku inc. and is based in Fukuoka, where she develops web applications.\nShe is particularly skilled in the e-commerce field, and has been involved in a wide range of projects, from building e-commerce sites to developing related apps.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/kanako-nagiri-387791295/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/laurie.png",
+    name: "Laurie",
+    title: "Software Engineer",
+    description: "Community Manager - Fukuoka Engineer Cafe",
+    bio: "Software Engineer and Community Manager of Fukuoka Engineer Cafe.",
+    socialMedia: [],
+  },
+];
+
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    time: "",
+    speaker: "",
+    title: "",
+    description: "",
+    duration: ""
+  });
+  
   return (
     <div
       className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)]`}
     >
       <Header />
 
-      <main className="mt-16">
+      <main className="mt-16 sm:mt-20">
         <section
           id="top"
           className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-red-900 to-black text-white px-8 py-12 overflow-hidden"
@@ -609,265 +733,439 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-                  {/* Day 1 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
-                      DAY 1: April 11 (Fri)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">
-                      Team Building
-                    </h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              18:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Doors Open</div>
-                              <div className="text-white/70 text-xs">
-                                Registration starts
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:00-19:15
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Opening</div>
-                              <div className="text-white/70 text-xs">
-                                Welcome address from organizers
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:15-19:45
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Short Keynotes</div>
-                              <div className="text-white/70 text-xs">
-                                Short keynotes from sponsor companies
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:45-20:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Self-introductions
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                Participants pitch their ideas in about 1 minute
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              20:30-21:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Team Formation (with dinner)
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                Dinner
-                                <br />
-                                Standing buffet style networking
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Venue Closes</div>
-                              <div className="text-white/70 text-xs">
-                                End of Day 1
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                {/* Vertical Timeline Layout */}
+                <div className="space-y-12">
+                  {/* Day 1 - April 11 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">1</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 1: April 11 (Fri)</h4>
+                        <p className="text-vibrant font-medium">Team Building</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 1 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Doors Open</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:30</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Registration starts</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Opening</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00-19:15</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Welcome address from organizers, introduction of Fukuoka venue (LAURIE)</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Short Keynotes</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:15-19:45</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Short keynotes from lead sponsor companies (Raven, LODGE, STYLY, Canon)</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Self-introductions</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:45-20:30</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Participants (individuals/pre-registered teams) briefly pitch their ideas in about 30 seconds to 1 minute</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Team Formation (with dinner)</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">20:30-21:45</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Standing buffet style networking</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Venue Closes</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">End of Day 1</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Day 2 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-secondary rounded-full mr-2 animate-pulse"></span>
-                      DAY 2: April 12 (Sat)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">
-                      Development
-                    </h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Breakfast</div>
-                              <div className="text-white/70 text-xs">
-                                Networking with participants and sponsors
+                  {/* Day 2 - April 12 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">2</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 2: April 12 (Sat)</h4>
+                        <p className="text-vibrant font-medium">Development</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 2 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Breakfast</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:00~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Networking with participants and sponsors</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Ideas & Feedback</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:30~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Teams share what they&apos;re working on in about 1 minute</p>
+                        </div>
+                      </div>
+
+                      {/* Development Time Block with nested activities */}
+                      <div className="flex flex-col">
+                        <div className="flex">
+                          <div className="mr-4 relative">
+                            <div className="w-4 h-4 rounded-full bg-secondary"></div>
+                            <div className="absolute top-4 left-2 bottom-0 w-0.5 bg-white/20"></div>
+                          </div>
+                          <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                              <h5 className="font-medium text-white">Development Time</h5>
+                              <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">10:00~22:00</span>
+                            </div>
+                            <p className="text-white/70 text-sm mt-1">The following speaker sessions and meals will take place in parallel. You can freely choose between development work, attending sessions, and taking breaks.</p>
+                          </div>
+                        </div>
+
+                        <div className="ml-8 space-y-4 mt-4">
+                          {/* Minji Lee's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:00-10:20",
+                              speaker: "Minji Lee",
+                              title: "Making Better visionOS Apps, Guided by HIG",
+                              description: "Sharing useful tips for developing visionOS apps, based on real development experience, and guided by Apple&apos;s Human Interface Guidelines (HIG).",
+                              duration: "20 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Making Better visionOS Apps, Guided by HIG</h5>
+                                  <p className="text-white/90 text-sm">By Minji Lee</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:00-10:20</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:30~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Ideas & Feedback
+                            </div>
+                          </div>
+
+                          {/* Mikaela Caron's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:25-10:50",
+                              speaker: "Mikaela Caron",
+                              title: "Let&apos;s Table That: Creating Games with TabletopKit for visionOS",
+                              description: "Let&apos;s learn about Apple&apos;s newest framework TabletopKit for visionOS! You will learn what is TabletopKit and how you can get started using it to build games for visionOS. We&apos;ll review the basics of the framework and what it gives you, as opposed to building a game without it. We&apos;ll then explore how we would build Monopoly using TabletopKit. No visionOS experience is necessary for getting started! By the end of the talk you&apos;ll be able to begin building your own tabletop games.",
+                              duration: "25 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Let&apos;s Table That: Creating Games with TabletopKit for visionOS</h5>
+                                  <p className="text-white/90 text-sm">By Mikaela Caron</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:25-10:50</span>
                               </div>
-                              <div className="text-white/70 text-xs">
-                                Teams share what they&apos;re working on in
-                                about 1 minute
+                            </div>
+                          </div>
+
+                          {/* Raven Zachary's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:55-11:20",
+                              speaker: "Raven Zachary",
+                              title: "The Apple Vision",
+                              description: "VisionDevCamp Founder Raven Zachary presents a short talk on Apple&apos;s vision for their spatial computing platform - visionOS. Learn about where Apple Vision Pro is finding succes in the market today and where it&apos;s headed in the future. We are just at the beginning of Apple&apos;s journey into spatial computing.",
+                              duration: "25 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">The Apple Vision</h5>
+                                  <p className="text-white/90 text-sm">By Raven Zachary</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:55-11:20</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              10:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Speaker Sessions
+                            </div>
+                          </div>
+
+                          {/* Oliver Weidlich's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "11:25-11:40",
+                              speaker: "Oliver Weidlich",
+                              title: "Top 5 things to create a great visionOS User Experience",
+                              description: "Having created two visionOS utilities, spoken about visionOS UX at conferences around the world, lectured for the visionOS Apple Foundation Program and mentored at MIT Reality Hack on visionOS UX Design, Oliver will share the five key aspects for a great visionOS app. He&apos;ll show best practice examples you can learn from and think about how you can apply in your application.",
+                              duration: "15 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Top 5 things to create a great visionOS User Experience</h5>
+                                  <p className="text-white/90 text-sm">By Oliver Weidlich</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">11:25-11:40</span>
                               </div>
-                              <div className="text-white/70 text-xs">
-                                Talk sessions by guest speakers
+                            </div>
+                          </div>
+
+                          {/* Warren Stringer's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "11:45-12:05",
+                              speaker: "Warren Stringer",
+                              title: "Immersive Performances",
+                              description: "Personas - how the AVP mixes with creators and their tools\nScripting - how I&apos;m using a data flow script to wire up a demo\nDemo - Lumi, Lightpad, Immersion, handpose, and Kusama dots\nFuture - The \"deep\" part -- scripting as another language model",
+                              duration: "20 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Immersive Performances</h5>
+                                  <p className="text-white/90 text-sm">By Warren Stringer</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">11:45-12:05</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              10:30~22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Development Time
+                            </div>
+                          </div>
+
+                          {/* Lunch */}
+                          <div className="flex">
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-vibrant"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <h5 className="font-medium text-white">Lunch</h5>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">13:00~</span>
                               </div>
-                              <div className="text-white/70 text-xs">
-                                13:00~ Lunch
-                                <br />
-                                19:00~ Dinner
+                              <p className="text-white/70 text-sm mt-1">Meal & Networking</p>
+                            </div>
+                          </div>
+
+                          {/* Dinner */}
+                          <div className="flex">
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-vibrant"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <h5 className="font-medium text-white">Dinner</h5>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Venue Closes</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                              <p className="text-white/70 text-sm mt-1">Meal & Networking</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Venue Closes</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Day 3 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
-                      DAY 3: April 13 (Sun)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">
-                      Demos & Judging
-                    </h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Breakfast</div>
-                              <div className="text-white/70 text-xs">
-                                Networking with participants and sponsor
-                                engineers
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:30~15:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Development Time
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                13:00~ Lunch
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              15:00~17:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Final Presentations
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                3-5 minutes per team
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              17:00~18:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Judging</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              18:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Results Announcement
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                Networking Party
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                Dinner
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              21:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">Venue Closes</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                  {/* Day 3 - April 13 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-success rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">3</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 3: April 13 (Sun)</h4>
+                        <p className="text-vibrant font-medium">Demos & Judging</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 3 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Breakfast</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:00~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Networking with participants and sponsor engineers</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Development Time</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:30~15:00</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Final presentation preparation (meals will take place in parallel)</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Final Presentations</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">15:00~17:00</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">3-5 minutes per team</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Judging</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">17:00~18:00</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Results Announcement</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:00~</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Networking Party</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">Dinner & Celebration</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">Venue Closes</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">21:00</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -941,6 +1239,67 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Modal for Session Details */}
+        {modalOpen && (
+          <div
+            className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+            onClick={() => {
+              setModalOpen(false);
+              document.body.style.overflow = "auto";
+            }}
+            style={{ isolation: "isolate" }}
+          >
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+            <div
+              className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => {
+                  setModalOpen(false);
+                  document.body.style.overflow = "auto";
+                }}
+                className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              <div className="flex flex-col p-6">
+                <span className="text-sm font-semibold text-accent/80 uppercase tracking-wider">{modalContent.time}</span>
+                <h3 className="text-2xl font-bold text-white mt-2">{modalContent.title}</h3>
+                <p className="text-secondary font-semibold mt-1">By {modalContent.speaker}</p>
+                <div className="flex items-center mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-vibrant mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-white/80">{modalContent.duration}</span>
+                </div>
+                
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                
+                <div className="mt-4">
+                  <h4 className="font-medium text-white mb-2">Session Description:</h4>
+                  <p className="text-white/90 text-sm leading-relaxed whitespace-pre-line">{modalContent.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <section
           id="judges"
           className="w-full flex flex-col gradient-secondary text-white px-8 py-20 relative overflow-hidden"
@@ -1021,6 +1380,21 @@ export default function Home() {
                   logo="/Reinforz-Insight-logo.png"
                   name="Reinforz Insight"
                   link="https://reinforz.co.jp/bizmedia/"
+                />
+                <SponsorCard
+                  logo="/logo_yappli_rgb.png"
+                  name="Yappli, Inc."
+                  link="https://yappli.co.jp/en/"
+                />
+                <SponsorCard
+                  logo="/Flitto_02_Logo_RGB.png"
+                  name="Flitto Japan Inc."
+                  link="https://flitto.jp/en/"
+                />
+                <SponsorCard
+                  logo="/nihonkougakuin.jpg"
+                  name="Nihon Kogakuin"
+                  link="https://www.neec.ac.jp/vision_craft/"
                 />
               </div>
 
@@ -1498,6 +1872,49 @@ export default function Home() {
         </section>
 
         <section
+          id="organizers"
+          className="w-full gradient-secondary text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+          <div className="container mx-auto max-w-5xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              Organizers
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {organizers.map((organizer, index) => (
+                <OrganizerCard key={index} {...organizer} />
+              ))}
+            </div>
+
+            <h4 className="text-2xl font-bold text-white mb-8 relative inline-block">
+              Tokyo Team
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+              {tokyoTeam.map((member, index) => (
+                <TeamMemberCard key={index} {...member} />
+              ))}
+            </div>
+
+            <h4 className="text-2xl font-bold text-white mb-8 relative inline-block">
+              Fukuoka Team
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {fukuokaTeam.map((member, index) => (
+                <TeamMemberCard key={index} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
           id="contact"
           className="w-full gradient-primary text-white px-8 py-20 relative overflow-hidden"
         >
@@ -1647,6 +2064,12 @@ export default function Home() {
                   Speakers
                 </Link>
                 <Link
+                  href="#organizers"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  Organizers
+                </Link>
+                <Link
                   href="#sponsors"
                   className="hover:text-red-400 transition-colors"
                 >
@@ -1782,6 +2205,11 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
+              <Link href="#organizers" className="hover:underline font-bold">
+                Organizers
+              </Link>
+            </li>
+            <li className="mb-2">
               <Link href="#sponsors" className="hover:underline font-bold">
                 Sponsors
               </Link>
@@ -1839,6 +2267,11 @@ function Header() {
           <li>
             <Link href="#speakers" className="hover:underline font-bold">
               Speakers
+            </Link>
+          </li>
+          <li>
+            <Link href="#organizers" className="hover:underline font-bold">
+              Organizers
             </Link>
           </li>
           <li>
@@ -2277,3 +2710,277 @@ const styles = {
     marginTop: "20px",
   },
 };
+
+function OrganizerCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  return (
+    <>
+      <div
+        onClick={openModal}
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
+      >
+        <div className="flex flex-row h-full items-center p-6">
+          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 flex-grow">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            <p className="text-white/90 text-sm">{title}</p>
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+            <div className="mt-2">
+              <p className="text-white/80 text-sm line-clamp-3">{bio}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+          onClick={closeModal}
+          style={{ isolation: "isolate" }}
+        >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div
+            className="gradient-primary rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-accent transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <div className="flex flex-col items-center p-6">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                <p className="text-secondary font-semibold mb-1">{title}</p>
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
+                )}
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <div className="text-white/90 text-sm leading-relaxed max-w-xl text-left whitespace-pre-line">
+                  {typeof bio === 'string' && bio.includes('\n') 
+                    ? bio.split('\n').map((line, i) => (
+                        <p key={i} className="mb-2">
+                          {line.includes('[') && line.includes('](') 
+                            ? line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => (
+                                <>
+                                  <a href={url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                                    {text}
+                                  </a>
+                                </>
+                              ))
+                            : line}
+                        </p>
+                      ))
+                    : bio}
+                </div>
+
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3 justify-center">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function TeamMemberCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  return (
+    <>
+      <div
+        onClick={openModal}
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
+      >
+        <div className="flex flex-col h-full items-center pt-6">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            {title && <p className="text-white/90 text-sm">{title}</p>}
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+          </div>
+          <div className="p-4 pt-0 flex-grow">
+            <p className="text-white/80 text-sm line-clamp-3">
+              {typeof bio === 'string' && bio.includes('\n') 
+                ? bio.split('\n')[0] 
+                : bio}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+          onClick={closeModal}
+          style={{ isolation: "isolate" }}
+        >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div
+            className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <div className="flex flex-col items-center p-6">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                {title && <p className="text-vibrant font-semibold mb-1">{title}</p>}
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
+                )}
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <div className="text-white/90 text-sm leading-relaxed max-w-xl text-left whitespace-pre-line">
+                  {typeof bio === 'string' && bio.includes('\n') 
+                    ? bio.split('\n').map((line, i) => (
+                        <p key={i} className="mb-2">
+                          {line.includes('[') && line.includes('](') 
+                            ? line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => (
+                                <>
+                                  <a href={url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                                    {text}
+                                  </a>
+                                </>
+                              ))
+                            : line}
+                        </p>
+                      ))
+                    : bio}
+                </div>
+
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3 justify-center">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}

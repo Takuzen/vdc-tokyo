@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import React from "react";
 
 const judges = [
   {
@@ -198,7 +199,131 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const organizers = [
+  {
+    image: "/takuzen-toh.jpg",
+    name: "Takuzen Toh / 鄧卓然",
+    title: "VisionDevCamp Tokyo共同主催者",
+    description: "Engineer / エンジニア",
+    bio: "VisionDevCamp Tokyo 2025共同共催者・VisionDevCamp最実用アプリ賞受賞・Let's Vision 2025登壇者・Apple Vision Pro向けのイマーシブビデオアプリ「Caspy」開発者",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/takuzentoh",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/yugoatobe.jpg",
+    name: "Yugo Atobe / 跡部優吾",
+    title: "VisionDevCamp Tokyo共同主催者",
+    description: "",
+    bio: "2023年よりvisionOS勉強会を主催している。\nDevCampを設計・開発した。\nオープンソース、オープンスタンダードにインセンティブを与える開発モデルや資金調達機構の構築に関心があります。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://yugoatobe.com/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+];
+
+const tokyoTeam = [
+  {
+    image: "/kazuhiro-hara.jpg",
+    name: "Kara_d / Kazuhiro Hara",
+    title: "",
+    description: "",
+    bio: "・よりひろいフロントエンド主催。XR Developer。Apple Vision Pro Holder。カンソクインダストリーズ代表のフリーランス。XREAL主催のARJAM入賞。VisionDevCamp Tokyo 共同主催者。",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/kara_d",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/munenori-koyasu.jpg",
+    name: "Koyasu Munenori / 小安宗徳",
+    title: "Designer / デザイナー",
+    description: "",
+    bio: "東京都を拠点に活動するUXデザイナー。\nWebシステムのUX設計や、Webサイトのデザインを行なっている。\n東京電機大学社会人博士課程に在籍し、UXについての知見を深めている。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://uxkys-pf.studio.site/",
+        icon: "/globe-outline.svg",
+      },
+    ],
+  },
+  {
+    image: "/morinosuke.jpg",
+    name: "Morinosuke / Seinosuke Saito",
+    title: "",
+    description: "",
+    bio: "東京大学工学部4年\nソフトウェアエンジニア\nVision Dev Camp Tokyo 2025 オンライン会場であるApple Vision Pro向けアプリ「DevCamp」を開発。",
+    socialMedia: [
+      {
+        platform: "X",
+        url: "https://x.com/morinosuke361",
+        icon: "/x-logo.png",
+      },
+    ],
+  },
+];
+
+const fukuokaTeam = [
+  {
+    image: "/david_kordsmeier.jpg",
+    name: "David Kordsmeier",
+    title: "",
+    description: "",
+    bio: "David Kordsmeierは大手テック企業でJavaやモバイル、組み込みシステムを担当するキャリアをスタートさせました。現在は、30社以上のスタートアップクライアントを持つブティックコンサルティング会社を運営し、スタートアップ企業のイノベーションに注力しています。現在は福岡を拠点に、AR/VR/IoTスタートアップベンチャー「IoTone Japan」の立ち上げに取り組んでいます。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/dkords/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/kanako_nagiri.jpg",
+    name: "Kanako Nakiri / 名切加奈子",
+    title: "",
+    description: "",
+    bio: "株式会社六に所属し、福岡を拠点にWebアプリケーションの開発を行っています。\n特にイーコマース分野を得意としており、ECサイトの構築から関連アプリの開発まで幅広く携わっています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/kanako-nagiri-387791295/",
+        icon: "/linkedin-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/laurie.png",
+    name: "Laurie",
+    title: "Software Engineer",
+    description: "",
+    bio: "ソフトウェアエンジニアであり、福岡エンジニアカフェのコミュニティマネージャーでもあります。",
+    socialMedia: [],
+  },
+];
+
 export default function Home() {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    time: "",
+    speaker: "",
+    title: "",
+    description: "",
+    duration: ""
+  });
+  
   return (
     <div
       className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)]`}
@@ -563,7 +688,7 @@ export default function Home() {
 
           <div className="container relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 relative">
-              スケジュール
+              Schedule
               <span className="absolute -bottom-2 left-0 w-20 h-1 bg-vibrant"></span>
             </h3>
 
@@ -586,249 +711,459 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-                  {/* Day 1 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-accent">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-accent rounded-full mr-2 animate-pulse"></span>
-                      DAY 1: 4月11日(金)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">
-                      チームビルディング
-                    </h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              18:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">開場</div>
-                              <div className="text-white/70 text-xs">
-                                参加者受付開始
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:00-19:15
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">オープニング</div>
-                              <div className="text-white/70 text-xs">
-                                オーガナイザーからの歓迎挨拶
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:15-19:45
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                ショートキーノート
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                スポンサー企業からのショートキーノート
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:45-20:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">自己紹介</div>
-                              <div className="text-white/70 text-xs">
-                                参加者が開発したいアイデアを1分程度で簡易ピッチ
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              20:30-21:30
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                チーム編成(食事付き交流会)
-                              </div>
-                              <div className="text-white/70 text-xs">
-                                夕食
-                                <br />
-                                立食形式で参加者同士が交流
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">閉場</div>
-                              <div className="text-white/70 text-xs">
-                                初日終了
-                              </div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                {/* Vertical Timeline Layout */}
+                <div className="space-y-12">
+                  {/* Day 1 - April 11 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">1</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 1: 4月11日(金)</h4>
+                        <p className="text-vibrant font-medium">チームビルディング</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 1 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">開場</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:30</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">参加者受付開始</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">オープニング</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00-19:15</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">オーガナイザーからの歓迎挨拶、福岡会場の紹介(LAURIE)</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">ショートキーノート</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:15-19:45</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">リードスポンサー企業からのショートキーノート(Raven、LODGE、STYLY、キヤノン)</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">自己紹介</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:45-20:30</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">参加者（個人/事前登録チーム）が開発したいアイデアを30秒~1分程度で簡易ピッチする</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">チーム編成(食事付き交流会)</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">20:30-21:45</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">立食形式で参加者同士が交流</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">閉場</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">初日終了</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Day 2 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-secondary">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-secondary rounded-full mr-2 animate-pulse"></span>
-                      DAY 2: 4月12日(土)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">開発</h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">朝食</div>
-                              <div className="text-white/70 text-xs">
-                                参加者同士やスポンサー企業との交流
+                  {/* Day 2 - April 12 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">2</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 2: 4月12日(土)</h4>
+                        <p className="text-vibrant font-medium">開発 & スピーカーセッション</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 2 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">朝食</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:00~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">参加者同士・スポンサー企業のエンジニアなどと軽めの朝食をとりながらカジュアルに交流できる</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">アイデアの共有&フィードバック</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">09:30~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">チームごとに、簡単に「これから何をつくるか」を1分程度で共有。前日に合流できなかったメンバーや追加参加者をフォローアップ</p>
+                        </div>
+                      </div>
+
+                      {/* Development Time Block with nested activities */}
+                      <div className="flex flex-col">
+                        <div className="flex">
+                          <div className="mr-4 relative">
+                            <div className="w-4 h-4 rounded-full bg-secondary"></div>
+                            <div className="absolute top-4 left-2 bottom-0 w-0.5 bg-white/20"></div>
+                          </div>
+                          <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                              <h5 className="font-medium text-white">開発作業時間</h5>
+                              <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">10:00~22:00</span>
+                            </div>
+                            <p className="text-white/70 text-sm mt-1">以下のスピーカーセッションや食事の時間は並行して行われます。開発作業・セッション参加・休憩はご自由に選択できます。</p>
+                          </div>
+                        </div>
+
+                        <div className="ml-8 space-y-4 mt-4">
+                          {/* Minji Lee's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:00-10:20",
+                              speaker: "Minji Lee",
+                              title: "Making Better visionOS Apps, Guided by HIG",
+                              description: "Sharing useful tips for developing visionOS apps, based on real development experience, and guided by Apple&apos;s Human Interface Guidelines (HIG).",
+                              duration: "20 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Making Better visionOS Apps, Guided by HIG</h5>
+                                  <p className="text-white/90 text-sm">By Minji Lee</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:00-10:20</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:30~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                アイデアの共有&フィードバック
+                            </div>
+                          </div>
+
+                          {/* Mikaela Caron's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:25-10:50",
+                              speaker: "Mikaela Caron",
+                              title: "Let&apos;s Table That: Creating Games with TabletopKit for visionOS",
+                              description: "Let&apos;s learn about Apple&apos;s newest framework TabletopKit for visionOS! You will learn what is TabletopKit and how you can get started using it to build games for visionOS. We&apos;ll review the basics of the framework and what it gives you, as opposed to building a game without it. We&apos;ll then explore how we would build Monopoly using TabletopKit. No visionOS experience is necessary for getting started! By the end of the talk you&apos;ll be able to begin building your own tabletop games.",
+                              duration: "25 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Let&apos;s Table That: Creating Games with TabletopKit for visionOS</h5>
+                                  <p className="text-white/90 text-sm">By Mikaela Caron</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:25-10:50</span>
                               </div>
-                              <div className="text-white/70 text-xs">
-                                チームごとに「現状何を作っているか」を1分程度で共有
+                            </div>
+                          </div>
+
+                          {/* Raven Zachary's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "10:55-11:20",
+                              speaker: "Raven Zachary",
+                              title: "The Apple Vision",
+                              description: "VisionDevCamp Founder Raven Zachary presents a short talk on Apple&apos;s vision for their spatial computing platform - visionOS. Learn about where Apple Vision Pro is finding succes in the market today and where it&apos;s headed in the future. We are just at the beginning of Apple&apos;s journey into spatial computing.",
+                              duration: "25 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">The Apple Vision</h5>
+                                  <p className="text-white/90 text-sm">By Raven Zachary</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">10:55-11:20</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              10:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">
-                                スピーカーセッション
+                            </div>
+                          </div>
+
+                          {/* Oliver Weidlich's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "11:25-11:40",
+                              speaker: "Oliver Weidlich",
+                              title: "Top 5 things to create a great visionOS User Experience",
+                              description: "Having created two visionOS utilities, spoken about visionOS UX at conferences around the world, lectured for the visionOS Apple Foundation Program and mentored at MIT Reality Hack on visionOS UX Design, Oliver will share the five key aspects for a great visionOS app. He&apos;ll show best practice examples you can learn from and think about how you can apply in your application.",
+                              duration: "15 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Top 5 things to create a great visionOS User Experience</h5>
+                                  <p className="text-white/90 text-sm">By Oliver Weidlich</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">11:25-11:40</span>
                               </div>
-                              <div className="text-white/70 text-xs">
-                                ゲストスピーカーによるトークセッション
+                            </div>
+                          </div>
+
+                          {/* Warren Stringer's Session */}
+                          <div className="flex" onClick={() => {
+                            setModalContent({
+                              time: "11:45-12:05",
+                              speaker: "Warren Stringer",
+                              title: "Immersive Performances",
+                              description: "Personas - how the AVP mixes with creators and their tools\nScripting - how I&apos;m using a data flow script to wire up a demo\nDemo - Lumi, Lightpad, Immersion, handpose, and Kusama dots\nFuture - The \"deep\" part -- scripting as another language model",
+                              duration: "20 minutes"
+                            });
+                            setModalOpen(true);
+                            document.body.style.overflow = "hidden";
+                          }}>
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-accent"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow cursor-pointer border border-transparent hover:border-accent/50">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <div>
+                                  <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+                                  <h5 className="font-medium text-white">Immersive Performances</h5>
+                                  <p className="text-white/90 text-sm">By Warren Stringer</p>
+                                </div>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">11:45-12:05</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              10:30~22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">開発作業時間</div>
-                              <div className="text-white/70 text-xs">
-                                13:00~ 昼食
-                                <br />
-                                19:00~ 夕食
+                            </div>
+                          </div>
+
+                          {/* Lunch */}
+                          <div className="flex">
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-vibrant"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <h5 className="font-medium text-white">昼食</h5>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">13:00~</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              22:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">閉場</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                              <p className="text-white/70 text-sm mt-1">食事 & 交流</p>
+                            </div>
+                          </div>
+
+                          {/* Dinner */}
+                          <div className="flex">
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-vibrant"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <h5 className="font-medium text-white">夕食</h5>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
+                              </div>
+                              <p className="text-white/70 text-sm mt-1">食事 & 交流</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">閉場</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">22:00</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  {/* Day 3 */}
-                  <div className="bg-black/50 backdrop-blur-sm p-5 rounded-xl shadow-lg border-l-4 border-success">
-                    <h4 className="text-xl font-bold mb-3 flex items-center">
-                      <span className="w-3 h-3 bg-success rounded-full mr-2 animate-pulse"></span>
-                      DAY 3: 4月13日(日)
-                    </h4>
-                    <h5 className="font-semibold mb-3 text-vibrant">
-                      デモ & 審査
-                    </h5>
-                    <div className="overflow-x-auto">
-                      <table className="w-full text-sm">
-                        <tbody>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">朝食</div>
-                              <div className="text-white/70 text-xs">
-                                参加者同士・スポンサー企業エンジニアとの交流
+                  {/* Day 3 - April 13 */}
+                  <div className="relative">
+                    <div className="flex items-center mb-6">
+                      <div className="w-10 h-10 bg-success rounded-full flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">3</span>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-2xl font-bold text-white">DAY 3: 4月13日(日)</h4>
+                        <p className="text-vibrant font-medium">デモ & 審査</p>
+                      </div>
+                    </div>
+
+                    <div className="ml-5 pl-10 border-l-2 border-white/20 space-y-6">
+                      {/* Timeline items for Day 3 */}
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">朝食</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">09:00-09:30</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">参加者同士・スポンサー企業エンジニアとの交流</p>
+                        </div>
+                      </div>
+
+                      {/* Development Time Block - Day 3 */}
+                      <div className="flex flex-col">
+                        <div className="flex">
+                          <div className="mr-4 relative">
+                            <div className="w-4 h-4 rounded-full bg-success"></div>
+                            <div className="absolute top-4 left-2 bottom-0 w-0.5 bg-white/20"></div>
+                          </div>
+                          <div className="bg-success/20 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                            <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                              <h5 className="font-medium text-white">開発作業時間</h5>
+                              <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">9:30-15:00</span>
+                            </div>
+                            <p className="text-white/70 text-sm mt-1">最終プレゼン準備（以下の食事の時間は並行して行われます）</p>
+                          </div>
+                        </div>
+
+                        <div className="ml-8 space-y-4 mt-4">
+                          {/* Lunch - Day 3 */}
+                          <div className="flex">
+                            <div className="mr-4 relative">
+                              <div className="w-3 h-3 rounded-full bg-vibrant"></div>
+                            </div>
+                            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-3 flex-grow">
+                              <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                                <h5 className="font-medium text-white">昼食</h5>
+                                <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">13:00~</span>
                               </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              9:30~15:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">開発作業時間</div>
-                              <div className="text-white/70 text-xs">
-                                13:00~ 昼食
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              15:00~17:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">最終成果発表</div>
-                              <div className="text-white/70 text-xs">
-                                1チーム3~5分で発表
-                              </div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              17:00~18:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">審査</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              18:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">結果発表</div>
-                            </td>
-                          </tr>
-                          <tr className="border-b border-white/10">
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              19:00~
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">懇親会</div>
-                              <div className="text-white/70 text-xs">夕食</div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-2 pr-3 whitespace-nowrap font-semibold">
-                              21:00
-                            </td>
-                            <td className="py-2">
-                              <div className="font-medium">閉場</div>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                              <p className="text-white/70 text-sm mt-1">食事 & 交流</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">最終成果発表</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">15:00-17:00</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">1チーム3~5分で発表</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">審査時間</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">17:00-18:00</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">結果発表</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">18:00~</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">懇親会</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">19:00~</span>
+                          </div>
+                          <p className="text-white/70 text-sm mt-1">夕食 & お祝い</p>
+                        </div>
+                      </div>
+
+                      <div className="flex">
+                        <div className="mr-4 relative">
+                          <div className="w-4 h-4 rounded-full bg-white/30"></div>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+                            <h5 className="font-medium text-white">閉場</h5>
+                            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">21:00</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -896,6 +1231,67 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Modal for Session Details */}
+        {modalOpen && (
+          <div
+            className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+            onClick={() => {
+              setModalOpen(false);
+              document.body.style.overflow = "auto";
+            }}
+            style={{ isolation: "isolate" }}
+          >
+            <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+            <div
+              className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => {
+                  setModalOpen(false);
+                  document.body.style.overflow = "auto";
+                }}
+                className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+
+              <div className="flex flex-col p-6">
+                <span className="text-sm font-semibold text-accent/80 uppercase tracking-wider">{modalContent.time}</span>
+                <h3 className="text-2xl font-bold text-white mt-2">{modalContent.title}</h3>
+                <p className="text-secondary font-semibold mt-1">By {modalContent.speaker}</p>
+                <div className="flex items-center mt-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-vibrant mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-white/80">{modalContent.duration}</span>
+                </div>
+                
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                
+                <div className="mt-4">
+                  <h4 className="font-medium text-white mb-2">Session Description:</h4>
+                  <p className="text-white/90 text-sm leading-relaxed whitespace-pre-line">{modalContent.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <section
           id="judges"
           className="w-full flex flex-col gradient-secondary text-white px-8 py-20 relative overflow-hidden"
@@ -976,6 +1372,21 @@ export default function Home() {
                   logo="/Reinforz-Insight-logo.png"
                   name="Reinforz Insight"
                   link="https://reinforz.co.jp/bizmedia/"
+                />
+                <SponsorCard
+                  logo="/logo_yappli_rgb.png"
+                  name="株式会社ヤプリ"
+                  link="https://yappli.co.jp/"
+                />
+                <SponsorCard
+                  logo="/Flitto_02_Logo_RGB.png"
+                  name="フリットジャパン株式会社"
+                  link="https://flitto.jp/"
+                />
+                <SponsorCard
+                  logo="/nihonkougakuin.jpg"
+                  name="日本工学院"
+                  link="https://www.neec.ac.jp/vision_craft/"
                 />
               </div>
 
@@ -1448,6 +1859,49 @@ export default function Home() {
         </section>
 
         <section
+          id="organizers"
+          className="w-full gradient-secondary text-white px-8 py-20 relative overflow-hidden"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-vibrant rounded-full filter blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary rounded-full filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+
+          <div className="container mx-auto max-w-5xl relative z-10">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-12 relative inline-block">
+              主催者
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              {organizers.map((organizer, index) => (
+                <OrganizerCard key={index} {...organizer} />
+              ))}
+            </div>
+
+            <h4 className="text-2xl font-bold text-white mb-8 relative inline-block">
+              東京メンバー
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+              {tokyoTeam.map((member, index) => (
+                <TeamMemberCard key={index} {...member} />
+              ))}
+            </div>
+
+            <h4 className="text-2xl font-bold text-white mb-8 relative inline-block">
+              福岡メンバー
+              <span className="absolute -bottom-2 left-0 w-full h-1 bg-vibrant"></span>
+            </h4>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+              {fukuokaTeam.map((member, index) => (
+                <TeamMemberCard key={index} {...member} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
           id="contact"
           className="w-full gradient-primary text-white px-8 py-20 relative overflow-hidden"
         >
@@ -1599,6 +2053,18 @@ export default function Home() {
                   スピーカー
                 </Link>
                 <Link
+                  href="#organizers"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  主催者
+                </Link>
+                <Link
+                  href="#team"
+                  className="hover:text-red-400 transition-colors"
+                >
+                  チーム
+                </Link>
+                <Link
                   href="#sponsors"
                   className="hover:text-red-400 transition-colors"
                 >
@@ -1732,6 +2198,16 @@ function Header() {
               </Link>
             </li>
             <li className="mb-2">
+              <Link href="#organizers" className="hover:underline font-bold">
+                主催者
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link href="#team" className="hover:underline font-bold">
+                チーム
+              </Link>
+            </li>
+            <li className="mb-2">
               <Link href="#sponsors" className="hover:underline font-bold">
                 スポンサー
               </Link>
@@ -1789,6 +2265,16 @@ function Header() {
           <li>
             <Link href="#speakers" className="hover:underline font-bold">
               スピーカー
+            </Link>
+          </li>
+          <li>
+            <Link href="#organizers" className="hover:underline font-bold">
+              主催者
+            </Link>
+          </li>
+          <li>
+            <Link href="#team" className="hover:underline font-bold">
+              チーム
             </Link>
           </li>
           <li>
@@ -2230,3 +2716,412 @@ const styles = {
     marginTop: "20px",
   },
 };
+
+// Add these components at the bottom of the file
+function TimelineItem({ time, title, subtitle }) {
+  return (
+    <div className="flex group">
+      <div className="mr-4 relative">
+        <div className="w-4 h-4 rounded-full bg-white/30 group-hover:bg-vibrant transition-colors duration-300"></div>
+        <div className="absolute top-0 left-2 h-full w-px bg-white/10 group-hover:bg-white/30 transition-colors duration-300"></div>
+      </div>
+      <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow transform transition-all duration-300 group-hover:bg-white/10 group-hover:translate-x-1">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+          <h5 className="font-medium text-white">{title}</h5>
+          <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full">{time}</span>
+        </div>
+        {subtitle && <p className="text-white/70 text-sm mt-1">{subtitle}</p>}
+      </div>
+    </div>
+  );
+}
+
+function SessionItem({ time, speaker, title, description, duration }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  return (
+    <>
+      <div className="flex group">
+        <div className="mr-4 relative">
+          <div className="w-4 h-4 rounded-full bg-accent group-hover:bg-vibrant transition-colors duration-300"></div>
+          <div className="absolute top-0 left-2 h-full w-px bg-white/10 group-hover:bg-white/30 transition-colors duration-300"></div>
+        </div>
+        <div 
+          onClick={openModal}
+          className="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-grow transform transition-all duration-300 group-hover:bg-white/10 group-hover:translate-x-1 cursor-pointer border border-transparent hover:border-accent/50"
+        >
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between">
+            <div>
+              <span className="text-xs font-semibold text-accent/80 uppercase tracking-wider">Speaker Session</span>
+              <h5 className="font-medium text-white">{title}</h5>
+              <p className="text-white/90 text-sm">By {speaker}</p>
+            </div>
+            <span className="text-sm font-mono text-vibrant bg-vibrant/10 px-2 py-1 rounded-full mt-2 sm:mt-0">{time}</span>
+          </div>
+        </div>
+      </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+          onClick={closeModal}
+          style={{ isolation: "isolate" }}
+        >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div
+            className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <div className="flex flex-col p-6">
+              <span className="text-sm font-semibold text-accent/80 uppercase tracking-wider">{time}</span>
+              <h3 className="text-2xl font-bold text-white mt-2">{title}</h3>
+              <p className="text-secondary font-semibold mt-1">By {speaker}</p>
+              <div className="flex items-center mt-3">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-vibrant mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                </svg>
+                <span className="text-white/80">{duration}</span>
+              </div>
+              
+              <div className="h-px w-full bg-white/20 my-4"></div>
+              
+              <div className="mt-4">
+                <h4 className="font-medium text-white mb-2">Session Description:</h4>
+                <p className="text-white/90 text-sm leading-relaxed whitespace-pre-line">{description}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function OrganizerCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  return (
+    <>
+      <div
+        onClick={openModal}
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
+      >
+        <div className="flex flex-row h-full items-center p-6">
+          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 flex-grow">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            <p className="text-white/90 text-sm">{title}</p>
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+            <p className="text-white/80 text-sm mt-2 line-clamp-3">{bio.split('\n')[0]}</p>
+          </div>
+        </div>
+      </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+          onClick={closeModal}
+          style={{ isolation: "isolate" }}
+        >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div
+            className="gradient-primary rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-accent transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <div className="flex flex-col md:flex-row md:items-start p-6 gap-6">
+              <div className="md:w-1/3 flex justify-center">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+                  <img
+                    src={image}
+                    alt={name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:w-2/3">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                <p className="text-secondary font-semibold mb-1">{title}</p>
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
+                )}
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <div className="text-white/90 text-sm leading-relaxed max-w-xl whitespace-pre-line">
+                  {bio.split('\n').map((line, i) => (
+                    <p key={i} className="mb-2">
+                      {line.includes('[') && line.includes('](') 
+                        ? line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => (
+                            React.createElement(React.Fragment, {}, 
+                              line.split(/\[([^\]]+)\]\(([^)]+)\)/).map((part, index, array) => {
+                                if (index % 3 === 0) {
+                                  return part;
+                                } else if (index % 3 === 1) {
+                                  const url = array[index + 1];
+                                  return React.createElement('a', {
+                                    href: url,
+                                    key: index,
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "text-accent hover:underline"
+                                  }, part);
+                                }
+                                return null;
+                              }).filter(Boolean)
+                            )
+                          ))
+                        : line}
+                    </p>
+                  ))}
+                </div>
+
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function TeamMemberCard({ image, name, title, description, bio, socialMedia = [] }) {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+  
+  const closeModal = (e) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setModalOpen(false);
+    document.body.style.overflow = "auto";
+  };
+
+  return (
+    <>
+      <div
+        onClick={openModal}
+        className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
+      >
+        <div className="flex flex-col h-full items-center pt-6">
+          <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+            <img
+              src={image}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="p-4 text-center">
+            <h3 className="text-white text-xl font-bold">{name}</h3>
+            {title && <p className="text-white/90 text-sm">{title}</p>}
+            {description && (
+              <p className="text-white/80 text-xs mt-1">{description}</p>
+            )}
+          </div>
+          <div className="p-4 pt-0 flex-grow">
+            <p className="text-white/80 text-sm line-clamp-3">
+              {typeof bio === 'string' && bio.includes('\n') 
+                ? bio.split('\n')[0] 
+                : bio}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {modalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-[9999] px-4"
+          onClick={closeModal}
+          style={{ isolation: "isolate" }}
+        >
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+          <div
+            className="gradient-accent rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative z-10"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-white/20 p-2 rounded-full hover:bg-vibrant transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+
+            <div className="flex flex-col items-center p-6">
+              <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
+                {title && <p className="text-vibrant font-semibold mb-1">{title}</p>}
+                {description && (
+                  <p className="text-white/80 mb-4">{description}</p>
+                )}
+                <div className="h-px w-full bg-white/20 my-4"></div>
+                <div className="text-white/90 text-sm leading-relaxed max-w-xl text-left whitespace-pre-line">
+                  {typeof bio === 'string' && bio.includes('\n') 
+                    ? bio.split('\n').map((line, i) => (
+                        <p key={i} className="mb-2">
+                          {line.includes('[') && line.includes('](') 
+                            ? line.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => (
+                                React.createElement(React.Fragment, {}, 
+                                  line.split(/\[([^\]]+)\]\(([^)]+)\)/).map((part, index, array) => {
+                                    if (index % 3 === 0) {
+                                      return part;
+                                    } else if (index % 3 === 1) {
+                                      const url = array[index + 1];
+                                      return React.createElement('a', {
+                                        href: url,
+                                        key: index,
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "text-accent hover:underline"
+                                      }, part);
+                                    }
+                                    return null;
+                                  }).filter(Boolean)
+                                )
+                              ))
+                            : line}
+                        </p>
+                      ))
+                    : bio}
+                </div>
+
+                {socialMedia.length > 0 && (
+                  <div className="mt-6 flex space-x-3 justify-center">
+                    {socialMedia.map((platform, index) => (
+                      <a
+                        key={index}
+                        href={platform.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
+                      >
+                        <img
+                          src={platform.icon}
+                          alt={platform.platform}
+                          className="w-5 h-5"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
