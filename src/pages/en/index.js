@@ -2592,7 +2592,7 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
                 </p>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
@@ -2722,7 +2722,7 @@ function SpeakerCard({
                 </p>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
@@ -2861,15 +2861,15 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
         onClick={openModal}
         className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
       >
-        <div className="flex flex-row h-full items-center p-6">
-          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+        <div className="flex flex-col md:flex-row h-full items-center p-6">
+          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-4 md:mb-0">
             <img
               src={image}
               alt={name}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-4 flex-grow">
+          <div className="p-4 flex-grow text-center md:text-left">
             <h3 className="text-white text-xl font-bold">{name}</h3>
             <p className="text-white/90 text-sm">{title}</p>
             {description && (
@@ -2947,7 +2947,7 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
                 </div>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
@@ -3086,7 +3086,7 @@ function TeamMemberCard({ image, name, title, description, bio, socialMedia = []
                 </div>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}

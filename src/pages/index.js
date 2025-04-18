@@ -2598,7 +2598,7 @@ function JudgeCard({ image, name, title, description, bio, socialMedia = [] }) {
                 </p>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
@@ -2728,14 +2728,14 @@ function SpeakerCard({
                 </p>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 justify-center md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
                         href={platform.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 bg-white/10 rounded-full hover:bg-vibrant text-white transition-colors"
+                        className="p-2 bg-white/10 rounded-full hover:bg-accent text-white transition-colors"
                       >
                         <img
                           src={platform.icon}
@@ -2980,15 +2980,15 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
         onClick={openModal}
         className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg overflow-hidden transform transition-transform hover:scale-105 duration-300 h-full cursor-pointer hover:shadow-glow"
       >
-        <div className="flex flex-row h-full items-center p-6">
-          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+        <div className="flex flex-col md:flex-row h-full items-center p-6">
+          <div className="w-32 h-32 flex-shrink-0 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-4 md:mb-0">
             <img
               src={image}
               alt={name}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="p-4 flex-grow">
+          <div className="p-4 flex-grow text-center md:text-left">
             <h3 className="text-white text-xl font-bold">{name}</h3>
             <p className="text-white/90 text-sm">{title}</p>
             {description && (
@@ -3032,7 +3032,7 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
 
             <div className="flex flex-col md:flex-row md:items-start p-6 gap-6">
               <div className="md:w-1/3 flex justify-center">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl mb-6 md:mb-0">
                   <img
                     src={image}
                     alt={name}
@@ -3040,7 +3040,7 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
                   />
                 </div>
               </div>
-              <div className="md:w-2/3">
+              <div className="md:w-2/3 text-center md:text-left">
                 <h3 className="text-2xl font-bold text-white mb-1">{name}</h3>
                 <p className="text-secondary font-semibold mb-1">{title}</p>
                 {description && (
@@ -3076,7 +3076,7 @@ function OrganizerCard({ image, name, title, description, bio, socialMedia = [] 
                 </div>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3">
+                  <div className="mt-6 flex space-x-3 md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
@@ -3227,7 +3227,7 @@ function TeamMemberCard({ image, name, title, description, bio, socialMedia = []
                 </div>
 
                 {socialMedia.length > 0 && (
-                  <div className="mt-6 flex space-x-3 justify-center">
+                  <div className="mt-6 flex space-x-3 md:justify-start">
                     {socialMedia.map((platform, index) => (
                       <a
                         key={index}
