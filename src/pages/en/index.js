@@ -186,6 +186,120 @@ const speakers = [
       },
     ],
   },
+  {
+    image: "/gianrocco_di_tomaso.png",
+    name: "Gianrocco Di Tomaso",
+    title: "Vision Os UX/UI Design | Graphic Designer | 3D Artist",
+    description: "",
+    bio: "Multidisciplinary designer with a strong background in visual communication and a specialization in immersive technologies, spatial computing, and 3D environment design. I combine creativity with technical expertise to craft innovative digital experiences on emerging platforms such as Apple Vision Pro and within mixed reality environments. I have hands-on experience in XR prototyping, creating interactive spaces, and designing intuitive spatial interfaces.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/gianrocco-di-tomaso-5895a0165/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Behance",
+        url: "https://www.behance.net/gianrocditoma",
+        icon: "/behance-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/rosa_laura_vernieri.jpg",
+    name: "Rosa Laura Vernieri",
+    title: "visionOS, iOS UX/UI Designer | Cognitive Ergonomist",
+    description: "",
+    bio: "UX/UI Designer, with 2 years of experience specialised in User Experience Research, Interaction Design, Accessibility, AR, VR, and XR. The academical titles as cognitive psychologist and cognitive ergonomist allow me to understand how our brain interacts and reacts to technologies, and consequently how to design the best structure of apps and products.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/rosalauravernieri/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Behance",
+        url: "https://www.behance.net/rosalavernier",
+        icon: "/behance-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/davide_castaldi.png",
+    name: "Davide Castaldi",
+    title: "visionOS and Apple ecosystem developer, software engineer",
+    description: "",
+    bio: "Software developer specializing in XR within the Apple ecosystem. With a strong foundation in visionOS, SwiftUI, and Reality Composer, creating immersive AR/VR/MR experiences designed for next-gen platforms. Big technical expertise ranging from Metal integration to C++ interoperability, with accessible and scalable UI/UX design. My greatest projects include apps like Astral Wilds (visionOS), an open-source package VisionTextArc (visionOS), and creative projects such as Tria Tactics (iOS/iPadOS).",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/davide-castaldi",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/Dave-Ed-Cast",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/giuseppe_rocco.jpg",
+    name: "Giuseppe Rocco",
+    title: "Virtualization Enthusiast | UNIX Specialist | Apple Developer",
+    description: "",
+    bio: "Versatile Developer with expertise in macOS development and UNIX systems administration, proficient in complex frameworks and experienced in building high-quality software targeting the Apple ecosystem, including a Mac App Store release. Passionate about open-source software, with multiple published Swift packages. Skilled in database engineering and scalable system integration. A self-driven problem solver who tackles challenging technical architectures independently while thriving in collaborative teams.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/giusepperocco",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/iOmega8561",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/alessandro_ricci.png",
+    name: "Alessandro Ricci",
+    title: "iOS & visionOS Developer",
+    description: "",
+    bio: "Experienced VisionOS, iOS and Unity developer with a deep passion for nature and accessibility. Creates user-friendly digital experiences for the entire Apple ecosystem, leveraging strong expertise in SwiftUI, UIKit, ARKit and RealityKit. Co-founder of \"Parts,\" an innovative startup dedicated to helping visually impaired people experience art in new and accessible ways, recognized by several prominent articles. His work blends creativity and technical skills, with a strong commitment to inclusive technologies and interactive 3D experiences.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/itsalessandroricci/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/itsalessandroricci",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/marzia_pirozzi.png",
+    name: "Marzia Pirozzi",
+    title: "Software Developer | Apple Developer",
+    description: "",
+    bio: "Full-stack developer with strong experience in mobile and immersive technologies. Skilled in delivering user-focused applications and in combining technical expertise with creativity and cross-functional collaboration. Currently pursuing a master's in Artificial Intelligence after completing a Computer Science degree.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://linkedin.com/in/marzia-pirozzi",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/Marziap",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
 ];
 
 const geistSans = Geist({
@@ -218,7 +332,7 @@ const organizers = [
     name: "Yugo Atobe",
     title: "Co-organizer of VisionDevCamp Tokyo",
     description: "",
-    bio: "Organizing the [visionOS Study Group](https://scrapbox.io/visionOS/) since 2023.\nDesigner and developer of DevCamp.\nInterested in development models and funding mechanisms that incentivize open source and open standards.",
+    bio: "Organizing visionOS Study Group since 2023. Designer and developer of DevCamp. Interested in development organization models and funding mechanisms that incentivize open source and open standards.",
     socialMedia: [
       {
         platform: "Website",
@@ -235,7 +349,7 @@ const tokyoTeam = [
     name: "Kara_d / Kazuhiro Hara",
     title: "",
     description: "",
-    bio: "Organizer of [Yorihiroi Frontend](https://yorihiroi-frontend.engineer/). XR Developer and Apple Vision Pro holder. Freelance developer and founder of Kansock Industries (https://kansock.industries/ja/). ARJAM award winner (hosted by XREAL). Co-organizer of VisionDevCamp Tokyo.",
+    bio: "Organizer of Yorihiroi Frontend. XR Developer and Apple Vision Pro holder. Freelance developer and founder of Kansock Industries. ARJAM award winner (hosted by XREAL). Co-organizer of VisionDevCamp Tokyo.",
     socialMedia: [
       {
         platform: "X",
@@ -249,7 +363,7 @@ const tokyoTeam = [
     name: "Koyasu Munenori",
     title: "Designer",
     description: "",
-    bio: "UX designer based in Tokyo.\nEngaged in UX design for web systems and website design.\nCurrently enrolled in the doctoral program at Tokyo Denki University, deepening his knowledge of UX.",
+    bio: "UX designer based in Tokyo. Engaged in UX design for web systems and website design. Currently enrolled in the doctoral program at Tokyo Denki University, deepening his knowledge of UX.",
     socialMedia: [
       {
         platform: "Website",
@@ -263,12 +377,26 @@ const tokyoTeam = [
     name: "Morinosuke / Seinosuke Saito",
     title: "",
     description: "",
-    bio: "4th-year engineering student at the University of Tokyo\nSoftware engineer\nDeveloped 'DevCamp', an Apple Vision Pro app that serves as the online venue for Vision Dev Camp Tokyo 2025.",
+    bio: "4th-year engineering student at the University of Tokyo. Software engineer. Developed 'DevCamp', an Apple Vision Pro app that serves as the online venue for Vision Dev Camp Tokyo 2025.",
     socialMedia: [
       {
         platform: "X",
         url: "https://x.com/morinosuke361",
         icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/bankie-icon.png",
+    name: "Bankie",
+    title: "Data Platform Engineer",
+    description: "",
+    bio: "Data Platform Engineer.",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://connpass.com/user/TreradeshBankie/",
+        icon: "/globe-outline.svg",
       },
     ],
   },
@@ -294,7 +422,7 @@ const fukuokaTeam = [
     name: "Kanako Nakiri",
     title: "",
     description: "",
-    bio: "She is a member of Roku inc. and is based in Fukuoka, where she develops web applications.\nShe is particularly skilled in the e-commerce field, and has been involved in a wide range of projects, from building e-commerce sites to developing related apps.",
+    bio: "She is a member of Roku inc. and is based in Fukuoka, where she develops web applications. She is particularly skilled in the e-commerce field, and has been involved in a wide range of projects, from building e-commerce sites to developing related apps.",
     socialMedia: [
       {
         platform: "LinkedIn",
@@ -2984,3 +3112,4 @@ function TeamMemberCard({ image, name, title, description, bio, socialMedia = []
     </>
   );
 }
+

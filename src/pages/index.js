@@ -187,6 +187,120 @@ const speakers = [
       },
     ],
   },
+  {
+    image: "/gianrocco_di_tomaso.png",
+    name: "Gianrocco Di Tomaso",
+    title: "Vision Os UX/UIデザイン | グラフィックデザイナー | 3Dアーティスト",
+    description: "",
+    bio: "視覚コミュニケーションを基盤とし、没入型テクノロジー、空間コンピューティング、3D環境デザインを専門とする多分野にわたるデザイナーです。創造性と技術的専門知識を組み合わせ、Apple Vision Proなどの新興プラットフォームやミックスドリアリティ環境における革新的なデジタル体験を創造しています。XRプロトタイピング、インタラクティブな空間の作成、直感的な空間インターフェースのデザインに関する実践的な経験を持っています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/gianrocco-di-tomaso-5895a0165/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Behance",
+        url: "https://www.behance.net/gianrocditoma",
+        icon: "/behance-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/rosa_laura_vernieri.jpg",
+    name: "Rosa Laura Vernieri",
+    title: "visionOS、iOS UX/UIデザイナー | 認知人間工学専門家",
+    description: "",
+    bio: "ユーザー体験研究、インタラクションデザイン、アクセシビリティ、AR、VR、XRを専門とする2年の経験を持つUX/UIデザイナーです。認知心理学者および認知人間工学専門家としての学術的タイトルを持ち、それにより私たちの脳がテクノロジーとどのように相互作用し反応するかを理解し、その結果、アプリや製品の最適な構造をデザインすることができます。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/rosalauravernieri/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Behance",
+        url: "https://www.behance.net/rosalavernier",
+        icon: "/behance-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/davide_castaldi.png",
+    name: "Davide Castaldi",
+    title: "visionOSおよびAppleエコシステム開発者、ソフトウェアエンジニア",
+    description: "",
+    bio: "Appleエコシステム内でXRを専門とするソフトウェア開発者です。visionOS、SwiftUI、Reality Composerに強い基盤を持ち、次世代プラットフォーム向けの没入型AR/VR/MR体験を創造しています。MetalからC++相互運用性まで幅広い技術的専門知識を持ち、アクセシブルでスケーラブルなUI/UXデザインを提供します。主なプロジェクトには、Astral Wilds（visionOS）、オープンソースパッケージVisionTextArc（visionOS）、Tria Tactics（iOS/iPadOS）などのクリエイティブプロジェクトがあります。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/davide-castaldi",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/Dave-Ed-Cast",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/giuseppe_rocco.jpg",
+    name: "Giuseppe Rocco",
+    title: "仮想化エンスージアスト | UNIXスペシャリスト | Apple開発者",
+    description: "",
+    bio: "macOS開発とUNIXシステム管理に精通した多才な開発者で、複雑なフレームワークに習熟し、Mac App Storeでのリリースを含むAppleエコシステムを対象とした高品質なソフトウェア構築の経験があります。オープンソースソフトウェアに情熱を持ち、複数のSwiftパッケージを公開しています。データベースエンジニアリングやスケーラブルなシステム統合のスキルを持ち、チャレンジングな技術アーキテクチャを独自に解決しつつ、協力的なチームでも活躍する自主的な問題解決者です。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/giusepperocco",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/iOmega8561",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/alessandro_ricci.png",
+    name: "Alessandro Ricci",
+    title: "iOS＆visionOS開発者",
+    description: "",
+    bio: "自然とアクセシビリティに深い情熱を持つ経験豊富なVisionOS、iOS、Unity開発者です。SwiftUI、UIKit、ARKit、RealityKitの強力な専門知識を活かし、Appleエコシステム全体のユーザーフレンドリーなデジタル体験を創造しています。視覚障害者が新しくアクセシブルな方法で芸術を体験できるよう支援する革新的なスタートアップ「Parts」の共同創設者であり、複数の著名な記事で認められています。彼の仕事は創造性と技術的スキルを融合させ、包括的なテクノロジーとインタラクティブな3D体験に強くコミットしています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://www.linkedin.com/in/itsalessandroricci/",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/itsalessandroricci",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/marzia_pirozzi.png",
+    name: "Marzia Pirozzi",
+    title: "ソフトウェア開発者 | Apple開発者",
+    description: "",
+    bio: "モバイルおよび没入型テクノロジーに強い経験を持つフルスタック開発者。ユーザーに焦点を当てたアプリケーションの提供と、技術的な専門知識と創造性、および部門横断的なコラボレーションを組み合わせることに長けています。コンピュータサイエンスの学位を取得した後、現在は人工知能の修士課程を追求しています。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://linkedin.com/in/marzia-pirozzi",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "GitHub",
+        url: "https://github.com/Marziap",
+        icon: "/github-logo.png",
+      },
+    ],
+  },
 ];
 
 const geistSans = Geist({
@@ -202,7 +316,7 @@ const geistMono = Geist_Mono({
 const organizers = [
   {
     image: "/takuzen-toh.jpg",
-    name: "Takuzen Toh / 鄧卓然",
+    name: "鄧卓然",
     title: "VisionDevCamp Tokyo共同主催者",
     description: "Engineer / エンジニア",
     bio: "VisionDevCamp Tokyo 2025共同共催者・VisionDevCamp最実用アプリ賞受賞・Let's Vision 2025登壇者・Apple Vision Pro向けのイマーシブビデオアプリ「Caspy」開発者",
@@ -216,10 +330,10 @@ const organizers = [
   },
   {
     image: "/yugoatobe.jpg",
-    name: "Yugo Atobe / 跡部優吾",
+    name: "Yugo Atobe",
     title: "VisionDevCamp Tokyo共同主催者",
     description: "",
-    bio: "2023年よりvisionOS勉強会を主催している。\nDevCampを設計・開発した。\nオープンソース、オープンスタンダードにインセンティブを与える開発モデルや資金調達機構の構築に関心があります。",
+    bio: "2023年よりvisionOS勉強会を主催しています。DevCampを設計・開発しました。オープンソース、オープンスタンダードにインセンティブを与える開発組織のモデルや資金調達機構の構築に関心があります。",
     socialMedia: [
       {
         platform: "Website",
@@ -247,10 +361,10 @@ const tokyoTeam = [
   },
   {
     image: "/munenori-koyasu.jpg",
-    name: "Koyasu Munenori / 小安宗徳",
+    name: "小安宗徳",
     title: "Designer / デザイナー",
     description: "",
-    bio: "東京都を拠点に活動するUXデザイナー。\nWebシステムのUX設計や、Webサイトのデザインを行なっている。\n東京電機大学社会人博士課程に在籍し、UXについての知見を深めている。",
+    bio: "東京都を拠点に活動するUXデザイナー。WebシステムのUX設計や、Webサイトのデザインを行なっている。東京電機大学社会人博士課程に在籍し、UXについての知見を深めている。",
     socialMedia: [
       {
         platform: "Website",
@@ -264,12 +378,26 @@ const tokyoTeam = [
     name: "Morinosuke / Seinosuke Saito",
     title: "",
     description: "",
-    bio: "東京大学工学部4年\nソフトウェアエンジニア\nVision Dev Camp Tokyo 2025 オンライン会場であるApple Vision Pro向けアプリ「DevCamp」を開発。",
+    bio: "東京大学工学部4年。ソフトウェアエンジニア。Vision Dev Camp Tokyo 2025 オンライン会場であるApple Vision Pro向けアプリ「DevCamp」を開発。",
     socialMedia: [
       {
         platform: "X",
         url: "https://x.com/morinosuke361",
         icon: "/x-logo.png",
+      },
+    ],
+  },
+  {
+    image: "/bankie-icon.png",
+    name: "Bankie",
+    title: "Data Platform Engineer",
+    description: "",
+    bio: "データプラットフォームエンジニア。",
+    socialMedia: [
+      {
+        platform: "Website",
+        url: "https://connpass.com/user/TreradeshBankie/",
+        icon: "/globe-outline.svg",
       },
     ],
   },
@@ -292,10 +420,10 @@ const fukuokaTeam = [
   },
   {
     image: "/kanako_nagiri.jpg",
-    name: "Kanako Nakiri / 名切加奈子",
+    name: "名切加奈子",
     title: "",
     description: "",
-    bio: "株式会社六に所属し、福岡を拠点にWebアプリケーションの開発を行っています。\n特にイーコマース分野を得意としており、ECサイトの構築から関連アプリの開発まで幅広く携わっています。",
+    bio: "株式会社六に所属し、福岡を拠点にWebアプリケーションの開発を行っています。特にイーコマース分野を得意としており、ECサイトの構築から関連アプリの開発まで幅広く携わっています。",
     socialMedia: [
       {
         platform: "LinkedIn",
@@ -3125,3 +3253,4 @@ function TeamMemberCard({ image, name, title, description, bio, socialMedia = []
     </>
   );
 }
+
