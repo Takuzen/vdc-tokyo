@@ -202,7 +202,7 @@ const speakers = [
       {
         platform: "Behance",
         url: "https://www.behance.net/gianrocditoma",
-        icon: "/behance-logo.png",
+        icon: "/behance-logo.svg",
       },
     ],
   },
@@ -221,7 +221,7 @@ const speakers = [
       {
         platform: "Behance",
         url: "https://www.behance.net/rosalavernier",
-        icon: "/behance-logo.png",
+        icon: "/behance-logo.svg",
       },
     ],
   },
@@ -316,10 +316,10 @@ const geistMono = Geist_Mono({
 const organizers = [
   {
     image: "/takuzen-toh.jpg",
-    name: "鄧卓然",
+    name: "登卓然 / Takuzen Toh",
     title: "VisionDevCamp Tokyo共同主催者",
     description: "Engineer / エンジニア",
-    bio: "VisionDevCamp Tokyo 2025共同共催者・VisionDevCamp最実用アプリ賞受賞・Let's Vision 2025登壇者・Apple Vision Pro向けのイマーシブビデオアプリ「Caspy」開発者",
+    bio: "VisionDevCamp最実用アプリ賞受賞・Let's Vision 2025登壇者・Apple Vision Pro向けのイマーシブビデオアプリ「Caspy」開発者",
     socialMedia: [
       {
         platform: "X",
@@ -350,7 +350,7 @@ const tokyoTeam = [
     name: "Kara_d / Kazuhiro Hara",
     title: "",
     description: "",
-    bio: "・よりひろいフロントエンド主催。XR Developer。Apple Vision Pro Holder。カンソクインダストリーズ代表のフリーランス。XREAL主催のARJAM入賞。VisionDevCamp Tokyo 共同主催者。",
+    bio: "よりひろいフロントエンド主催。XR Developer。Apple Vision Pro Holder。カンソクインダストリーズ代表のフリーランス。XREAL主催のARJAM入賞。VisionDevCamp Tokyo 共同主催者。",
     socialMedia: [
       {
         platform: "X",
@@ -1511,6 +1511,11 @@ export default function Home() {
                   name="フリットジャパン株式会社"
                   link="https://flitto.jp/"
                 />
+	  	<SponsorCard
+                  logo="/techworld-logo.jpg"
+                  name="︎TECH WORLD"
+                  link="https://www.youtube.com/@TECHWORLD111"
+                />
                 <SponsorCard
                   logo="/nihonkougakuin.jpg"
                   name="日本工学院"
@@ -1537,11 +1542,6 @@ export default function Home() {
                   logo="/crossdevice-logo.png"
                   name="︎株式会社クロスデバイス"
                   link="https://www.crossdevice.co.jp/"
-                />
-                <SponsorCard
-                  logo="/techworld-logo.jpg"
-                  name="︎TECH WORLD"
-                  link="https://www.youtube.com/@TECHWORLD111"
                 />
               </div>
 

@@ -201,7 +201,7 @@ const speakers = [
       {
         platform: "Behance",
         url: "https://www.behance.net/gianrocditoma",
-        icon: "/behance-logo.png",
+        icon: "/behance-logo.svg",
       },
     ],
   },
@@ -220,7 +220,7 @@ const speakers = [
       {
         platform: "Behance",
         url: "https://www.behance.net/rosalavernier",
-        icon: "/behance-logo.png",
+        icon: "/behance-logo.svg",
       },
     ],
   },
@@ -315,10 +315,10 @@ const geistMono = Geist_Mono({
 const organizers = [
   {
     image: "/takuzen-toh.jpg",
-    name: "Takuzen Toh / 鄧卓然",
+    name: "Takuzen Toh",
     title: "Co-organizer of VisionDevCamp Tokyo",
     description: "Engineer",
-    bio: "Co-organizer of VisionDevCamp Tokyo 2025 · Winner of Most Useful App at VisionDevCamp · Speaker at Let's Vision 2025 · Creator of Caspy, an immersive video app built for Apple Vision Pro",
+    bio: "Winner of Most Useful App at VisionDevCamp · Speaker at Let's Vision 2025 · Creator of Caspy, an immersive video app built for Apple Vision Pro",
     socialMedia: [
       {
         platform: "X",
@@ -1519,6 +1519,11 @@ export default function Home() {
                   name="Flitto Japan Inc."
                   link="https://flitto.jp/en/"
                 />
+		<SponsorCard
+                  logo="/techworld-logo.jpg"
+                  name="︎TECH WORLD"
+                  link="https://www.youtube.com/@TECHWORLD111"
+                />
                 <SponsorCard
                   logo="/nihonkougakuin.jpg"
                   name="Nihon Kogakuin"
@@ -1545,11 +1550,6 @@ export default function Home() {
                   logo="/crossdevice-logo.png"
                   name="︎Crossdevice Inc."
                   link="https://www.crossdevice.co.jp/"
-                />
-                <SponsorCard
-                  logo="/techworld-logo.jpg"
-                  name="︎TECH WORLD"
-                  link="https://www.youtube.com/@TECHWORLD111"
                 />
               </div>
 
