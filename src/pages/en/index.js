@@ -300,6 +300,25 @@ const speakers = [
       },
     ],
   },
+  {
+    image: "/default_profile_400x400.png",
+    name: "Dario Laverde",
+    title: "Sr Creative Technologist",
+    description: "XR Specialist/developer/advisor, former Dir Developer Relations, HTC",
+    bio: "He will give a talk titled \"Using Unity to Develop for AVP (in a cross-platform way)\", where he will cover how to port Unity content from Android-based headsets (e.g. Quest, Vive, Pico) to Vision Pro, and how to use Unity’s XR Interaction Toolkit, XR Hands, and Multiplayer templates to build new projects.",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://linkedin.com/in/dariony",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Bluesky",
+        url: "https://bsky.app/profile/virtualdario.bsky.social",
+        icon: "/bluesky-logo.png",
+      },
+    ],
+  },
 ];
 
 const geistSans = Geist({
@@ -318,7 +337,10 @@ const organizers = [
     name: "Takuzen Toh",
     title: "Co-organizer of VisionDevCamp Tokyo",
     description: "Engineer",
-    bio: "Winner of Most Useful App at VisionDevCamp · Speaker at Let's Vision 2025 · Creator of Caspy, an immersive video app built for Apple Vision Pro",
+    bio: (
+  <>
+    Winner of Most Useful App at VisionDevCamp · Speaker at Let's Vision 2025 · Creator of <em>Caspy</em>, an immersive video app built for Apple Vision Pro
+  </>),
     socialMedia: [
       {
         platform: "X",
@@ -1528,6 +1550,11 @@ export default function Home() {
                   logo="/nihonkougakuin.jpg"
                   name="Nihon Kogakuin"
                   link="https://www.neec.ac.jp/vision_craft/"
+                />
+		<SponsorCard
+                  logo="/eos-vr-system-logo.png"
+                  name="Canon Inc."
+                  link="https://personal.canon.jp/product/camera/rf/rf-lensworld/vr-lens"
                 />
               </div>
 

@@ -301,6 +301,25 @@ const speakers = [
       },
     ],
   },
+  {
+    image: "/default_profile_400x400.png",
+    name: "Dario Laverde",
+    title: "シニア・クリエイティブ・テクノロジスト",
+    description: "XRスペシャリスト／開発者／アドバイザー、元HTCのディベロッパーリレーションズディレクター",
+    bio: "今回Unityを利用してAVP向けに開発する（クロスプラットフォームでの開発）というタイトルで登壇し、Android系のヘッドセット（例：Quest、Vive、Pico）からVision ProへのUnityコンテンツの移植方法、UnityのXR Interaction ToolkitやXR Hands、マルチプレイヤーテンプレートを使った新規プロジェクトの作成方法について話してくれます。",
+    socialMedia: [
+      {
+        platform: "LinkedIn",
+        url: "https://linkedin.com/in/dariony",
+        icon: "/linkedin-logo.png",
+      },
+      {
+        platform: "Bluesky",
+        url: "https://bsky.app/profile/virtualdario.bsky.social",
+        icon: "/bluesky-logo.png",
+      },
+    ],
+  },
 ];
 
 const geistSans = Geist({
@@ -1521,6 +1540,12 @@ export default function Home() {
                   name="日本工学院"
                   link="https://www.neec.ac.jp/vision_craft/"
                 />
+	        <SponsorCard
+                  logo="/eos-vr-system-logo.png"
+                  name="キヤノン株式会社"
+                  link="https://personal.canon.jp/product/camera/rf/rf-lensworld/vr-lens"
+                />
+
               </div>
 
               <h4 className="text-xl font-bold mt-16 mb-8 text-white">
