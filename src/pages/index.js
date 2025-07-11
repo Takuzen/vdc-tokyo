@@ -524,7 +524,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="mt-12">
+      <section className="mt-12 bg-white">
         <p className="text-sm text-black mb-4 ml-2 sm:ml-6 text-left">Sponsored by</p>
         <div className="flex flex-wrap justify-evenly items-center gap-x-6 sm:gap-x-12 gap-y-4 ml-1 mb-6">
           <img src="/unity-logo-black.png" alt="Unity logo" className="h-12 sm:h-14 object-contain" />
