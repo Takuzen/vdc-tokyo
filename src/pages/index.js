@@ -478,79 +478,63 @@ export default function Home() {
       <Header />
 
       <main className="mt-16 sm:mt-20">
-        <section
-          id="top"
-          className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-red-900 to-black text-white px-8 py-12 overflow-hidden"
-        >
-          {/* Hero Image - Full width banner */}
-          <div className="absolute inset-0 w-full h-full z-0">
-            <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-            <img
-              src="/visiondevcamp2024.jpg"
-              alt="VisionDevCamp 2024 Event"
-              className="w-full h-full object-cover object-center sm:object-top"
-            />
+              {/* Hero Section: Event Title, Date, Location, and Call-to-Action */}
+      <section className="md:flex md:items-start md:justify-between md:space-x-8"> 
+        {/* Text Content */}
+        <div className="bg-black text-white md:bg-transparent md:text-current md:flex-1 p-6">
+          {/* Event status notice */}
+          <p className="text-sm text-red-500 mb-2">
+            このイベントは終了しました。
+          </p>
+          {/* Event title */}
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+            VisionDevCamp <span className="text-red-500">Tokyo 2025</span>
+          </h1>
+          {/* Event date and location details */}
+          <div className="text-sm md:text-base mb-4">
+            <p>
+              <span role="img" aria-label="date">📅</span> 2025年4月11日(金)〜13日(日)
+            </p>
+            <p>
+              <span role="img" aria-label="location">📍</span> オープンコラボレーションハブ LODGE &amp; Online
+            </p>
           </div>
+          {/* Additional note about future announcements/archives */}
+          <p className="text-xs md:text-sm text-gray-300 md:text-gray-700 mb-6">
+            最新情報やアーカイブは公式サイトやSNSでお知らせします。
+          </p>
+          {/* Link to official X (Twitter) account */}
+          <a href="https://twitter.com/devcamptokyo" target="_blank" rel="noopener noreferrer"
+             className="inline-flex items-center border border-current rounded-full px-4 py-2 text-sm font-medium no-underline">
+            {/* The link inherits text color from context: white on mobile, black on desktop */}
+            X @devcamptokyo
+          </a>
+        </div>
 
-          {/* Content Overlay */}
-          <div className="relative z-20 text-center w-full max-w-6xl mx-auto py-16">
-            <div className="inline-block mb-6 p-2 bg-red-500 bg-opacity-90 rounded-lg transform -rotate-2">
-              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
-                VisionDevCamp <span className="text-black">Tokyo</span> 2025
-              </h1>
-            </div>
+        {/* Hero Image */}
+        <div className="md:mt-6 md:mt-0 md:flex-1">
+          <Image 
+            src="/vdc2025-hero.jpg"
+            alt="Group photo from VisionDevCamp Tokyo 2025"
+            width={800}
+            height={600}
+            className="w-full h-auto object-cover md:rounded-md"
+          />
+        </div>
+      </section>
 
-            <div className="mt-6 bg-black bg-opacity-70 p-5 rounded-xl shadow-xl">
-              <a
-                href="https://visiondevcamp.org/"
-                className="text-xl sm:text-2xl font-medium text-white hover:text-red-300 transition-colors"
-              >
-                シリコンバレーの2007年より続く歴史あるハッカソンが初めての日本開催！
-              </a>
-
-              <p className="text-xl sm:text-2xl mt-4 text-white font-medium">
-                個人でもチームでも、共にVision Proのアイデアを形にしよう！
-              </p>
-
-              <div className="mt-8 text-center">
-                <p className="text-4xl sm:text-5xl font-bold text-red-400">
-                  2025年4月11日
-                  <span className="text-2xl sm:text-3xl">（金）</span>～13日
-                  <span className="text-2xl sm:text-3xl">（日）</span>
-                </p>
-              </div>
-
-              <div className="mt-6 text-center">
-                <p className="text-lg sm:text-xl font-bold">
-                  会場：
-                  <span className="underline decoration-[1px]">
-                    <a
-                      href="https://www.z-lodge.com/#space"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-red-300 transition-colors"
-                    >
-                      {" ︎オープンコラボレーションハブ LODGE "}
-                    </a>
-                  </span>
-                  <span className="ml-1">& Online</span>
-                </p>
-              </div>
-
-              <div className="mt-10">
-                <a
-                  href="https://lu.ma/wsqwzm4s"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transform transition-transform hover:scale-105 shadow-lg"
-                >
-                  参加登録はこちら →
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
+      {/* Sponsors Section */}
+      <section className="mt-12">
+        <p className="text-sm text-black mb-4 ml-2 sm:ml-6 text-left">Sponsored by</p>
+        <div className="flex flex-wrap justify-evenly items-center gap-x-6 sm:gap-x-12 gap-y-4 ml-1 mb-6">
+          <img src="/unity-logo-black.png" alt="Unity logo" className="h-12 sm:h-14 object-contain" />
+          <img src="/eos-vr-system-logo.png" alt="Canon logo" className="h-12 sm:h-14 object-contain" />
+          <img src="/styly-logo.png" alt="STYLY Inc. logo" className="h-12 sm:h-14 object-contain" />
+          <img src="/logo_yappli_rgb.png" alt="Yappli logo" className="h-8 sm:h-10 object-contain" />
+          <img src="/nihonkougakuin.jpg" alt="Nihonkougakuin logo" className="h-6 sm:h-8 object-contain" />
+          <img src="beautiful-things-logo.png" alt="Beautiful Things logo" className="h-10 sm:h-12 object-contain" />
+        </div>
+      </section>
         {/* Overview Section - New */}
         <section
           id="overview"
