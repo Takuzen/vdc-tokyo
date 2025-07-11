@@ -481,7 +481,7 @@ export default function Home() {
               {/* Hero Section: Event Title, Date, Location, and Call-to-Action */}
       <section className="md:flex md:items-start md:justify-between md:space-x-8"> 
         {/* Text Content */}
-        <div className="bg-black text-white md:bg-transparent md:text-current md:flex-1 p-6">
+        <div className="bg-white md:flex-1 p-6">
           {/* Event status notice */}
           <p className="text-sm text-red-500 mb-2">
             このイベントは終了しました。
@@ -500,7 +500,7 @@ export default function Home() {
             </p>
           </div>
           {/* Additional note about future announcements/archives */}
-          <p className="text-xs md:text-sm text-gray-300 md:text-gray-700 mb-6">
+          <p className="text-xs md:text-sm text-gray-700 mb-6">
             最新情報やアーカイブは公式サイトやSNSでお知らせします。
           </p>
           {/* Link to official X (Twitter) account */}
@@ -524,7 +524,7 @@ export default function Home() {
       </section>
 
       {/* Sponsors Section */}
-      <section className="mt-12 bg-white">
+      <section className="mt-12">
         <p className="text-sm text-black mb-4 ml-2 sm:ml-6 text-left">Sponsored by</p>
         <div className="flex flex-wrap justify-evenly items-center gap-x-6 sm:gap-x-12 gap-y-4 ml-1 mb-6">
           <img src="/unity-logo-black.png" alt="Unity logo" className="h-12 sm:h-14 object-contain" />
