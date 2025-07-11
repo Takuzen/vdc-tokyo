@@ -478,20 +478,19 @@ export default function Home() {
       <Header />
 
       <main className="mt-16 sm:mt-20">
-              {/* Hero Section: Event Title, Date, Location, and Call-to-Action */}
-      <section className="md:flex md:items-start md:justify-between md:space-x-8"> 
+      <section className="bg-white md:flex md:items-start md:justify-between md:space-x-8"> 
         {/* Text Content */}
-        <div className="bg-white md:flex-1 p-6">
+        <div className="md:flex-1 p-6">
           {/* Event status notice */}
           <p className="text-sm text-red-500 mb-2">
             このイベントは終了しました。
           </p>
           {/* Event title */}
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          <h1 className="text-black text-3xl md:text-5xl font-bold mb-4">
             VisionDevCamp <span className="text-red-500">Tokyo 2025</span>
           </h1>
           {/* Event date and location details */}
-          <div className="text-sm md:text-base mb-4">
+          <div className="text-black text-sm md:text-base mb-4">
             <p>
               <span role="img" aria-label="date">📅</span> 2025年4月11日(金)〜13日(日)
             </p>
@@ -505,7 +504,7 @@ export default function Home() {
           </p>
           {/* Link to official X (Twitter) account */}
           <a href="https://twitter.com/devcamptokyo" target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center border border-current rounded-full px-4 py-2 text-sm font-medium no-underline">
+             className="text-black inline-flex items-center border border-current rounded-full px-4 py-2 text-sm font-medium no-underline">
             {/* The link inherits text color from context: white on mobile, black on desktop */}
             X @devcamptokyo
           </a>
